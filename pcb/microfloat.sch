@@ -11874,22 +11874,12 @@ In this library you will find switches and other mechanical assisted circuit ele
 <wire x1="63.5" y1="210.82" x2="60.96" y2="210.82" width="0.1524" layer="91"/>
 <label x="60.96" y="210.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="CMD"/>
-<wire x1="386.08" y1="261.62" x2="383.54" y2="261.62" width="0.1524" layer="91"/>
-<label x="383.54" y="261.62" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="SCLK_1" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="PA13//EIC/EXTINT[13]"/>
 <wire x1="63.5" y1="208.28" x2="60.96" y2="208.28" width="0.1524" layer="91"/>
 <label x="60.96" y="208.28" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="CLK"/>
-<wire x1="386.08" y1="256.54" x2="383.54" y2="256.54" width="0.1524" layer="91"/>
-<label x="383.54" y="256.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MISO_1" class="0">
@@ -11898,17 +11888,17 @@ In this library you will find switches and other mechanical assisted circuit ele
 <wire x1="63.5" y1="205.74" x2="60.96" y2="205.74" width="0.1524" layer="91"/>
 <label x="60.96" y="205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="DAT0"/>
-<wire x1="386.08" y1="251.46" x2="383.54" y2="251.46" width="0.1524" layer="91"/>
-<label x="383.54" y="251.46" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="MOSI_2" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="PA16/EIC/EXTINT[0]"/>
 <wire x1="63.5" y1="200.66" x2="60.96" y2="200.66" width="0.1524" layer="91"/>
 <label x="60.96" y="200.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="CMD"/>
+<wire x1="386.08" y1="261.62" x2="383.54" y2="261.62" width="0.1524" layer="91"/>
+<label x="383.54" y="261.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SCLK_2" class="0">
@@ -11917,12 +11907,22 @@ In this library you will find switches and other mechanical assisted circuit ele
 <wire x1="63.5" y1="198.12" x2="60.96" y2="198.12" width="0.1524" layer="91"/>
 <label x="60.96" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="CLK"/>
+<wire x1="386.08" y1="256.54" x2="383.54" y2="256.54" width="0.1524" layer="91"/>
+<label x="383.54" y="256.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="MISO_2" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="PA18/EIC/EXTINT[2]"/>
 <wire x1="63.5" y1="195.58" x2="60.96" y2="195.58" width="0.1524" layer="91"/>
 <label x="60.96" y="195.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="DAT0"/>
+<wire x1="386.08" y1="251.46" x2="383.54" y2="251.46" width="0.1524" layer="91"/>
+<label x="383.54" y="251.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="UART_RX_PH" class="0">
@@ -12084,7 +12084,7 @@ In this library you will find switches and other mechanical assisted circuit ele
 <label x="27.94" y="205.74" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="D-" class="0">
+<net name="D_N" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="DN1"/>
 <wire x1="236.22" y1="248.92" x2="233.68" y2="248.92" width="0.1524" layer="91"/>
@@ -12099,23 +12099,6 @@ In this library you will find switches and other mechanical assisted circuit ele
 <pinref part="U6" gate="G$1" pin="PA24/EIC/EXTINT[8]"/>
 <wire x1="63.5" y1="180.34" x2="60.96" y2="180.34" width="0.1524" layer="91"/>
 <label x="60.96" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="D+" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="DP2"/>
-<wire x1="276.86" y1="251.46" x2="279.4" y2="251.46" width="0.1524" layer="91"/>
-<label x="279.4" y="251.46" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="DP1"/>
-<wire x1="236.22" y1="251.46" x2="233.68" y2="251.46" width="0.1524" layer="91"/>
-<label x="233.68" y="251.46" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U6" gate="G$1" pin="PA25/EIC/EXTINT[9]"/>
-<wire x1="63.5" y1="177.8" x2="60.96" y2="177.8" width="0.1524" layer="91"/>
-<label x="60.96" y="177.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -12504,6 +12487,23 @@ In this library you will find switches and other mechanical assisted circuit ele
 <pinref part="U$19" gate="G$1" pin="1"/>
 <wire x1="256.54" y1="33.02" x2="248.92" y2="33.02" width="0.1524" layer="91"/>
 <junction x="248.92" y="33.02"/>
+</segment>
+</net>
+<net name="D_P" class="0">
+<segment>
+<pinref part="U6" gate="G$1" pin="PA25/EIC/EXTINT[9]"/>
+<wire x1="63.5" y1="177.8" x2="60.96" y2="177.8" width="0.1524" layer="91"/>
+<label x="60.96" y="177.8" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="DP2"/>
+<wire x1="276.86" y1="251.46" x2="279.4" y2="251.46" width="0.1524" layer="91"/>
+<label x="279.4" y="251.46" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="DP1"/>
+<wire x1="236.22" y1="251.46" x2="233.68" y2="251.46" width="0.1524" layer="91"/>
+<label x="233.68" y="251.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
