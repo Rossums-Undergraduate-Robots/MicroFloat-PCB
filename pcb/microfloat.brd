@@ -188,12 +188,13 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYzk2ZTQz" projecturn="a.cGVyc29uYWw6dWUyYzk2ZTQzIzIwMTkwMjE1MTc2NTExNTA2" f3durn="urn:adsk.wipprod:dm.lineage:kBVr3XIRQMefSeK5IowBAA" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="3c45d896-04a7-4eae-b7b8-d7290e07e245" lastsyncedrevisionid="3c45d896-04a7-4eae-b7b8-d7290e07e245" lastboardhashguid="ff6db588-a866-1344-3c75-80f5d7c7692e" lastpushedtime="2021-03-22T20:04:48Z" linktopcb3d="true"/>
 <plain>
 <wire x1="-0.05" y1="65.99556875" x2="38.05" y2="65.99556875" width="0.1524" layer="20"/>
 <wire x1="-0.05" y1="0.00443125" x2="38.05" y2="0.00443125" width="0.1524" layer="20"/>
 <wire x1="38.05" y1="65.99556875" x2="57.1" y2="33" width="0.1524" layer="20"/>
 <wire x1="57.1" y1="33" x2="38.05" y2="0.00443125" width="0.1524" layer="20"/>
-<wire x1="-0.05" y1="65.99556875" x2="-19.1" y2="33" width="0.1524" layer="20"/>
+<wire x1="-0.05" y1="65.99556875" x2="-19.1" y2="33" width="0.1524" layer="20" locked="yes"/>
 <wire x1="-19.1" y1="33" x2="-0.05" y2="0.00443125" width="0.1524" layer="20"/>
 <circle x="19" y="33" radius="38.1" width="0.1524" layer="51"/>
 </plain>
@@ -5106,6 +5107,11 @@ of those online libraries will not be understood (or retained)
 with this version.
 </note>
 <note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
+</note>
+<note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
 will not be understood (or retained) with this version.
@@ -5114,6 +5120,10 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="8.5" severity="warning">
+Since Version 8.5, EAGLE supports locking for holes, vias, wires and polygons. 
+The locking property on all objects of these types will not be understood in this version. 
 </note>
 </compatibility>
 </eagle>
