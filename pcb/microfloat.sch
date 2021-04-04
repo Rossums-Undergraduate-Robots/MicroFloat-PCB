@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -11364,27 +11364,112 @@ In this library you will find switches and other mechanical assisted circuit ele
 <part name="FRAME4" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_B_L" device=""/>
 <part name="U1" library="microfloat" deviceset="BME280" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100 nF"/>
-<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100 nF"/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1 uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</part>
+<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1 uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</part>
 <part name="U2" library="microfloat" deviceset="ICM-42688-P" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1 uF"/>
-<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2 uF"/>
-<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10 nF"/>
+<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1 uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</part>
+<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2 uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</part>
+<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.01 uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</part>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J1" library="microfloat" deviceset="503182-1852" device=""/>
-<part name="T1" library="microfloat" deviceset="MMBT3906" device="SOT23-BEC" package3d_urn="urn:adsk.eagle:package:28748/2" technology="BC807-40"/>
-<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
-<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
-<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="27k"/>
+<part name="T1" library="microfloat" deviceset="MMBT3906" device="SOT23-BEC" package3d_urn="urn:adsk.eagle:package:28748/2" technology="BC807-40" value="MMBT3906"/>
+<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="1%"/>
+</part>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="1%"/>
+</part>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="27k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="1%"/>
+</part>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
-<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="150k"/>
+<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="0.1%"/>
+</part>
+<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="150k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="0.1%"/>
+</part>
 <part name="U4" library="microfloat" deviceset="NEO-M8N-0" device=""/>
 <part name="U$3" library="microfloat" deviceset="LR62E" device=""/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -11398,12 +11483,66 @@ In this library you will find switches and other mechanical assisted circuit ele
 <part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="J2" library="microfloat" deviceset="USB4105_REVA" device=""/>
 <part name="U3" library="microfloat" deviceset="MAX13237EETE" device=""/>
-<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.2 uF"/>
-<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.2 uF"/>
-<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.2 uF"/>
-<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.2 uF"/>
-<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.2 uF"/>
-<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.2 uF"/>
+<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.2 uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</part>
+<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.2 uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</part>
+<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.2 uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</part>
+<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.2 uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</part>
+<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.2 uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</part>
+<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.2 uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="1%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</part>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -11411,8 +11550,26 @@ In this library you will find switches and other mechanical assisted circuit ele
 <part name="+3V10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="J11" library="microfloat" deviceset="JTAG-MINI" device=""/>
 <part name="U5" library="microfloat" deviceset="TXB0104PWR" device=""/>
-<part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1 uF"/>
-<part name="C14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1 uF"/>
+<part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1 uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</part>
+<part name="C14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1 uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</part>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="+3V11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -11421,8 +11578,24 @@ In this library you will find switches and other mechanical assisted circuit ele
 <part name="C15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="15 pF"/>
 <part name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="15 pF"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="5.1k"/>
-<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="5.1k"/>
+<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="5.1k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="1%"/>
+</part>
+<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="5.1k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="1%"/>
+</part>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -11446,10 +11619,26 @@ In this library you will find switches and other mechanical assisted circuit ele
 <part name="GND42" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="S2" library="RoboJackets-Switches" deviceset="KMR2" device=""/>
 <part name="+3V14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="652"/>
+<part name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="652">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="0.1%"/>
+</part>
 <part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k'"/>
+<part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k'">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="0.1%"/>
+</part>
 <part name="GND44" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U9" library="microfloat" deviceset="ATSAMD51N20A-AUT" device=""/>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_B_L" device=""/>
@@ -11717,14 +11906,62 @@ In this library you will find switches and other mechanical assisted circuit ele
 <part name="P+4" library="microfloat" deviceset="+6V" device=""/>
 <part name="+3V18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="C26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
-<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
-<part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
-<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
-<part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
-<part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
+<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="1%"/>
+</part>
+<part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="1%"/>
+</part>
+<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="1%"/>
+</part>
+<part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="1%"/>
+</part>
+<part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="1%"/>
+</part>
 <part name="+3V15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
+<part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="1%"/>
+</part>
 <part name="+3V19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="F1" library="microfloat" deviceset="SMD_FUSE" device="1206" value="0.5A"/>
 <part name="F2" library="microfloat" deviceset="SMD_FUSE" device="1206" value="2A"/>
@@ -11740,51 +11977,51 @@ In this library you will find switches and other mechanical assisted circuit ele
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
-<part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k">
+<part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="390k">
 <spice>
 <pinmapping spiceprefix="R">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="TOLERANCE" value="1%"/>
+<attribute name="TOLERANCE" value="0.1%"/>
 </part>
-<part name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k">
+<part name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="68k">
 <spice>
 <pinmapping spiceprefix="R">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="TOLERANCE" value="1%"/>
+<attribute name="TOLERANCE" value="0.1%"/>
 </part>
-<part name="R22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k">
+<part name="R22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="43k">
 <spice>
 <pinmapping spiceprefix="R">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="TOLERANCE" value="1%"/>
+<attribute name="TOLERANCE" value="0.1%"/>
 </part>
-<part name="R23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k">
+<part name="R23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="910k">
 <spice>
 <pinmapping spiceprefix="R">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="TOLERANCE" value="1%"/>
+<attribute name="TOLERANCE" value="0.1%"/>
 </part>
 <part name="U6" library="microfloat" deviceset="LTC4419CMSEPBF" device=""/>
-<part name="R24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k">
+<part name="R24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="82k">
 <spice>
 <pinmapping spiceprefix="R">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="TOLERANCE" value="1%"/>
+<attribute name="TOLERANCE" value="0.1%"/>
 </part>
 <part name="GND34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -11818,28 +12055,120 @@ In this library you will find switches and other mechanical assisted circuit ele
 <part name="U$1" library="microfloat" deviceset="SQ2348ES-T1_GE3" device=""/>
 <part name="U$27" library="microfloat" deviceset="GSOT04-E3-08" device=""/>
 <part name="CR1" library="microfloat" deviceset="VSKY20401608-G4-08" device=""/>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
-<part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10"/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="1%"/>
+</part>
+<part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="1%"/>
+</part>
 <part name="GND45" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J3" library="microfloat" deviceset="1054291110" device=""/>
 <part name="J4" library="microfloat" deviceset="1054291110" device=""/>
 <part name="GND46" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+8" library="microfloat" deviceset="+6V" device=""/>
-<part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="+3V20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="J5" library="microfloat" deviceset="1054291116" device=""/>
-<part name="GND47" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="P+13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="GND48" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$28" library="microfloat" deviceset="VBATT" device=""/>
 <part name="GND49" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
+<part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="1%"/>
+</part>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="F5" library="microfloat" deviceset="SMD_FUSE" device="1206" value="0.5A"/>
 <part name="U$29" library="microfloat" deviceset="TEST_POINT" device=""/>
 <part name="U$30" library="microfloat" deviceset="VBATT_5V" device=""/>
+<part name="U$31" library="microfloat" deviceset="TEST_POINT" device=""/>
+<part name="U$32" library="microfloat" deviceset="TEST_POINT" device=""/>
+<part name="C29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1.0 uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</part>
+<part name="C30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1.0 uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</part>
+<part name="C31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</part>
+<part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C40" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1.0 uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="5%"/>
+<attribute name="VOLTAGE" value="10V"/>
+</part>
+<part name="GND41" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="560k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="0.1%"/>
+</part>
+<part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="TOLERANCE" value="0.1%"/>
+</part>
+<part name="GND50" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U$33" library="microfloat" deviceset="VBATT" device=""/>
+<part name="GND57" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND58" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11919,10 +12248,12 @@ In this library you will find switches and other mechanical assisted circuit ele
 <instance part="R8" gate="G$1" x="281.94" y="251.46" smashed="yes" rot="R180">
 <attribute name="NAME" x="285.75" y="249.9614" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="285.75" y="254.762" size="1.778" layer="96" rot="R180"/>
+<attribute name="TOLERANCE" x="281.94" y="251.46" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="R9" gate="G$1" x="226.06" y="251.46" smashed="yes" rot="R180">
 <attribute name="NAME" x="224.79" y="249.9614" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="229.87" y="254.762" size="1.778" layer="96" rot="R180"/>
+<attribute name="TOLERANCE" x="226.06" y="251.46" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="GND2" gate="1" x="287.02" y="233.68" smashed="yes">
 <attribute name="VALUE" x="284.48" y="231.14" size="1.778" layer="96"/>
@@ -12014,22 +12345,27 @@ In this library you will find switches and other mechanical assisted circuit ele
 <instance part="R14" gate="G$1" x="226.06" y="205.74" smashed="yes" rot="R90">
 <attribute name="NAME" x="224.5614" y="201.93" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="229.362" y="201.93" size="1.778" layer="96" rot="R90"/>
+<attribute name="TOLERANCE" x="226.06" y="205.74" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R15" gate="G$1" x="210.82" y="205.74" smashed="yes" rot="R90">
 <attribute name="NAME" x="209.3214" y="201.93" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="214.122" y="201.93" size="1.778" layer="96" rot="R90"/>
+<attribute name="TOLERANCE" x="210.82" y="205.74" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R16" gate="G$1" x="233.68" y="205.74" smashed="yes" rot="R90">
 <attribute name="NAME" x="232.1814" y="201.93" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="236.982" y="201.93" size="1.778" layer="96" rot="R90"/>
+<attribute name="TOLERANCE" x="233.68" y="205.74" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R17" gate="G$1" x="203.2" y="205.74" smashed="yes" rot="R90">
 <attribute name="NAME" x="201.7014" y="201.93" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="206.502" y="201.93" size="1.778" layer="96" rot="R90"/>
+<attribute name="TOLERANCE" x="203.2" y="205.74" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R18" gate="G$1" x="195.58" y="205.74" smashed="yes" rot="R90">
 <attribute name="NAME" x="194.0814" y="201.93" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="198.882" y="201.93" size="1.778" layer="96" rot="R90"/>
+<attribute name="TOLERANCE" x="195.58" y="205.74" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="+3V15" gate="G$1" x="218.44" y="215.9" smashed="yes">
 <attribute name="VALUE" x="215.9" y="210.82" size="1.778" layer="96" rot="R90"/>
@@ -12040,6 +12376,7 @@ In this library you will find switches and other mechanical assisted circuit ele
 <instance part="R19" gate="G$1" x="355.6" y="254" smashed="yes" rot="R270">
 <attribute name="NAME" x="357.0986" y="257.81" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="352.298" y="257.81" size="1.778" layer="96" rot="R270"/>
+<attribute name="TOLERANCE" x="355.6" y="254" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="+3V19" gate="G$1" x="355.6" y="264.16" smashed="yes">
 <attribute name="VALUE" x="353.06" y="259.08" size="1.778" layer="96" rot="R90"/>
@@ -12631,6 +12968,20 @@ In this library you will find switches and other mechanical assisted circuit ele
 <label x="63.5" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
+<net name="IMU_INT" class="0">
+<segment>
+<pinref part="U9" gate="G$1" pin="PA20"/>
+<wire x1="66.04" y1="182.88" x2="63.5" y2="182.88" width="0.1524" layer="91"/>
+<label x="63.5" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="BATT_MEASURE" class="0">
+<segment>
+<pinref part="U9" gate="G$1" pin="PB03"/>
+<wire x1="66.04" y1="149.86" x2="60.96" y2="149.86" width="0.1524" layer="91"/>
+<label x="60.96" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -12698,10 +13049,14 @@ In this library you will find switches and other mechanical assisted circuit ele
 <instance part="C1" gate="G$1" x="76.2" y="236.22" smashed="yes">
 <attribute name="NAME" x="77.216" y="236.855" size="1.778" layer="95"/>
 <attribute name="VALUE" x="77.216" y="232.029" size="1.778" layer="96"/>
+<attribute name="TOLERANCE" x="76.2" y="236.22" size="1.778" layer="96" display="off"/>
+<attribute name="VOLTAGE" x="76.2" y="236.22" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C2" gate="G$1" x="63.5" y="236.22" smashed="yes">
 <attribute name="NAME" x="64.516" y="236.855" size="1.778" layer="95"/>
 <attribute name="VALUE" x="64.516" y="232.029" size="1.778" layer="96"/>
+<attribute name="TOLERANCE" x="63.5" y="236.22" size="1.778" layer="96" display="off"/>
+<attribute name="VOLTAGE" x="63.5" y="236.22" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U2" gate="G$1" x="139.7" y="243.84" smashed="yes">
 <attribute name="NAME" x="119.38" y="259.842" size="1.778" layer="95"/>
@@ -12713,33 +13068,42 @@ In this library you will find switches and other mechanical assisted circuit ele
 <instance part="C3" gate="G$1" x="185.42" y="248.92" smashed="yes">
 <attribute name="NAME" x="186.436" y="249.555" size="1.778" layer="95"/>
 <attribute name="VALUE" x="186.436" y="244.729" size="1.778" layer="96"/>
+<attribute name="TOLERANCE" x="185.42" y="248.92" size="1.778" layer="96" display="off"/>
+<attribute name="VOLTAGE" x="185.42" y="248.92" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C4" gate="G$1" x="195.58" y="248.92" smashed="yes">
 <attribute name="NAME" x="196.596" y="249.555" size="1.778" layer="95"/>
 <attribute name="VALUE" x="196.596" y="244.729" size="1.778" layer="96"/>
+<attribute name="TOLERANCE" x="195.58" y="248.92" size="1.778" layer="96" display="off"/>
+<attribute name="VOLTAGE" x="195.58" y="248.92" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C5" gate="G$1" x="175.26" y="248.92" smashed="yes">
 <attribute name="NAME" x="176.276" y="249.555" size="1.778" layer="95"/>
 <attribute name="VALUE" x="176.276" y="244.729" size="1.778" layer="96"/>
+<attribute name="TOLERANCE" x="175.26" y="248.92" size="1.778" layer="96" display="off"/>
+<attribute name="VOLTAGE" x="175.26" y="248.92" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND6" gate="1" x="185.42" y="238.76" smashed="yes">
 <attribute name="VALUE" x="182.88" y="236.22" size="1.778" layer="96"/>
 </instance>
 <instance part="T1" gate="G$1" x="76.2" y="175.26" smashed="yes">
 <attribute name="NAME" x="73.66" y="177.8" size="1.778" layer="95"/>
-<attribute name="VALUE" x="66.04" y="180.34" size="1.778" layer="96"/>
+<attribute name="VALUE" x="78.74" y="175.26" size="1.778" layer="96"/>
 </instance>
 <instance part="R2" gate="G$1" x="78.74" y="162.56" smashed="yes" rot="R90">
 <attribute name="NAME" x="77.2414" y="158.75" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="82.042" y="158.75" size="1.778" layer="96" rot="R90"/>
+<attribute name="TOLERANCE" x="78.74" y="162.56" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R4" gate="G$1" x="63.5" y="175.26" smashed="yes" rot="R180">
 <attribute name="NAME" x="67.31" y="173.7614" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="67.31" y="178.562" size="1.778" layer="96" rot="R180"/>
+<attribute name="TOLERANCE" x="63.5" y="175.26" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="R5" gate="G$1" x="71.12" y="185.42" smashed="yes" rot="R90">
 <attribute name="NAME" x="69.6214" y="181.61" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="74.422" y="181.61" size="1.778" layer="96" rot="R90"/>
+<attribute name="TOLERANCE" x="71.12" y="185.42" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="+3V1" gate="G$1" x="78.74" y="198.12" smashed="yes">
 <attribute name="VALUE" x="76.2" y="193.04" size="1.778" layer="96" rot="R90"/>
@@ -12756,10 +13120,12 @@ In this library you will find switches and other mechanical assisted circuit ele
 <instance part="R6" gate="G$1" x="154.94" y="172.72" smashed="yes" rot="R90">
 <attribute name="NAME" x="153.4414" y="168.91" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="158.242" y="168.91" size="1.778" layer="96" rot="R90"/>
+<attribute name="TOLERANCE" x="154.94" y="172.72" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R7" gate="G$1" x="154.94" y="157.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="153.4414" y="153.67" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="158.242" y="153.67" size="1.778" layer="96" rot="R90"/>
+<attribute name="TOLERANCE" x="154.94" y="157.48" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="U4" gate="G$1" x="139.7" y="91.44" smashed="yes">
 <attribute name="NAME" x="121.9161" y="114.8138" size="1.77845" layer="95"/>
@@ -12801,29 +13167,41 @@ In this library you will find switches and other mechanical assisted circuit ele
 <instance part="C7" gate="G$1" x="350.52" y="220.98" smashed="yes">
 <attribute name="NAME" x="351.536" y="221.615" size="1.778" layer="95"/>
 <attribute name="VALUE" x="351.536" y="216.789" size="1.778" layer="96"/>
+<attribute name="TOLERANCE" x="350.52" y="220.98" size="1.778" layer="96" display="off"/>
+<attribute name="VOLTAGE" x="350.52" y="220.98" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C8" gate="G$1" x="365.76" y="254" smashed="yes">
-<attribute name="NAME" x="366.776" y="254.635" size="1.778" layer="95"/>
-<attribute name="VALUE" x="366.776" y="249.809" size="1.778" layer="96"/>
+<instance part="C8" gate="G$1" x="373.38" y="254" smashed="yes">
+<attribute name="NAME" x="374.396" y="254.635" size="1.778" layer="95"/>
+<attribute name="VALUE" x="374.396" y="249.809" size="1.778" layer="96"/>
+<attribute name="TOLERANCE" x="373.38" y="254" size="1.778" layer="96" display="off"/>
+<attribute name="VOLTAGE" x="373.38" y="254" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C9" gate="G$1" x="274.32" y="248.92" smashed="yes">
 <attribute name="NAME" x="275.336" y="249.555" size="1.778" layer="95"/>
 <attribute name="VALUE" x="275.336" y="244.729" size="1.778" layer="96"/>
+<attribute name="TOLERANCE" x="274.32" y="248.92" size="1.778" layer="96" display="off"/>
+<attribute name="VOLTAGE" x="274.32" y="248.92" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C10" gate="G$1" x="274.32" y="238.76" smashed="yes">
 <attribute name="NAME" x="275.336" y="239.395" size="1.778" layer="95"/>
 <attribute name="VALUE" x="275.336" y="234.569" size="1.778" layer="96"/>
+<attribute name="TOLERANCE" x="274.32" y="238.76" size="1.778" layer="96" display="off"/>
+<attribute name="VOLTAGE" x="274.32" y="238.76" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C11" gate="G$1" x="375.92" y="254" smashed="yes">
-<attribute name="NAME" x="376.936" y="254.635" size="1.778" layer="95"/>
-<attribute name="VALUE" x="376.936" y="249.809" size="1.778" layer="96"/>
+<instance part="C11" gate="G$1" x="383.54" y="254" smashed="yes">
+<attribute name="NAME" x="384.556" y="254.635" size="1.778" layer="95"/>
+<attribute name="VALUE" x="384.556" y="249.809" size="1.778" layer="96"/>
+<attribute name="TOLERANCE" x="383.54" y="254" size="1.778" layer="96" display="off"/>
+<attribute name="VOLTAGE" x="383.54" y="254" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C12" gate="G$1" x="355.6" y="254" smashed="yes">
-<attribute name="NAME" x="356.616" y="254.635" size="1.778" layer="95"/>
-<attribute name="VALUE" x="356.616" y="249.809" size="1.778" layer="96"/>
+<instance part="C12" gate="G$1" x="363.22" y="254" smashed="yes">
+<attribute name="NAME" x="364.236" y="254.635" size="1.778" layer="95"/>
+<attribute name="VALUE" x="364.236" y="249.809" size="1.778" layer="96"/>
+<attribute name="TOLERANCE" x="363.22" y="254" size="1.778" layer="96" display="off"/>
+<attribute name="VOLTAGE" x="363.22" y="254" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GND18" gate="1" x="365.76" y="243.84" smashed="yes">
-<attribute name="VALUE" x="363.22" y="241.3" size="1.778" layer="96"/>
+<instance part="GND18" gate="1" x="373.38" y="243.84" smashed="yes">
+<attribute name="VALUE" x="370.84" y="241.3" size="1.778" layer="96"/>
 </instance>
 <instance part="GND19" gate="1" x="347.98" y="210.82" smashed="yes">
 <attribute name="VALUE" x="345.44" y="208.28" size="1.778" layer="96"/>
@@ -12834,8 +13212,8 @@ In this library you will find switches and other mechanical assisted circuit ele
 <instance part="+3V8" gate="G$1" x="302.26" y="259.08" smashed="yes">
 <attribute name="VALUE" x="299.72" y="254" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V10" gate="G$1" x="355.6" y="269.24" smashed="yes">
-<attribute name="VALUE" x="353.06" y="264.16" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V10" gate="G$1" x="363.22" y="269.24" smashed="yes">
+<attribute name="VALUE" x="360.68" y="264.16" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U5" gate="A" x="261.62" y="127" smashed="yes">
 <attribute name="NAME" x="246.7356" y="141.1986" size="2.0828" layer="95" ratio="6" rot="SR0"/>
@@ -12844,10 +13222,14 @@ In this library you will find switches and other mechanical assisted circuit ele
 <instance part="C13" gate="G$1" x="213.36" y="129.54" smashed="yes">
 <attribute name="NAME" x="214.376" y="130.175" size="1.778" layer="95"/>
 <attribute name="VALUE" x="214.376" y="125.349" size="1.778" layer="96"/>
+<attribute name="VOLTAGE" x="213.36" y="129.54" size="1.778" layer="96" display="off"/>
+<attribute name="TOLERANCE" x="213.36" y="129.54" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C14" gate="G$1" x="307.34" y="129.54" smashed="yes">
 <attribute name="NAME" x="308.356" y="130.175" size="1.778" layer="95"/>
 <attribute name="VALUE" x="308.356" y="125.349" size="1.778" layer="96"/>
+<attribute name="TOLERANCE" x="307.34" y="129.54" size="1.778" layer="96" display="off"/>
+<attribute name="VOLTAGE" x="307.34" y="129.54" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="P+3" gate="1" x="307.34" y="139.7" smashed="yes">
 <attribute name="VALUE" x="304.8" y="134.62" size="1.778" layer="96" rot="R90"/>
@@ -12876,6 +13258,7 @@ In this library you will find switches and other mechanical assisted circuit ele
 <instance part="R25" gate="G$1" x="381" y="180.34" smashed="yes" rot="R90">
 <attribute name="NAME" x="379.5014" y="176.53" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="384.302" y="176.53" size="1.778" layer="96" rot="R90"/>
+<attribute name="TOLERANCE" x="381" y="180.34" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND40" gate="1" x="381" y="162.56" smashed="yes">
 <attribute name="VALUE" x="378.46" y="160.02" size="1.778" layer="96"/>
@@ -12886,6 +13269,7 @@ In this library you will find switches and other mechanical assisted circuit ele
 <instance part="R26" gate="G$1" x="411.48" y="180.34" smashed="yes" rot="R90">
 <attribute name="NAME" x="409.9814" y="176.53" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="414.782" y="176.53" size="1.778" layer="96" rot="R90"/>
+<attribute name="TOLERANCE" x="411.48" y="180.34" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND44" gate="1" x="411.48" y="162.56" smashed="yes">
 <attribute name="VALUE" x="408.94" y="160.02" size="1.778" layer="96"/>
@@ -12905,10 +13289,12 @@ In this library you will find switches and other mechanical assisted circuit ele
 <instance part="R3" gate="G$1" x="33.02" y="12.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="31.5214" y="8.89" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="36.322" y="8.89" size="1.778" layer="96" rot="R90"/>
+<attribute name="TOLERANCE" x="33.02" y="12.7" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R27" gate="G$1" x="40.64" y="17.78" smashed="yes" rot="R180">
 <attribute name="NAME" x="44.45" y="16.2814" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="44.45" y="21.082" size="1.778" layer="96" rot="R180"/>
+<attribute name="TOLERANCE" x="40.64" y="17.78" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="GND45" gate="1" x="30.48" y="5.08" smashed="yes">
 <attribute name="VALUE" x="27.94" y="2.54" size="1.778" layer="96"/>
@@ -12919,23 +13305,17 @@ In this library you will find switches and other mechanical assisted circuit ele
 <instance part="J4" gate="A" x="127" y="38.1" smashed="yes">
 <attribute name="NAME" x="131.1656" y="43.4086" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 </instance>
-<instance part="GND46" gate="1" x="170.18" y="27.94" smashed="yes" rot="R270">
-<attribute name="VALUE" x="167.64" y="30.48" size="1.778" layer="96" rot="R270"/>
+<instance part="GND46" gate="1" x="167.64" y="27.94" smashed="yes" rot="R270">
+<attribute name="VALUE" x="165.1" y="30.48" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="P+8" gate="G$1" x="170.18" y="15.24" smashed="yes" rot="R90">
 <attribute name="VALUE" x="172.72" y="12.7" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="P+10" gate="1" x="170.18" y="17.78" smashed="yes" rot="R90">
-<attribute name="VALUE" x="175.26" y="15.24" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="+3V20" gate="G$1" x="121.92" y="17.78" smashed="yes" rot="R90">
-<attribute name="VALUE" x="127" y="15.24" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="127" y="20.32" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="J5" gate="A" x="396.24" y="139.7" smashed="yes">
 <attribute name="NAME" x="400.4056" y="145.0086" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-</instance>
-<instance part="GND47" gate="1" x="391.16" y="127" smashed="yes" rot="R270">
-<attribute name="VALUE" x="388.62" y="129.54" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="P+11" gate="1" x="68.58" y="38.1" smashed="yes" rot="R90">
 <attribute name="VALUE" x="73.66" y="35.56" size="1.778" layer="96" rot="R180"/>
@@ -12955,12 +13335,68 @@ In this library you will find switches and other mechanical assisted circuit ele
 <instance part="R28" gate="G$1" x="289.56" y="114.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="288.0614" y="110.49" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="292.862" y="110.49" size="1.778" layer="96" rot="R90"/>
+<attribute name="TOLERANCE" x="289.56" y="114.3" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="+3V4" gate="G$1" x="302.26" y="109.22" smashed="yes" rot="R270">
 <attribute name="VALUE" x="297.18" y="111.76" size="1.778" layer="96"/>
 </instance>
 <instance part="GND9" gate="1" x="294.64" y="238.76" smashed="yes" rot="R270">
 <attribute name="VALUE" x="292.1" y="241.3" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="C29" gate="G$1" x="393.7" y="254" smashed="yes">
+<attribute name="NAME" x="394.716" y="254.635" size="1.778" layer="95"/>
+<attribute name="VALUE" x="394.716" y="249.809" size="1.778" layer="96"/>
+<attribute name="TOLERANCE" x="393.7" y="254" size="1.778" layer="96" display="off"/>
+<attribute name="VOLTAGE" x="393.7" y="254" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C30" gate="G$1" x="353.06" y="254" smashed="yes">
+<attribute name="NAME" x="354.076" y="254.635" size="1.778" layer="95"/>
+<attribute name="VALUE" x="354.076" y="249.809" size="1.778" layer="96"/>
+<attribute name="TOLERANCE" x="353.06" y="254" size="1.778" layer="96" display="off"/>
+<attribute name="VOLTAGE" x="353.06" y="254" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="P+10" gate="1" x="172.72" y="27.94" smashed="yes" rot="R90">
+<attribute name="VALUE" x="177.8" y="25.4" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND11" gate="1" x="175.26" y="5.08" smashed="yes">
+<attribute name="VALUE" x="172.72" y="2.54" size="1.778" layer="96"/>
+</instance>
+<instance part="GND17" gate="1" x="127" y="5.08" smashed="yes">
+<attribute name="VALUE" x="124.46" y="2.54" size="1.778" layer="96"/>
+</instance>
+<instance part="GND21" gate="1" x="396.24" y="91.44" smashed="yes">
+<attribute name="VALUE" x="393.7" y="88.9" size="1.778" layer="96"/>
+</instance>
+<instance part="C40" gate="G$1" x="10.16" y="101.6" smashed="yes">
+<attribute name="NAME" x="11.176" y="102.235" size="1.778" layer="95"/>
+<attribute name="VALUE" x="11.176" y="97.409" size="1.778" layer="96"/>
+<attribute name="VOLTAGE" x="10.16" y="101.6" size="1.778" layer="96" display="off"/>
+<attribute name="TOLERANCE" x="10.16" y="101.6" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="GND41" gate="1" x="5.08" y="86.36" smashed="yes">
+<attribute name="VALUE" x="2.54" y="83.82" size="1.778" layer="96"/>
+</instance>
+<instance part="R29" gate="G$1" x="251.46" y="78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="249.9614" y="74.93" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="254.762" y="74.93" size="1.778" layer="96" rot="R90"/>
+<attribute name="TOLERANCE" x="251.46" y="78.74" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R30" gate="G$1" x="251.46" y="63.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="249.9614" y="59.69" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="254.762" y="59.69" size="1.778" layer="96" rot="R90"/>
+<attribute name="TOLERANCE" x="251.46" y="63.5" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="GND50" gate="1" x="251.46" y="53.34" smashed="yes">
+<attribute name="VALUE" x="248.92" y="50.8" size="1.778" layer="96"/>
+</instance>
+<instance part="U$33" gate="G$1" x="251.46" y="86.36" smashed="yes">
+<attribute name="VALUE" x="248.92" y="83.82" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND57" gate="1" x="391.16" y="129.54" smashed="yes" rot="R270">
+<attribute name="VALUE" x="388.62" y="132.08" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND58" gate="1" x="391.16" y="109.22" smashed="yes" rot="R270">
+<attribute name="VALUE" x="388.62" y="111.76" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -13087,18 +13523,6 @@ In this library you will find switches and other mechanical assisted circuit ele
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C12" gate="G$1" pin="2"/>
-<wire x1="355.6" y1="248.92" x2="355.6" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="246.38" x2="365.76" y2="246.38" width="0.1524" layer="91"/>
-<pinref part="C11" gate="G$1" pin="2"/>
-<wire x1="365.76" y1="246.38" x2="375.92" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="375.92" y1="246.38" x2="375.92" y2="248.92" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="365.76" y1="248.92" x2="365.76" y2="246.38" width="0.1524" layer="91"/>
-<junction x="365.76" y="246.38"/>
-<pinref part="GND18" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="U3" gate="A" pin="GND"/>
 <wire x1="340.36" y1="220.98" x2="342.9" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="342.9" y1="220.98" x2="342.9" y2="213.36" width="0.1524" layer="91"/>
@@ -13152,14 +13576,13 @@ In this library you will find switches and other mechanical assisted circuit ele
 <wire x1="175.26" y1="30.48" x2="172.72" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="33.02" x2="172.72" y2="30.48" width="0.1524" layer="91"/>
 <junction x="172.72" y="33.02"/>
-<pinref part="J3" gate="A" pin="5"/>
-<wire x1="175.26" y1="27.94" x2="172.72" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="30.48" x2="172.72" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="30.48" x2="170.18" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="30.48" x2="170.18" y2="27.94" width="0.1524" layer="91"/>
 <junction x="172.72" y="30.48"/>
 <pinref part="J3" gate="A" pin="6"/>
 <wire x1="175.26" y1="25.4" x2="172.72" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="27.94" x2="172.72" y2="25.4" width="0.1524" layer="91"/>
-<junction x="172.72" y="27.94"/>
+<wire x1="170.18" y1="27.94" x2="170.18" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="25.4" x2="172.72" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="J3" gate="A" pin="7"/>
 <wire x1="175.26" y1="22.86" x2="172.72" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="25.4" x2="172.72" y2="22.86" width="0.1524" layer="91"/>
@@ -13169,16 +13592,10 @@ In this library you will find switches and other mechanical assisted circuit ele
 <wire x1="172.72" y1="22.86" x2="172.72" y2="20.32" width="0.1524" layer="91"/>
 <junction x="172.72" y="22.86"/>
 <pinref part="GND46" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="J5" gate="A" pin="5"/>
-<wire x1="396.24" y1="129.54" x2="393.7" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="J5" gate="A" pin="7"/>
-<wire x1="396.24" y1="124.46" x2="393.7" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="393.7" y1="124.46" x2="393.7" y2="127" width="0.1524" layer="91"/>
-<pinref part="GND47" gate="1" pin="GND"/>
-<wire x1="393.7" y1="127" x2="393.7" y2="129.54" width="0.1524" layer="91"/>
-<junction x="393.7" y="127"/>
+<pinref part="J3" gate="A" pin="9"/>
+<wire x1="175.26" y1="17.78" x2="172.72" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="17.78" x2="172.72" y2="20.32" width="0.1524" layer="91"/>
+<junction x="172.72" y="20.32"/>
 </segment>
 <segment>
 <pinref part="J5" gate="A" pin="15"/>
@@ -13194,6 +13611,59 @@ In this library you will find switches and other mechanical assisted circuit ele
 <pinref part="U3" gate="A" pin="FORCEON"/>
 <wire x1="304.8" y1="238.76" x2="297.18" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J3" gate="A" pin="11"/>
+<pinref part="J3" gate="A" pin="12"/>
+<wire x1="175.26" y1="12.7" x2="175.26" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="175.26" y1="7.62" x2="175.26" y2="10.16" width="0.1524" layer="91"/>
+<junction x="175.26" y="10.16"/>
+</segment>
+<segment>
+<pinref part="GND17" gate="1" pin="GND"/>
+<wire x1="127" y1="7.62" x2="127" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="J4" gate="A" pin="12"/>
+<wire x1="127" y1="10.16" x2="127" y2="11.3538" width="0.1524" layer="91"/>
+<junction x="127" y="10.16"/>
+</segment>
+<segment>
+<wire x1="5.08" y1="93.98" x2="5.08" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="GND41" gate="1" pin="GND"/>
+<wire x1="5.08" y1="93.98" x2="5.08" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="C40" gate="G$1" pin="2"/>
+<wire x1="5.08" y1="96.52" x2="10.16" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R30" gate="G$1" pin="1"/>
+<wire x1="251.46" y1="58.42" x2="251.46" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="GND50" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J5" gate="A" pin="17"/>
+<pinref part="J5" gate="A" pin="18"/>
+<wire x1="396.24" y1="99.06" x2="396.24" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="GND21" gate="1" pin="GND"/>
+<wire x1="396.24" y1="96.52" x2="396.24" y2="93.98" width="0.1524" layer="91"/>
+<junction x="396.24" y="96.52"/>
+</segment>
+<segment>
+<pinref part="GND57" gate="1" pin="GND"/>
+<wire x1="393.7" y1="129.54" x2="396.24" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="393.7" y1="129.54" x2="393.7" y2="132.08" width="0.1524" layer="91"/>
+<junction x="393.7" y="129.54"/>
+<wire x1="393.7" y1="132.08" x2="396.24" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="J5" gate="A" pin="4"/>
+<pinref part="J5" gate="A" pin="5"/>
+</segment>
+<segment>
+<pinref part="GND58" gate="1" pin="GND"/>
+<wire x1="393.7" y1="109.22" x2="396.24" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="393.7" y1="109.22" x2="393.7" y2="111.76" width="0.1524" layer="91"/>
+<junction x="393.7" y="109.22"/>
+<wire x1="393.7" y1="111.76" x2="396.24" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="J5" gate="A" pin="12"/>
+<pinref part="J5" gate="A" pin="13"/>
 </segment>
 </net>
 <net name="LEAK" class="0">
@@ -13260,6 +13730,9 @@ In this library you will find switches and other mechanical assisted circuit ele
 <wire x1="27.94" y1="99.06" x2="22.86" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="99.06" x2="22.86" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
+<pinref part="C40" gate="G$1" pin="1"/>
+<wire x1="10.16" y1="104.14" x2="22.86" y2="104.14" width="0.1524" layer="91"/>
+<junction x="22.86" y="104.14"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="VCC"/>
@@ -13280,17 +13753,24 @@ In this library you will find switches and other mechanical assisted circuit ele
 <segment>
 <pinref part="U3" gate="A" pin="VCC"/>
 <pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="340.36" y1="261.62" x2="355.6" y2="261.62" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="261.62" x2="375.92" y2="261.62" width="0.1524" layer="91"/>
-<wire x1="375.92" y1="261.62" x2="375.92" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="261.62" x2="363.22" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="261.62" x2="383.54" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="261.62" x2="383.54" y2="256.54" width="0.1524" layer="91"/>
 <pinref part="U3" gate="A" pin="VL"/>
 <pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="340.36" y1="256.54" x2="355.6" y2="256.54" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="256.54" x2="355.6" y2="261.62" width="0.1524" layer="91"/>
-<junction x="355.6" y="256.54"/>
-<junction x="355.6" y="261.62"/>
+<wire x1="340.36" y1="256.54" x2="353.06" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="353.06" y1="256.54" x2="363.22" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="256.54" x2="363.22" y2="261.62" width="0.1524" layer="91"/>
+<junction x="363.22" y="256.54"/>
+<junction x="363.22" y="261.62"/>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
-<wire x1="355.6" y1="266.7" x2="355.6" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="266.7" x2="363.22" y2="261.62" width="0.1524" layer="91"/>
+<pinref part="C29" gate="G$1" pin="1"/>
+<wire x1="393.7" y1="261.62" x2="393.7" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="261.62" x2="393.7" y2="261.62" width="0.1524" layer="91"/>
+<junction x="383.54" y="261.62"/>
+<pinref part="C30" gate="G$1" pin="1"/>
+<junction x="353.06" y="256.54"/>
 </segment>
 <segment>
 <pinref part="U5" gate="A" pin="VCCA"/>
@@ -13340,24 +13820,24 @@ In this library you will find switches and other mechanical assisted circuit ele
 <label x="55.88" y="175.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J4" gate="A" pin="7"/>
-<wire x1="127" y1="22.86" x2="124.46" y2="22.86" width="0.1524" layer="91"/>
-<label x="124.46" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="127" y1="27.94" x2="124.46" y2="27.94" width="0.1524" layer="91"/>
+<label x="124.46" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J4" gate="A" pin="5"/>
 </segment>
 <segment>
-<pinref part="J4" gate="A" pin="8"/>
-<wire x1="127" y1="20.32" x2="124.46" y2="20.32" width="0.1524" layer="91"/>
-<label x="124.46" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="127" y1="15.24" x2="124.46" y2="15.24" width="0.1524" layer="91"/>
+<label x="124.46" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J4" gate="A" pin="10"/>
 </segment>
 <segment>
-<pinref part="J5" gate="A" pin="11"/>
+<wire x1="396.24" y1="134.62" x2="393.7" y2="134.62" width="0.1524" layer="91"/>
+<label x="393.7" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="A" pin="3"/>
+</segment>
+<segment>
 <wire x1="396.24" y1="114.3" x2="393.7" y2="114.3" width="0.1524" layer="91"/>
 <label x="393.7" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J5" gate="A" pin="12"/>
-<wire x1="396.24" y1="111.76" x2="393.7" y2="111.76" width="0.1524" layer="91"/>
-<label x="393.7" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="A" pin="11"/>
 </segment>
 </net>
 <net name="CO2_OUT" class="0">
@@ -13518,8 +13998,8 @@ In this library you will find switches and other mechanical assisted circuit ele
 <segment>
 <pinref part="U3" gate="A" pin="V+"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="340.36" y1="259.08" x2="365.76" y2="259.08" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="259.08" x2="365.76" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="259.08" x2="373.38" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="259.08" x2="373.38" y2="256.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="R_OUT" class="0">
@@ -13589,9 +14069,8 @@ In this library you will find switches and other mechanical assisted circuit ele
 <junction x="307.34" y="134.62"/>
 </segment>
 <segment>
-<pinref part="J3" gate="A" pin="9"/>
-<wire x1="175.26" y1="17.78" x2="172.72" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="P+10" gate="1" pin="+5V"/>
+<pinref part="J3" gate="A" pin="5"/>
 </segment>
 </net>
 <net name="UART_TX_CTD_A" class="0">
@@ -13629,9 +14108,9 @@ In this library you will find switches and other mechanical assisted circuit ele
 <label x="284.48" y="127" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J5" gate="A" pin="9"/>
-<wire x1="396.24" y1="119.38" x2="393.7" y2="119.38" width="0.1524" layer="91"/>
-<label x="393.7" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="396.24" y1="121.92" x2="393.7" y2="121.92" width="0.1524" layer="91"/>
+<label x="393.7" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="A" pin="8"/>
 </segment>
 </net>
 <net name="UART_RX_M_B" class="0">
@@ -13641,9 +14120,9 @@ In this library you will find switches and other mechanical assisted circuit ele
 <label x="284.48" y="124.46" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J5" gate="A" pin="10"/>
-<wire x1="396.24" y1="116.84" x2="393.7" y2="116.84" width="0.1524" layer="91"/>
-<label x="393.7" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="396.24" y1="124.46" x2="393.7" y2="124.46" width="0.1524" layer="91"/>
+<label x="393.7" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="A" pin="7"/>
 </segment>
 </net>
 <net name="UART_TX_CTD_B" class="0">
@@ -13653,9 +14132,9 @@ In this library you will find switches and other mechanical assisted circuit ele
 <label x="284.48" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J4" gate="A" pin="5"/>
-<wire x1="127" y1="27.94" x2="124.46" y2="27.94" width="0.1524" layer="91"/>
-<label x="124.46" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="127" y1="22.86" x2="124.46" y2="22.86" width="0.1524" layer="91"/>
+<label x="124.46" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J4" gate="A" pin="7"/>
 </segment>
 </net>
 <net name="UART_RX_CTD_B" class="0">
@@ -13700,9 +14179,9 @@ In this library you will find switches and other mechanical assisted circuit ele
 <label x="71.12" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J5" gate="A" pin="13"/>
-<wire x1="396.24" y1="109.22" x2="393.7" y2="109.22" width="0.1524" layer="91"/>
-<label x="393.7" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="396.24" y1="127" x2="393.7" y2="127" width="0.1524" layer="91"/>
+<label x="393.7" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="A" pin="6"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -13714,9 +14193,6 @@ In this library you will find switches and other mechanical assisted circuit ele
 <pinref part="P+12" gate="1" pin="+12V"/>
 <pinref part="CR1" gate="A" pin="11"/>
 <junction x="45.72" y="43.18"/>
-<wire x1="50.8" y1="45.72" x2="50.8" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="40.64" x2="55.88" y2="40.64" width="0.1524" layer="91"/>
-<junction x="50.8" y="45.72"/>
 </segment>
 <segment>
 <pinref part="J14" gate="G$1" pin="2"/>
@@ -13744,9 +14220,9 @@ In this library you will find switches and other mechanical assisted circuit ele
 <label x="406.4" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J5" gate="A" pin="4"/>
-<wire x1="396.24" y1="132.08" x2="393.7" y2="132.08" width="0.1524" layer="91"/>
-<label x="393.7" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="396.24" y1="119.38" x2="393.7" y2="119.38" width="0.1524" layer="91"/>
+<label x="393.7" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="A" pin="9"/>
 </segment>
 </net>
 <net name="RSENSE+" class="0">
@@ -13773,9 +14249,9 @@ In this library you will find switches and other mechanical assisted circuit ele
 <label x="375.92" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J5" gate="A" pin="3"/>
-<wire x1="396.24" y1="134.62" x2="393.7" y2="134.62" width="0.1524" layer="91"/>
-<label x="393.7" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="396.24" y1="116.84" x2="393.7" y2="116.84" width="0.1524" layer="91"/>
+<label x="393.7" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="A" pin="10"/>
 </segment>
 </net>
 <net name="RREF+" class="0">
@@ -13800,17 +14276,15 @@ In this library you will find switches and other mechanical assisted circuit ele
 <pinref part="U$1" gate="G$1" pin="G"/>
 </segment>
 </net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="J5" gate="A" pin="6"/>
-<wire x1="396.24" y1="127" x2="393.7" y2="127" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="VBATT" class="0">
 <segment>
 <pinref part="J5" gate="A" pin="16"/>
 <pinref part="U$28" gate="G$1" pin="VBATT"/>
 <wire x1="396.24" y1="101.6" x2="386.08" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$33" gate="G$1" pin="VBATT"/>
+<pinref part="R29" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="CO2_IN" class="0">
@@ -13830,6 +14304,53 @@ In this library you will find switches and other mechanical assisted circuit ele
 <pinref part="U5" gate="A" pin="OE"/>
 <pinref part="R28" gate="G$1" pin="2"/>
 <wire x1="281.94" y1="119.38" x2="289.56" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND1" class="0">
+<segment>
+<pinref part="C29" gate="G$1" pin="2"/>
+<wire x1="383.54" y1="246.38" x2="393.7" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="393.7" y1="246.38" x2="393.7" y2="248.92" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<wire x1="363.22" y1="248.92" x2="363.22" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="246.38" x2="373.38" y2="246.38" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="373.38" y1="246.38" x2="383.54" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="246.38" x2="383.54" y2="248.92" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<wire x1="373.38" y1="248.92" x2="373.38" y2="246.38" width="0.1524" layer="91"/>
+<junction x="373.38" y="246.38"/>
+<pinref part="GND18" gate="1" pin="GND"/>
+<junction x="383.54" y="246.38"/>
+<wire x1="363.22" y1="246.38" x2="353.06" y2="246.38" width="0.1524" layer="91"/>
+<junction x="363.22" y="246.38"/>
+<pinref part="C30" gate="G$1" pin="2"/>
+<wire x1="353.06" y1="246.38" x2="353.06" y2="248.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<wire x1="127" y1="12.7" x2="127" y2="11.5062" width="0.1524" layer="91"/>
+<pinref part="J4" gate="A" pin="11"/>
+</segment>
+</net>
+<net name="IMU_INT" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="INT1/INT"/>
+<wire x1="165.1" y1="248.92" x2="170.18" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="248.92" x2="170.18" y2="243.84" width="0.1524" layer="91"/>
+<label x="170.18" y="243.84" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="BATT_MEASURE" class="0">
+<segment>
+<pinref part="R30" gate="G$1" pin="2"/>
+<wire x1="251.46" y1="68.58" x2="251.46" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="71.12" x2="259.08" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="R29" gate="G$1" pin="1"/>
+<wire x1="251.46" y1="73.66" x2="251.46" y2="71.12" width="0.1524" layer="91"/>
+<junction x="251.46" y="71.12"/>
+<label x="259.08" y="71.12" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -13854,6 +14375,8 @@ In this library you will find switches and other mechanical assisted circuit ele
 <text x="274.32" y="187.96" size="5.08" layer="97">GND Test Points</text>
 <wire x1="325.12" y1="195.58" x2="325.12" y2="144.78" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="325.12" y1="144.78" x2="271.78" y2="144.78" width="0.1524" layer="97" style="shortdash"/>
+<text x="165.1" y="170.18" size="1.778" layer="97">See page 13/14 for details
+https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -14169,8 +14692,8 @@ In this library you will find switches and other mechanical assisted circuit ele
 <instance part="U$19" gate="G$1" x="284.48" y="172.72" smashed="yes"/>
 <instance part="U$20" gate="G$1" x="284.48" y="167.64" smashed="yes"/>
 <instance part="U$21" gate="G$1" x="284.48" y="162.56" smashed="yes"/>
-<instance part="GND43" gate="1" x="276.86" y="154.94" smashed="yes">
-<attribute name="VALUE" x="274.32" y="152.4" size="1.778" layer="96"/>
+<instance part="GND43" gate="1" x="276.86" y="149.86" smashed="yes">
+<attribute name="VALUE" x="274.32" y="147.32" size="1.778" layer="96"/>
 </instance>
 <instance part="U$24" gate="G$1" x="284.48" y="182.88" smashed="yes"/>
 <instance part="P+5" gate="1" x="238.76" y="157.48" smashed="yes">
@@ -14189,6 +14712,17 @@ In this library you will find switches and other mechanical assisted circuit ele
 <instance part="U$29" gate="G$1" x="157.48" y="180.34" smashed="yes"/>
 <instance part="U$30" gate="G$1" x="381" y="264.16" smashed="yes">
 <attribute name="VALUE" x="378.46" y="261.62" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="U$31" gate="G$1" x="241.3" y="149.86" smashed="yes"/>
+<instance part="U$32" gate="G$1" x="284.48" y="157.48" smashed="yes"/>
+<instance part="C31" gate="G$1" x="236.22" y="147.32" smashed="yes">
+<attribute name="NAME" x="237.236" y="147.955" size="1.778" layer="95"/>
+<attribute name="VALUE" x="237.236" y="143.129" size="1.778" layer="96"/>
+<attribute name="TOLERANCE" x="236.22" y="147.32" size="1.778" layer="96" display="off"/>
+<attribute name="VOLTAGE" x="236.22" y="147.32" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="GND10" gate="1" x="236.22" y="137.16" smashed="yes">
+<attribute name="VALUE" x="233.68" y="134.62" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -14334,6 +14868,7 @@ In this library you will find switches and other mechanical assisted circuit ele
 <wire x1="276.86" y1="172.72" x2="276.86" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="167.64" x2="276.86" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="162.56" x2="276.86" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="157.48" x2="276.86" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="162.56" x2="276.86" y2="162.56" width="0.1524" layer="91"/>
 <junction x="276.86" y="162.56"/>
 <pinref part="U$20" gate="G$1" pin="P$1"/>
@@ -14347,6 +14882,14 @@ In this library you will find switches and other mechanical assisted circuit ele
 <wire x1="281.94" y1="182.88" x2="276.86" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="182.88" x2="276.86" y2="177.8" width="0.1524" layer="91"/>
 <junction x="276.86" y="177.8"/>
+<pinref part="U$32" gate="G$1" pin="P$1"/>
+<wire x1="281.94" y1="157.48" x2="276.86" y2="157.48" width="0.1524" layer="91"/>
+<junction x="276.86" y="157.48"/>
+</segment>
+<segment>
+<pinref part="GND10" gate="1" pin="GND"/>
+<pinref part="C31" gate="G$1" pin="2"/>
+<wire x1="236.22" y1="139.7" x2="236.22" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBATT" class="0">
@@ -14514,9 +15057,14 @@ In this library you will find switches and other mechanical assisted circuit ele
 </segment>
 <segment>
 <pinref part="U6" gate="A" pin="OUT"/>
-<wire x1="233.68" y1="149.86" x2="238.76" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="149.86" x2="236.22" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="149.86" x2="238.76" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="149.86" x2="238.76" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="1" pin="+5V"/>
+<pinref part="U$31" gate="G$1" pin="P$1"/>
+<junction x="238.76" y="149.86"/>
+<pinref part="C31" gate="G$1" pin="1"/>
+<junction x="236.22" y="149.86"/>
 </segment>
 </net>
 <net name="N$17" class="0">
