@@ -12977,9 +12977,30 @@ In this library you will find switches and other mechanical assisted circuit ele
 </net>
 <net name="BATT_MEASURE" class="0">
 <segment>
-<pinref part="U9" gate="G$1" pin="PB03"/>
-<wire x1="66.04" y1="149.86" x2="60.96" y2="149.86" width="0.1524" layer="91"/>
-<label x="60.96" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="66.04" y1="137.16" x2="63.5" y2="137.16" width="0.1524" layer="91"/>
+<label x="63.5" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U9" gate="G$1" pin="PB08"/>
+</segment>
+</net>
+<net name="CO2_OUT" class="0">
+<segment>
+<pinref part="U9" gate="G$1" pin="PB06"/>
+<wire x1="66.04" y1="142.24" x2="63.5" y2="142.24" width="0.1524" layer="91"/>
+<label x="63.5" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="RSENSE+" class="0">
+<segment>
+<pinref part="U9" gate="G$1" pin="PB02"/>
+<wire x1="66.04" y1="152.4" x2="63.5" y2="152.4" width="0.1524" layer="91"/>
+<label x="63.5" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="RREF+" class="0">
+<segment>
+<pinref part="U9" gate="G$1" pin="PB00"/>
+<wire x1="66.04" y1="157.48" x2="63.5" y2="157.48" width="0.1524" layer="91"/>
+<label x="63.5" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
