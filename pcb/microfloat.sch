@@ -845,30 +845,6 @@
 <text x="-5" y="8" size="0.6096" layer="25">&gt;NAME</text>
 <text x="-4.9" y="-8.3" size="0.6096" layer="27">&gt;VALUE</text>
 </package>
-<package name="MOLEX_NANOFIT_SMD_RIGHTANGLE_02">
-<description>2 Pin Nano-Fit Vertical Header, PCB Mount, Single Row
-&lt;br&gt;
-&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1054301202"&gt;Part&lt;\a&gt;
-&lt;br&gt;
-&lt;a href="https://www.molex.com/pdm_docs/sd/1054301202_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
-<smd name="1" x="1.25" y="0" dx="2.5" dy="1.24" layer="1" rot="R90"/>
-<smd name="2" x="-1.25" y="0" dx="2.5" dy="1.24" layer="1" rot="R90"/>
-<smd name="PAD" x="-3.52" y="-4.93" dx="1.1" dy="8.2" layer="1"/>
-<smd name="PAD@2" x="3.52" y="-4.93" dx="1.1" dy="8.2" layer="1"/>
-<wire x1="-1.27" y1="0.95" x2="1.27" y2="0.95" width="0.127" layer="21"/>
-<wire x1="1.27" y1="0.95" x2="1.27" y2="-0.34" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-0.34" x2="4.37" y2="-0.34" width="0.127" layer="21"/>
-<wire x1="4.37" y1="-0.34" x2="4.37" y2="-9.03" width="0.127" layer="21"/>
-<wire x1="4.37" y1="-9.03" x2="-4.37" y2="-9.03" width="0.127" layer="21"/>
-<wire x1="-4.37" y1="-9.03" x2="-4.37" y2="-0.34" width="0.127" layer="21"/>
-<wire x1="-4.37" y1="-0.34" x2="-1.27" y2="-0.34" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-0.34" x2="-1.27" y2="0.95" width="0.127" layer="21"/>
-<wire x1="-4.37" y1="-17.83" x2="4.37" y2="-17.83" width="0.1524" layer="21"/>
-<rectangle x1="-5.08" y1="-17.78" x2="5.08" y2="1.905" layer="39"/>
-<text x="0" y="-18.415" size="0.6096" layer="51" font="vector" align="top-center">Line must not be
-visible on the PCB.</text>
-<text x="0" y="2.54" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-</package>
 <package name="TE_1909763-1">
 <wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
@@ -1842,18 +1818,6 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <text x="-15.24" y="12.7" size="1.778" layer="95">&gt;NAME</text>
 <text x="-15.24" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="CONNECTOR_02">
-<wire x1="7.62" y1="-7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
-<wire x1="3.81" y1="-5.08" x2="5.08" y2="-5.08" width="0.6096" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
-<text x="0" y="-8.255" size="1.4224" layer="96" align="top-left">&gt;MODEL</text>
-<text x="0" y="0.762" size="1.27" layer="95">&gt;NAME</text>
-<pin name="1" x="10.16" y="-2.54" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="10.16" y="-5.08" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
 <symbol name="1909763-1">
 <circle x="0" y="2.54" radius="1.016" width="0.254" layer="94"/>
 <wire x1="-1.016" y1="1.524" x2="0" y2="1.524" width="0.254" layer="94"/>
@@ -2619,25 +2583,6 @@ The library has been designed by&lt;a href="https://www.facebook.com/groups/eagl
 <technologies>
 <technology name="">
 <attribute name="DKPN" value="1914-LR62ECT-ND" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CONNECTOR-2" prefix="J" uservalue="yes">
-<description>2 Pin Connector</description>
-<gates>
-<gate name="G$1" symbol="CONNECTOR_02" x="0" y="0"/>
-</gates>
-<devices>
-<device name="PCB_MOUNT" package="MOLEX_NANOFIT_SMD_RIGHTANGLE_02">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="1054301202"/>
 </technology>
 </technologies>
 </device>
@@ -11600,7 +11545,6 @@ In this library you will find switches and other mechanical assisted circuit ele
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="J14" library="microfloat" deviceset="CONNECTOR-2" device="PCB_MOUNT"/>
 <part name="P+12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
@@ -12080,7 +12024,6 @@ In this library you will find switches and other mechanical assisted circuit ele
 <part name="P+8" library="microfloat" deviceset="+6V" device=""/>
 <part name="+3V20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="J5" library="microfloat" deviceset="1054291116" device=""/>
-<part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="P+13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="GND48" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$28" library="microfloat" deviceset="VBATT" device=""/>
@@ -12472,8 +12415,12 @@ In this library you will find switches and other mechanical assisted circuit ele
 <segment>
 <pinref part="J1" gate="G$1" pin="VSS"/>
 <wire x1="233.68" y1="182.88" x2="226.06" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="182.88" x2="226.06" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="182.88" x2="226.06" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="GND26" gate="1" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="SHIELD"/>
+<wire x1="226.06" y1="165.1" x2="226.06" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="165.1" x2="226.06" y2="165.1" width="0.1524" layer="91"/>
+<junction x="226.06" y="165.1"/>
 </segment>
 </net>
 <net name="!RESET" class="0">
@@ -13003,6 +12950,13 @@ In this library you will find switches and other mechanical assisted circuit ele
 <label x="63.5" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
+<net name="READY" class="0">
+<segment>
+<pinref part="U9" gate="G$1" pin="PB04"/>
+<wire x1="66.04" y1="147.32" x2="63.5" y2="147.32" width="0.1524" layer="91"/>
+<label x="63.5" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -13264,9 +13218,6 @@ In this library you will find switches and other mechanical assisted circuit ele
 <instance part="GND23" gate="1" x="307.34" y="119.38" smashed="yes">
 <attribute name="VALUE" x="304.8" y="116.84" size="1.778" layer="96"/>
 </instance>
-<instance part="J14" gate="G$1" x="83.82" y="33.02" smashed="yes" rot="R180">
-<attribute name="NAME" x="83.82" y="32.258" size="1.27" layer="95" rot="R180"/>
-</instance>
 <instance part="P+12" gate="1" x="50.8" y="50.8" smashed="yes">
 <attribute name="VALUE" x="48.26" y="45.72" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -13337,9 +13288,6 @@ In this library you will find switches and other mechanical assisted circuit ele
 </instance>
 <instance part="J5" gate="A" x="396.24" y="139.7" smashed="yes">
 <attribute name="NAME" x="400.4056" y="145.0086" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-</instance>
-<instance part="P+11" gate="1" x="68.58" y="38.1" smashed="yes" rot="R90">
-<attribute name="VALUE" x="73.66" y="35.56" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="P+13" gate="1" x="391.16" y="106.68" smashed="yes" rot="R90">
 <attribute name="VALUE" x="396.24" y="104.14" size="1.778" layer="96" rot="R180"/>
@@ -14195,11 +14143,6 @@ In this library you will find switches and other mechanical assisted circuit ele
 <label x="50.8" y="35.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J14" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="35.56" x2="71.12" y2="35.56" width="0.1524" layer="91"/>
-<label x="71.12" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <wire x1="396.24" y1="127" x2="393.7" y2="127" width="0.1524" layer="91"/>
 <label x="393.7" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J5" gate="A" pin="6"/>
@@ -14214,11 +14157,6 @@ In this library you will find switches and other mechanical assisted circuit ele
 <pinref part="P+12" gate="1" pin="+12V"/>
 <pinref part="CR1" gate="A" pin="11"/>
 <junction x="45.72" y="43.18"/>
-</segment>
-<segment>
-<pinref part="J14" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="38.1" x2="71.12" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="P+11" gate="1" pin="+12V"/>
 </segment>
 <segment>
 <pinref part="J5" gate="A" pin="14"/>
@@ -14372,6 +14310,13 @@ In this library you will find switches and other mechanical assisted circuit ele
 <wire x1="251.46" y1="73.66" x2="251.46" y2="71.12" width="0.1524" layer="91"/>
 <junction x="251.46" y="71.12"/>
 <label x="259.08" y="71.12" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="READY" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="READY"/>
+<wire x1="340.36" y1="251.46" x2="342.9" y2="251.46" width="0.1524" layer="91"/>
+<label x="342.9" y="251.46" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
