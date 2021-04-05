@@ -20771,7 +20771,6 @@ In this library you will find switches and other mechanical assisted circuit ele
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="F5" library="microfloat" deviceset="SMD_FUSE" device="1206" value="0.5A"/>
 <part name="U$29" library="microfloat" deviceset="TEST_POINT" device=""/>
-<part name="U$30" library="microfloat" deviceset="VBATT_5V" device=""/>
 <part name="U$31" library="microfloat" deviceset="TEST_POINT" device=""/>
 <part name="U$32" library="microfloat" deviceset="TEST_POINT" device=""/>
 <part name="C29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1.0 uF">
@@ -20851,6 +20850,7 @@ In this library you will find switches and other mechanical assisted circuit ele
 <part name="C44" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="J6" library="microfloat" deviceset="JTAG-MINI" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U$16" library="microfloat" deviceset="VBATT_5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21249,8 +21249,23 @@ In this library you will find switches and other mechanical assisted circuit ele
 <segment>
 <pinref part="J1" gate="G$1" pin="VDD"/>
 <wire x1="233.68" y1="187.96" x2="218.44" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="187.96" x2="218.44" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="187.96" x2="218.44" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="+3V15" gate="G$1" pin="+3V3"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="R18" gate="G$1" pin="2"/>
+<wire x1="218.44" y1="210.82" x2="218.44" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="210.82" x2="226.06" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="226.06" y1="210.82" x2="218.44" y2="210.82" width="0.1524" layer="91"/>
+<junction x="226.06" y="210.82"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<wire x1="218.44" y1="210.82" x2="210.82" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="210.82" x2="203.2" y2="210.82" width="0.1524" layer="91"/>
+<junction x="210.82" y="210.82"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="210.82" x2="195.58" y2="210.82" width="0.1524" layer="91"/>
+<junction x="203.2" y="210.82"/>
+<junction x="218.44" y="210.82"/>
 </segment>
 <segment>
 <pinref part="R19" gate="G$1" pin="1"/>
@@ -21498,22 +21513,6 @@ In this library you will find switches and other mechanical assisted circuit ele
 <pinref part="U9" gate="G$1" pin="PA10"/>
 <wire x1="63.5" y1="208.28" x2="66.04" y2="208.28" width="0.1524" layer="91"/>
 <label x="63.5" y="208.28" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="R16" gate="G$1" pin="2"/>
-<pinref part="R18" gate="G$1" pin="2"/>
-<wire x1="233.68" y1="210.82" x2="226.06" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="226.06" y1="210.82" x2="210.82" y2="210.82" width="0.1524" layer="91"/>
-<junction x="226.06" y="210.82"/>
-<pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="210.82" y1="210.82" x2="203.2" y2="210.82" width="0.1524" layer="91"/>
-<junction x="210.82" y="210.82"/>
-<pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="203.2" y1="210.82" x2="195.58" y2="210.82" width="0.1524" layer="91"/>
-<junction x="203.2" y="210.82"/>
 </segment>
 </net>
 <net name="MOSI_1" class="0">
@@ -23451,9 +23450,6 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <attribute name="VALUE" x="152.4" y="177.8" size="1.778" layer="96" rot="R270" align="top-left"/>
 </instance>
 <instance part="U$29" gate="G$1" x="157.48" y="180.34" smashed="yes"/>
-<instance part="U$30" gate="G$1" x="381" y="264.16" smashed="yes">
-<attribute name="VALUE" x="378.46" y="261.62" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="U$31" gate="G$1" x="241.3" y="149.86" smashed="yes"/>
 <instance part="U$32" gate="G$1" x="284.48" y="157.48" smashed="yes"/>
 <instance part="C31" gate="G$1" x="236.22" y="147.32" smashed="yes">
@@ -23482,6 +23478,9 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 </instance>
 <instance part="U$34" gate="G$1" x="342.9" y="182.88" smashed="yes">
 <attribute name="VALUE" x="340.36" y="180.34" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="U$16" gate="G$1" x="381" y="264.16" smashed="yes">
+<attribute name="VALUE" x="378.46" y="261.62" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -23892,23 +23891,6 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <junction x="248.92" y="264.16"/>
 </segment>
 </net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="370.84" y1="238.76" x2="370.84" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="370.84" y1="238.76" x2="381" y2="238.76" width="0.1524" layer="91"/>
-<junction x="370.84" y="238.76"/>
-<pinref part="L2" gate="A" pin="2"/>
-<wire x1="363.22" y1="238.76" x2="370.84" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="381" y1="238.76" x2="381" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="C19" gate="G$1" pin="1"/>
-<wire x1="381" y1="238.76" x2="391.16" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="391.16" y1="238.76" x2="391.16" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="C20" gate="G$1" pin="1"/>
-<junction x="381" y="238.76"/>
-<pinref part="F4" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
@@ -23976,11 +23958,11 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <pinref part="U$25" gate="G$1" pin="VBATT_5V"/>
 </segment>
 <segment>
-<pinref part="F4" gate="G$1" pin="2"/>
-<wire x1="381" y1="261.62" x2="381" y2="259.08" width="0.1524" layer="91"/>
 <pinref part="U$9" gate="G$1" pin="P$1"/>
+<pinref part="F4" gate="G$1" pin="2"/>
+<pinref part="U$16" gate="G$1" pin="VBATT_5V"/>
+<wire x1="381" y1="259.08" x2="381" y2="261.62" width="0.1524" layer="91"/>
 <junction x="381" y="259.08"/>
-<pinref part="U$30" gate="G$1" pin="VBATT_5V"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -24022,6 +24004,23 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <pinref part="C42" gate="G$1" pin="+"/>
 <wire x1="370.84" y1="175.26" x2="381" y2="175.26" width="0.1524" layer="91"/>
 <junction x="370.84" y="175.26"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<wire x1="391.16" y1="238.76" x2="391.16" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="C20" gate="G$1" pin="1"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="370.84" y1="238.76" x2="370.84" y2="236.22" width="0.1524" layer="91"/>
+<pinref part="L2" gate="A" pin="2"/>
+<wire x1="363.22" y1="238.76" x2="370.84" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="C19" gate="G$1" pin="1"/>
+<pinref part="F4" gate="G$1" pin="1"/>
+<wire x1="381" y1="228.6" x2="381" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="370.84" y1="238.76" x2="381" y2="238.76" width="0.1524" layer="91"/>
+<junction x="370.84" y="238.76"/>
+<junction x="381" y="238.76"/>
+<wire x1="391.16" y1="238.76" x2="381" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
