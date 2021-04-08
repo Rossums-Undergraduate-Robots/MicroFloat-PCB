@@ -21670,6 +21670,13 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <pinref part="U9" gate="G$1" pin="PA21"/>
 </segment>
 </net>
+<net name="RAD_BUSY" class="0">
+<segment>
+<wire x1="66.04" y1="99.06" x2="60.96" y2="99.06" width="0.1524" layer="91"/>
+<label x="60.96" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U9" gate="G$1" pin="PB23"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -22739,13 +22746,6 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <label x="27.94" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="RAD_BUSY" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="BUSY"/>
-<wire x1="33.02" y1="83.82" x2="27.94" y2="83.82" width="0.1524" layer="91"/>
-<label x="27.94" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="!RESET_N" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="RESET_N"/>
@@ -23159,6 +23159,13 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <pinref part="U$34" gate="G$1" pin="VIN"/>
 <wire x1="358.14" y1="81.28" x2="363.22" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="J8" gate="A" pin="1"/>
+</segment>
+</net>
+<net name="RAD_BUSY" class="0">
+<segment>
+<wire x1="33.02" y1="83.82" x2="27.94" y2="83.82" width="0.1524" layer="91"/>
+<label x="27.94" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$3" gate="G$1" pin="BUSY"/>
 </segment>
 </net>
 </nets>
