@@ -1021,7 +1021,7 @@
 <wire x1="8.66" y1="-8.66" x2="-8.66" y2="-8.66" width="0.05" layer="39"/>
 <wire x1="-8.66" y1="-8.66" x2="-8.66" y2="8.66" width="0.05" layer="39"/>
 <circle x="-9.1" y="6.2" radius="0.12" width="0.24" layer="21"/>
-<circle x="-9.1" y="6.2" radius="0.12" width="0.24" layer="51"/>
+<circle x="-9.1" y="6.2" radius="0.12" width="0.24" layer="21"/>
 <text x="-7" y="8.8" size="1.27" layer="25">&gt;NAME</text>
 <text x="-7" y="-10.1" size="1.27" layer="27">&gt;VALUE</text>
 <smd name="1" x="-7.67" y="6" dx="1.47" dy="0.28" layer="1" roundness="25"/>
@@ -1301,34 +1301,6 @@
 <wire x1="-1.016" y1="0" x2="-0.8636" y2="0" width="0.1524" layer="21" curve="-180"/>
 <text x="-2.9972" y="-2.159" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
 <text x="-3.0226" y="1.016" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
-</package>
-<package name="CLP1608-2L_VIS-M">
-<smd name="1" x="-0.5969" y="0" dx="0.4302" dy="0.7104" layer="1"/>
-<smd name="2" x="0.2921" y="0" dx="1.0398" dy="0.7104" layer="1"/>
-<wire x1="-0.8128" y1="-0.4064" x2="0.8128" y2="-0.4064" width="0.1524" layer="51"/>
-<wire x1="0.8128" y1="-0.4064" x2="0.8128" y2="0.4064" width="0.1524" layer="51"/>
-<wire x1="0.8128" y1="0.4064" x2="-0.8128" y2="0.4064" width="0.1524" layer="51"/>
-<wire x1="-0.8128" y1="0.4064" x2="-0.8128" y2="-0.4064" width="0.1524" layer="51"/>
-<wire x1="0.0762" y1="0" x2="-0.0762" y2="0" width="0" layer="51" curve="-180"/>
-<wire x1="-0.0762" y1="0" x2="0.0762" y2="0" width="0" layer="51" curve="-180"/>
-<wire x1="-2.1844" y1="0" x2="-2.3368" y2="0" width="0.1524" layer="21" curve="-180"/>
-<wire x1="-2.3368" y1="0" x2="-2.1844" y2="0" width="0.1524" layer="21" curve="-180"/>
-<text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
-<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
-</package>
-<package name="CLP1608-2L_VIS-L">
-<smd name="1" x="-0.5969" y="0" dx="0.2302" dy="0.6104" layer="1"/>
-<smd name="2" x="0.2921" y="0" dx="0.8398" dy="0.6104" layer="1"/>
-<wire x1="-0.8128" y1="-0.4064" x2="0.8128" y2="-0.4064" width="0.1524" layer="51"/>
-<wire x1="0.8128" y1="-0.4064" x2="0.8128" y2="0.4064" width="0.1524" layer="51"/>
-<wire x1="0.8128" y1="0.4064" x2="-0.8128" y2="0.4064" width="0.1524" layer="51"/>
-<wire x1="-0.8128" y1="0.4064" x2="-0.8128" y2="-0.4064" width="0.1524" layer="51"/>
-<wire x1="0.0762" y1="0" x2="-0.0762" y2="0" width="0" layer="51" curve="-180"/>
-<wire x1="-0.0762" y1="0" x2="0.0762" y2="0" width="0" layer="51" curve="-180"/>
-<wire x1="-2.1082" y1="0" x2="-2.2606" y2="0" width="0.1524" layer="21" curve="-180"/>
-<wire x1="-2.2606" y1="0" x2="-2.1082" y2="0" width="0.1524" layer="21" curve="-180"/>
-<text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
-<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
 <package name="CON_1054291110_MOL">
 <smd name="1" x="0" y="0" dx="1.24" dy="3" layer="1"/>
@@ -2742,38 +2714,6 @@ SMT Type, PCB Top Mount </description>
 </gates>
 <devices>
 <device name="" package="CLP1608-2L_VIS">
-<connects>
-<connect gate="A" pin="11" pad="1"/>
-<connect gate="A" pin="12" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="BUILT_BY" value="EMA_Cory" constant="no"/>
-<attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" constant="no"/>
-<attribute name="DATASHEET" value="https://www.vishay.com/docs/85892/vsky20401608.pdf" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="VSKY20401608-G4-08" constant="no"/>
-<attribute name="SOURCELIBRARY" value="Vishay_2020-06-02" constant="no"/>
-<attribute name="VENDOR" value="Vishay" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="CLP1608-2L_VIS-M" package="CLP1608-2L_VIS-M">
-<connects>
-<connect gate="A" pin="11" pad="1"/>
-<connect gate="A" pin="12" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="BUILT_BY" value="EMA_Cory" constant="no"/>
-<attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" constant="no"/>
-<attribute name="DATASHEET" value="https://www.vishay.com/docs/85892/vsky20401608.pdf" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="VSKY20401608-G4-08" constant="no"/>
-<attribute name="SOURCELIBRARY" value="Vishay_2020-06-02" constant="no"/>
-<attribute name="VENDOR" value="Vishay" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="CLP1608-2L_VIS-L" package="CLP1608-2L_VIS-L">
 <connects>
 <connect gate="A" pin="11" pad="1"/>
 <connect gate="A" pin="12" pad="2"/>
@@ -20341,26 +20281,6 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <part name="U$29" library="microfloat" deviceset="TEST_POINT" device=""/>
 <part name="U$31" library="microfloat" deviceset="TEST_POINT" device=""/>
 <part name="U$32" library="microfloat" deviceset="TEST_POINT" device=""/>
-<part name="C29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1.0 uF">
-<spice>
-<pinmapping spiceprefix="C">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VOLTAGE" value="10V"/>
-</part>
-<part name="C30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1.0 uF">
-<spice>
-<pinmapping spiceprefix="C">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VOLTAGE" value="10V"/>
-</part>
 <part name="C31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uF">
 <spice>
 <pinmapping spiceprefix="C">
@@ -22043,18 +21963,6 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <instance part="GND9" gate="1" x="294.64" y="238.76" smashed="yes" rot="R270">
 <attribute name="VALUE" x="292.1" y="241.3" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C29" gate="G$1" x="414.02" y="254" smashed="yes">
-<attribute name="NAME" x="415.036" y="254.635" size="1.778" layer="95"/>
-<attribute name="VALUE" x="415.036" y="249.809" size="1.778" layer="96"/>
-<attribute name="TOLERANCE" x="414.02" y="254" size="1.778" layer="96" display="off"/>
-<attribute name="VOLTAGE" x="414.02" y="254" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="C30" gate="G$1" x="358.14" y="254" smashed="yes">
-<attribute name="NAME" x="359.156" y="254.635" size="1.778" layer="95"/>
-<attribute name="VALUE" x="359.156" y="249.809" size="1.778" layer="96"/>
-<attribute name="TOLERANCE" x="358.14" y="254" size="1.778" layer="96" display="off"/>
-<attribute name="VOLTAGE" x="358.14" y="254" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="P+10" gate="1" x="172.72" y="27.94" smashed="yes" rot="R90">
 <attribute name="VALUE" x="177.8" y="25.4" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -22478,19 +22386,12 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <pinref part="GND50" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C29" gate="G$1" pin="2"/>
 <wire x1="375.92" y1="246.38" x2="383.54" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="383.54" y1="246.38" x2="391.16" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="391.16" y1="246.38" x2="398.78" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="398.78" y1="246.38" x2="406.4" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="406.4" y1="246.38" x2="414.02" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="414.02" y1="246.38" x2="414.02" y2="248.92" width="0.1524" layer="91"/>
 <wire x1="368.3" y1="248.92" x2="368.3" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="368.3" y1="246.38" x2="375.92" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="368.3" y1="246.38" x2="358.14" y2="246.38" width="0.1524" layer="91"/>
-<junction x="368.3" y="246.38"/>
-<pinref part="C30" gate="G$1" pin="2"/>
-<wire x1="358.14" y1="246.38" x2="358.14" y2="248.92" width="0.1524" layer="91"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 <junction x="375.92" y="246.38"/>
 <pinref part="C65" gate="G$1" pin="2"/>
@@ -22504,7 +22405,6 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <junction x="398.78" y="246.38"/>
 <pinref part="C68" gate="G$1" pin="2"/>
 <wire x1="406.4" y1="248.92" x2="406.4" y2="246.38" width="0.1524" layer="91"/>
-<junction x="406.4" y="246.38"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <pinref part="C64" gate="G$1" pin="2"/>
 <wire x1="375.92" y1="248.92" x2="375.92" y2="246.38" width="0.1524" layer="91"/>
@@ -22664,25 +22564,18 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <pinref part="U3" gate="A" pin="VCC"/>
 <wire x1="340.36" y1="261.62" x2="368.3" y2="261.62" width="0.1524" layer="91"/>
 <pinref part="U3" gate="A" pin="VL"/>
-<wire x1="340.36" y1="256.54" x2="358.14" y2="256.54" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="256.54" x2="368.3" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="256.54" x2="368.3" y2="256.54" width="0.1524" layer="91"/>
 <wire x1="368.3" y1="256.54" x2="368.3" y2="261.62" width="0.1524" layer="91"/>
 <junction x="368.3" y="261.62"/>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
 <wire x1="368.3" y1="266.7" x2="368.3" y2="261.62" width="0.1524" layer="91"/>
-<pinref part="C29" gate="G$1" pin="1"/>
-<wire x1="414.02" y1="261.62" x2="414.02" y2="256.54" width="0.1524" layer="91"/>
 <wire x1="368.3" y1="261.62" x2="398.78" y2="261.62" width="0.1524" layer="91"/>
-<pinref part="C30" gate="G$1" pin="1"/>
-<junction x="358.14" y="256.54"/>
 <pinref part="C67" gate="G$1" pin="1"/>
 <wire x1="398.78" y1="261.62" x2="406.4" y2="261.62" width="0.1524" layer="91"/>
-<wire x1="406.4" y1="261.62" x2="414.02" y2="261.62" width="0.1524" layer="91"/>
 <wire x1="398.78" y1="256.54" x2="398.78" y2="261.62" width="0.1524" layer="91"/>
 <junction x="398.78" y="261.62"/>
 <pinref part="C68" gate="G$1" pin="1"/>
 <wire x1="406.4" y1="256.54" x2="406.4" y2="261.62" width="0.1524" layer="91"/>
-<junction x="406.4" y="261.62"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <junction x="368.3" y="256.54"/>
 <pinref part="C64" gate="G$1" pin="1"/>
