@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -1643,6 +1643,12 @@
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="VBATT" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VIN">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="VIN" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="VBUS">
@@ -2854,7 +2860,7 @@ SMT Type, PCB Top Mount </description>
 </deviceset>
 <deviceset name="VIN">
 <gates>
-<gate name="G$1" symbol="VBATT" x="0" y="0"/>
+<gate name="G$1" symbol="VIN" x="0" y="2.54"/>
 </gates>
 <devices>
 <device name="">
@@ -23072,13 +23078,13 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 </net>
 <net name="VBATT" class="0">
 <segment>
-<pinref part="U$33" gate="G$1" pin="VIN"/>
+<pinref part="U$33" gate="G$1" pin="VBATT"/>
 <pinref part="R121" gate="G$1" pin="2"/>
 <wire x1="251.46" y1="88.9" x2="251.46" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="398.78" y1="58.42" x2="393.7" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="U$30" gate="G$1" pin="VIN"/>
+<pinref part="U$30" gate="G$1" pin="VBATT"/>
 <pinref part="J7" gate="A" pin="10"/>
 </segment>
 </net>
@@ -23754,7 +23760,7 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <wire x1="15.24" y1="248.92" x2="15.24" y2="254" width="0.1524" layer="91"/>
 <pinref part="C149" gate="G$1" pin="1"/>
 <junction x="15.24" y="248.92"/>
-<pinref part="U$22" gate="G$1" pin="VIN"/>
+<pinref part="U$22" gate="G$1" pin="VBATT"/>
 </segment>
 <segment>
 <pinref part="U103" gate="G$1" pin="VIN"/>
@@ -23762,7 +23768,7 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <wire x1="289.56" y1="243.84" x2="289.56" y2="248.92" width="0.1524" layer="91"/>
 <pinref part="C139" gate="G$1" pin="1"/>
 <junction x="289.56" y="243.84"/>
-<pinref part="U$5" gate="G$1" pin="VIN"/>
+<pinref part="U$5" gate="G$1" pin="VBATT"/>
 </segment>
 <segment>
 <pinref part="U100" gate="G$1" pin="VIN"/>
@@ -23774,7 +23780,7 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <wire x1="152.4" y1="248.92" x2="144.78" y2="248.92" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="248.92" x2="152.4" y2="251.46" width="0.1524" layer="91"/>
 <junction x="152.4" y="248.92"/>
-<pinref part="U$23" gate="G$1" pin="VIN"/>
+<pinref part="U$23" gate="G$1" pin="VBATT"/>
 </segment>
 <segment>
 <pinref part="F103" gate="G$1" pin="1"/>
@@ -23783,7 +23789,7 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <pinref part="C6" gate="G$1" pin="+"/>
 <wire x1="370.84" y1="175.26" x2="381" y2="175.26" width="0.1524" layer="91"/>
 <junction x="370.84" y="175.26"/>
-<pinref part="U$28" gate="G$1" pin="VIN"/>
+<pinref part="U$28" gate="G$1" pin="VBATT"/>
 <wire x1="381" y1="175.26" x2="381" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="$$U$11" gate="G$1" pin="P$1"/>
 <wire x1="381" y1="177.8" x2="381" y2="180.34" width="0.1524" layer="91"/>
