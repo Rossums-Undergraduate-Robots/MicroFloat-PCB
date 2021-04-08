@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -8352,7 +8352,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <via x="30.4" y="22.5" extent="1-16" drill="0.2"/>
 <wire x1="31.565" y1="24.5" x2="32.4" y2="24.5" width="0.2" layer="1"/>
 <via x="32.4" y="24.5" extent="1-16" drill="0.2"/>
-<via x="33.4" y="26.4" extent="1-16" drill="0.2"/>
+<via x="33.6" y="26.4" extent="1-16" drill="0.2"/>
 <wire x1="31.565" y1="25" x2="32.065" y2="25.5" width="0.2" layer="1"/>
 <wire x1="32.065" y1="25.5" x2="32.4" y2="25.5" width="0.2" layer="1"/>
 <via x="32.4" y="25.5" extent="1-16" drill="0.2"/>
@@ -8506,9 +8506,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <via x="21.1" y="16" extent="1-16" drill="0.2"/>
 <wire x1="22.15" y1="14" x2="21.1" y2="14" width="0.2" layer="16"/>
 <via x="21.1" y="14" extent="1-16" drill="0.2"/>
+<wire x1="28.5452" y1="30.7802" x2="27.7" y2="30.7802" width="0.2" layer="16"/>
+<wire x1="27.6" y1="30.8802" x2="27.7" y2="30.7802" width="0.2" layer="16"/>
 <wire x1="28.565" y1="30.8" x2="28.5452" y2="30.7802" width="0.2" layer="16"/>
-<wire x1="28.5452" y1="30.7802" x2="27.6" y2="30.7802" width="0.2" layer="16"/>
-<via x="27.6" y="30.7802" extent="1-16" drill="0.2"/>
+<via x="27.6" y="30.8802" extent="1-16" drill="0.2"/>
 <wire x1="28.565" y1="32.4" x2="30.6" y2="32.4" width="0.2" layer="16"/>
 <wire x1="30.6" y1="32.4" x2="31" y2="32" width="0.2" layer="16"/>
 <wire x1="31" y1="32" x2="33" y2="34" width="0.35" layer="16"/>
@@ -8589,7 +8590,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <via x="38" y="33" extent="1-16" drill="0.2"/>
 <wire x1="36.85" y1="35" x2="38.6302" y2="35" width="0.2" layer="1"/>
 <via x="38.6302" y="35" extent="1-16" drill="0.2"/>
-<wire x1="33.4" y1="25.35" x2="33.4" y2="26.4" width="0.2" layer="16"/>
+<wire x1="33.6" y1="26.4" x2="33.6" y2="25.55" width="0.2" layer="16"/>
+<wire x1="33.4" y1="25.35" x2="33.6" y2="25.55" width="0.2" layer="16"/>
 <wire x1="18.6" y1="25.08" x2="18.6" y2="27.07520625" width="0.2" layer="1"/>
 <wire x1="18.6" y1="27.07520625" x2="18.6302" y2="27.10540625" width="0.2" layer="1"/>
 <via x="18.6302" y="27.10540625" extent="1-16" drill="0.2"/>
@@ -9071,15 +9073,14 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="46.927" y1="13.027" x2="46.927" y2="12.905975" width="0.2" layer="1"/>
 <wire x1="46.794025" y1="12.773" x2="43.227" y2="12.773" width="0.2" layer="1"/>
 <wire x1="43.227" y1="12.773" x2="42" y2="14" width="0.2" layer="1"/>
-<via x="24.127365625" y="23.772634375" extent="1-16" drill="0.2"/>
-<wire x1="24.1698" y1="23.65018125" x2="24.1698" y2="23.7302" width="0.2" layer="16"/>
-<wire x1="24.1698" y1="23.7302" x2="24.127365625" y2="23.772634375" width="0.2" layer="16"/>
+<via x="25.327365625" y="22.472634375" extent="1-16" drill="0.2"/>
+<wire x1="25.33735625" y1="22.482625" x2="25.327365625" y2="22.472634375" width="0.2" layer="16"/>
 <wire x1="42" y1="14" x2="40.5558875" y2="14" width="0.2" layer="16"/>
 <wire x1="40.5558875" y1="14" x2="39.9506875" y2="13.3948" width="0.2" layer="16"/>
 <wire x1="39.9506875" y1="13.3948" x2="34.42518125" y2="13.3948" width="0.2" layer="16"/>
-<wire x1="34.42518125" y1="13.3948" x2="24.1698" y2="23.65018125" width="0.2" layer="16"/>
-<wire x1="24.127365625" y1="23.772634375" x2="24.1" y2="23.8" width="0.2" layer="1"/>
-<wire x1="24.1" y1="25.08" x2="24.1" y2="23.8" width="0.2" layer="1"/>
+<wire x1="34.42518125" y1="13.3948" x2="25.33735625" y2="22.482625" width="0.2" layer="16"/>
+<wire x1="25.327365625" y1="22.472634375" x2="24.1" y2="23.7" width="0.2" layer="1"/>
+<wire x1="24.1" y1="25.08" x2="24.1" y2="23.7" width="0.2" layer="1"/>
 </signal>
 <signal name="SCLK_2">
 <contactref element="U2" pad="13"/>
@@ -9146,7 +9147,15 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <signal name="ANT_SW">
 <contactref element="U$6" pad="P$1"/>
 <contactref element="U3" pad="69"/>
-<wire x1="26.27" y1="35.75" x2="48.5" y2="23" width="0" layer="19" extent="1-1"/>
+<wire x1="22" y1="30" x2="48.5" y2="23" width="0" layer="19" extent="1-1"/>
+<wire x1="26.27" y1="35.75" x2="24.75" y2="35.75" width="0.2" layer="1"/>
+<wire x1="24.75" y1="35.75" x2="24" y2="35" width="0.2" layer="1"/>
+<wire x1="24" y1="35" x2="23" y2="34" width="0.2" layer="1"/>
+<wire x1="23" y1="34" x2="22" y2="34" width="0.2" layer="1"/>
+<wire x1="22" y1="34" x2="21" y2="33" width="0.2" layer="1"/>
+<wire x1="21" y1="33" x2="21" y2="32" width="0.2" layer="1"/>
+<wire x1="21" y1="32" x2="21" y2="31" width="0.2" layer="1"/>
+<wire x1="21" y1="31" x2="22" y2="30" width="0.2" layer="1"/>
 </signal>
 <signal name="!SX-NRESET">
 <contactref element="U$6" pad="P$2"/>
@@ -9253,10 +9262,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="J2" pad="3"/>
 <wire x1="34" y1="17.5" x2="34" y2="19.5698" width="0.2" layer="1"/>
 <via x="34" y="19.5698" extent="1-16" drill="0.2"/>
-<wire x1="34.3" y1="26.3" x2="34.3" y2="19.8698" width="0.2" layer="16"/>
+<wire x1="34.3" y1="26.5" x2="34.3" y2="19.8698" width="0.2" layer="16"/>
 <wire x1="34.3" y1="19.8698" x2="34" y2="19.5698" width="0.2" layer="16"/>
-<wire x1="31.4" y1="29.565" x2="31.4" y2="29.2" width="0.2" layer="16"/>
-<wire x1="31.4" y1="29.2" x2="34.3" y2="26.3" width="0.2" layer="16"/>
+<wire x1="31.4" y1="29.565" x2="31.4" y2="29.4" width="0.2" layer="16"/>
+<wire x1="31.4" y1="29.4" x2="34.3" y2="26.5" width="0.2" layer="16"/>
 </signal>
 <signal name="T_OUT">
 <contactref element="U102" pad="10"/>
@@ -9264,10 +9273,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="31.5" y1="17.5" x2="31.5" y2="19.5698" width="0.2" layer="1"/>
 <via x="31.5" y="19.5698" extent="1-16" drill="0.2"/>
 <wire x1="31.5" y1="19.5698" x2="31.4302" y2="19.5698" width="0.2" layer="16"/>
-<wire x1="27" y1="24" x2="31.4302" y2="19.5698" width="0.2" layer="16"/>
-<wire x1="28.565" y1="31.6" x2="27.6" y2="31.6" width="0.2" layer="16"/>
-<wire x1="27.6" y1="31.6" x2="27" y2="31" width="0.2" layer="16"/>
-<wire x1="27" y1="31" x2="27" y2="24" width="0.2" layer="16"/>
+<wire x1="26.9" y1="24.1" x2="31.4302" y2="19.5698" width="0.2" layer="16"/>
+<wire x1="28.565" y1="31.6" x2="27.5" y2="31.6" width="0.2" layer="16"/>
+<wire x1="27.5" y1="31.6" x2="26.9" y2="31" width="0.2" layer="16"/>
+<wire x1="26.9" y1="31" x2="26.9" y2="24.1" width="0.2" layer="16"/>
 </signal>
 <signal name="N$5">
 <contactref element="U102" pad="2"/>
@@ -9369,62 +9378,86 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="39.35" y1="24.5" x2="36.551" y2="24.5" width="0.2" layer="16"/>
 </signal>
 <signal name="UART_TX_CTD_A">
-<contactref element="U1" pad="2"/>
 <contactref element="U3" pad="35"/>
-<wire x1="24.3" y1="18.7" x2="24.3" y2="17.8194" width="0.2" layer="1"/>
 <wire x1="17.1" y1="25.08" x2="17.1" y2="24.166925" width="0.2" layer="1"/>
-<wire x1="20.839925" y1="20.427" x2="22.573" y2="20.427" width="0.2" layer="1"/>
+<wire x1="20.839925" y1="20.427" x2="21" y2="20.427" width="0.2" layer="1"/>
 <wire x1="17.1" y1="24.166925" x2="20.839925" y2="20.427" width="0.2" layer="1"/>
-<wire x1="22.573" y1="20.427" x2="24.3" y2="18.7" width="0.2" layer="1"/>
+<contactref element="U1" pad="4"/>
+<wire x1="23" y1="17.8194" x2="23" y2="18.7" width="0.2" layer="1"/>
+<wire x1="23" y1="18.7" x2="21.273" y2="20.427" width="0.2" layer="1"/>
+<wire x1="21.273" y1="20.427" x2="21" y2="20.427" width="0.2" layer="1"/>
 </signal>
 <signal name="UART_RX_CTD_A">
-<contactref element="U1" pad="3"/>
 <contactref element="U3" pad="34"/>
 <wire x1="16.6" y1="25.08" x2="16.633" y2="25.047" width="0.2" layer="1"/>
 <wire x1="16.633" y1="25.047" x2="16.633" y2="23.971475" width="0.2" layer="1"/>
 <wire x1="16.633" y1="23.971475" x2="20.604475" y2="20" width="0.2" layer="1"/>
-<wire x1="22.356425" y1="20" x2="23.65" y2="18.706425" width="0.2" layer="1"/>
-<wire x1="23.65" y1="18.706425" x2="23.65" y2="17.8194" width="0.2" layer="1"/>
-<wire x1="20.604475" y1="20" x2="22.356425" y2="20" width="0.2" layer="1"/>
+<wire x1="20.604475" y1="20" x2="21" y2="20" width="0.2" layer="1"/>
+<contactref element="U1" pad="5"/>
+<wire x1="22.35" y1="17.8194" x2="22.35" y2="18.65" width="0.2" layer="1"/>
+<wire x1="22.35" y1="18.65" x2="21" y2="20" width="0.2" layer="1"/>
 </signal>
 <signal name="UART_TX_M_A">
-<contactref element="U1" pad="4"/>
 <contactref element="U3" pad="65"/>
-<wire x1="23" y1="17.8194" x2="26.27" y2="33.75" width="0" layer="19" extent="1-1"/>
+<contactref element="U1" pad="2"/>
+<wire x1="24.3" y1="17.8194" x2="24.3" y2="20.81473125" width="0.2" layer="1"/>
+<wire x1="24.3" y1="20.81473125" x2="24.1802" y2="20.93453125" width="0.2" layer="1"/>
+<via x="24.1802" y="20.93453125" extent="1-16" drill="0.2"/>
+<wire x1="24.1802" y1="20.93453125" x2="24.1802" y2="23.1802" width="0.2" layer="16"/>
+<wire x1="24.1802" y1="23.1802" x2="25.2698" y2="24.2698" width="0.2" layer="16"/>
+<via x="24" y="33" extent="1-16" drill="0.2"/>
+<wire x1="25.2698" y1="24.2698" x2="25.2698" y2="31.18038125" width="0.2" layer="16"/>
+<wire x1="24.4698" y1="32.5302" x2="24" y2="33" width="0.2" layer="16"/>
+<wire x1="24.4698" y1="31.98038125" x2="24.4698" y2="32.5302" width="0.2" layer="16"/>
+<wire x1="25.2698" y1="31.18038125" x2="24.4698" y2="31.98038125" width="0.2" layer="16"/>
+<wire x1="24" y1="33" x2="24.75" y2="33.75" width="0.2" layer="1"/>
+<wire x1="24.75" y1="33.75" x2="26.27" y2="33.75" width="0.2" layer="1"/>
 </signal>
 <signal name="UART_RX_M_A">
-<contactref element="U1" pad="5"/>
 <contactref element="U3" pad="64"/>
-<wire x1="22.35" y1="17.8194" x2="26.27" y2="33.25" width="0" layer="19" extent="1-1"/>
+<contactref element="U1" pad="3"/>
+<wire x1="23.65" y1="17.8194" x2="23.65" y2="21.35" width="0.2" layer="1"/>
+<wire x1="23.65" y1="21.35" x2="23" y2="22" width="0.2" layer="1"/>
+<via x="23" y="22" extent="1-16" drill="0.2"/>
+<wire x1="23" y1="22" x2="23" y2="23" width="0.2" layer="16"/>
+<wire x1="23" y1="23" x2="24.9" y2="24.9" width="0.2" layer="16"/>
+<wire x1="24.9" y1="24.9" x2="24.9" y2="30.1" width="0.2" layer="16"/>
+<wire x1="24.9" y1="30.1" x2="24" y2="31" width="0.2" layer="16"/>
+<via x="24" y="31" extent="1-16" drill="0.2"/>
+<wire x1="26.27" y1="33.25" x2="25.25" y2="33.25" width="0.2" layer="1"/>
+<wire x1="24" y1="32" x2="24" y2="31" width="0.2" layer="1"/>
+<wire x1="25.25" y1="33.25" x2="24" y2="32" width="0.2" layer="1"/>
 </signal>
 <signal name="UART_TX_M_B">
-<contactref element="U1" pad="11"/>
 <contactref element="J7" pad="5"/>
-<wire x1="23" y1="12.1806" x2="28.3" y2="60.2" width="0" layer="19" extent="1-1"/>
+<contactref element="U1" pad="13"/>
+<wire x1="24.3" y1="12.1806" x2="28.3" y2="60.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="UART_RX_M_B">
-<contactref element="U1" pad="10"/>
 <contactref element="J7" pad="4"/>
-<wire x1="22.35" y1="12.1806" x2="30.8" y2="60.2" width="0" layer="19" extent="1-1"/>
+<contactref element="U1" pad="12"/>
+<wire x1="23.65" y1="12.1806" x2="30.8" y2="60.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="UART_TX_CTD_B">
-<contactref element="U1" pad="13"/>
 <contactref element="J2" pad="7"/>
 <wire x1="36.5" y1="11" x2="36.5" y2="9.5" width="0.2" layer="1"/>
-<wire x1="26.4" y1="8.5" x2="24.3" y2="10.6" width="0.2" layer="1"/>
-<wire x1="24.3" y1="10.6" x2="24.3" y2="12.1806" width="0.2" layer="1"/>
 <wire x1="36.5" y1="9.5" x2="35.5" y2="8.5" width="0.2" layer="1"/>
 <wire x1="35.5" y1="8.5" x2="26.4" y2="8.5" width="0.2" layer="1"/>
+<contactref element="U1" pad="11"/>
+<wire x1="23" y1="12.1806" x2="23" y2="11" width="0.2" layer="1"/>
+<wire x1="25.5" y1="8.5" x2="26.4" y2="8.5" width="0.2" layer="1"/>
+<wire x1="23" y1="11" x2="25.5" y2="8.5" width="0.2" layer="1"/>
 </signal>
 <signal name="UART_RX_CTD_B">
-<contactref element="U1" pad="12"/>
 <contactref element="J2" pad="6"/>
-<wire x1="23.65" y1="12.1806" x2="23.65" y2="9.35" width="0.2" layer="1"/>
-<wire x1="37.1512" y1="8.1512" x2="38" y2="9" width="0.2" layer="1"/>
-<wire x1="23.65" y1="9.35" x2="24.8488" y2="8.1512" width="0.2" layer="1"/>
+<wire x1="23.65" y1="9.35" x2="24" y2="9" width="0.2" layer="1"/>
+<wire x1="24" y1="9" x2="24.8488" y2="8.1512" width="0.2" layer="1"/>
 <wire x1="24.8488" y1="8.1512" x2="37.1512" y2="8.1512" width="0.2" layer="1"/>
 <wire x1="39" y1="11" x2="39" y2="10" width="0.2" layer="1"/>
-<wire x1="39" y1="10" x2="38" y2="9" width="0.2" layer="1"/>
+<wire x1="39" y1="10" x2="37.1512" y2="8.1512" width="0.2" layer="1"/>
+<contactref element="U1" pad="10"/>
+<wire x1="22.35" y1="12.1806" x2="22.35" y2="10.65" width="0.2" layer="1"/>
+<wire x1="22.35" y1="10.65" x2="23.65" y2="9.35" width="0.2" layer="1"/>
 </signal>
 <signal name="XIN32">
 <contactref element="C143" pad="1"/>
@@ -10183,8 +10216,17 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </signal>
 <signal name="IMU_INT">
 <contactref element="U2" pad="4"/>
-<contactref element="U3" pad="70"/>
-<wire x1="31.4" y1="23.335" x2="26.27" y2="36.25" width="0" layer="19" extent="1-1"/>
+<wire x1="31.4" y1="23.335" x2="32.035" y2="22.7" width="0.2" layer="1"/>
+<wire x1="32.7" y1="22.7" x2="33" y2="23" width="0.2" layer="1"/>
+<wire x1="32.035" y1="22.7" x2="32.7" y2="22.7" width="0.2" layer="1"/>
+<via x="29.57390625" y="28.664" extent="1-16" drill="0.2"/>
+<wire x1="29.7861875" y1="28.664" x2="29.57390625" y2="28.664" width="0.2" layer="1"/>
+<wire x1="30.3162875" y1="28.1339" x2="29.7861875" y2="28.664" width="0.2" layer="1"/>
+<wire x1="33" y1="27" x2="31.8661" y2="28.1339" width="0.2" layer="1"/>
+<wire x1="31.8661" y1="28.1339" x2="30.3162875" y2="28.1339" width="0.2" layer="1"/>
+<wire x1="33" y1="23" x2="33" y2="27" width="0.2" layer="1"/>
+<contactref element="U3" pad="58"/>
+<wire x1="26.27" y1="30.25" x2="29.57390625" y2="28.664" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BATT_MEASURE">
 <contactref element="R120" pad="2"/>

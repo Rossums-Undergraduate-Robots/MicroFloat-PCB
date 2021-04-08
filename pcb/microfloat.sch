@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -21613,13 +21613,6 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <label x="63.5" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="IMU_INT" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="PA20"/>
-<wire x1="66.04" y1="182.88" x2="63.5" y2="182.88" width="0.1524" layer="91"/>
-<label x="63.5" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="BATT_MEASURE" class="0">
 <segment>
 <wire x1="66.04" y1="137.16" x2="63.5" y2="137.16" width="0.1524" layer="91"/>
@@ -21681,6 +21674,13 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <wire x1="66.04" y1="99.06" x2="60.96" y2="99.06" width="0.1524" layer="91"/>
 <label x="60.96" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U3" gate="G$1" pin="PB23"/>
+</segment>
+</net>
+<net name="IMU_INT" class="0">
+<segment>
+<wire x1="121.92" y1="195.58" x2="124.46" y2="195.58" width="0.1524" layer="91"/>
+<label x="124.46" y="195.58" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="PC18"/>
 </segment>
 </net>
 </nets>
@@ -22909,80 +22909,52 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <pinref part="J4" gate="A" pin="5"/>
 </segment>
 </net>
-<net name="UART_TX_CTD_A" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="A1"/>
-<wire x1="241.3" y1="132.08" x2="238.76" y2="132.08" width="0.1524" layer="91"/>
-<label x="238.76" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="UART_RX_CTD_A" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="A2"/>
-<wire x1="241.3" y1="129.54" x2="238.76" y2="129.54" width="0.1524" layer="91"/>
-<label x="238.76" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="UART_TX_M_A" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="A3"/>
-<wire x1="241.3" y1="127" x2="238.76" y2="127" width="0.1524" layer="91"/>
-<label x="238.76" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="UART_RX_M_A" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="A4"/>
-<wire x1="241.3" y1="124.46" x2="238.76" y2="124.46" width="0.1524" layer="91"/>
-<label x="238.76" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="UART_TX_M_B" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="B3"/>
-<wire x1="281.94" y1="127" x2="284.48" y2="127" width="0.1524" layer="91"/>
-<label x="284.48" y="127" size="1.27" layer="95" xref="yes"/>
-</segment>
 <segment>
 <wire x1="398.78" y1="71.12" x2="396.24" y2="71.12" width="0.1524" layer="91"/>
 <label x="396.24" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J7" gate="A" pin="5"/>
 </segment>
+<segment>
+<wire x1="281.94" y1="132.08" x2="284.48" y2="132.08" width="0.1524" layer="91"/>
+<label x="284.48" y="132.08" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="A" pin="B1"/>
+</segment>
 </net>
 <net name="UART_RX_M_B" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="B4"/>
-<wire x1="281.94" y1="124.46" x2="284.48" y2="124.46" width="0.1524" layer="91"/>
-<label x="284.48" y="124.46" size="1.27" layer="95" xref="yes"/>
-</segment>
 <segment>
 <wire x1="398.78" y1="73.66" x2="396.24" y2="73.66" width="0.1524" layer="91"/>
 <label x="396.24" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J7" gate="A" pin="4"/>
 </segment>
+<segment>
+<wire x1="281.94" y1="129.54" x2="284.48" y2="129.54" width="0.1524" layer="91"/>
+<label x="284.48" y="129.54" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="A" pin="B2"/>
+</segment>
 </net>
 <net name="UART_TX_CTD_B" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="B1"/>
-<wire x1="281.94" y1="132.08" x2="284.48" y2="132.08" width="0.1524" layer="91"/>
-<label x="284.48" y="132.08" size="1.27" layer="95" xref="yes"/>
-</segment>
 <segment>
 <wire x1="127" y1="22.86" x2="124.46" y2="22.86" width="0.1524" layer="91"/>
 <label x="124.46" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J2" gate="A" pin="7"/>
 </segment>
+<segment>
+<wire x1="281.94" y1="127" x2="284.48" y2="127" width="0.1524" layer="91"/>
+<label x="284.48" y="127" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="A" pin="B3"/>
+</segment>
 </net>
 <net name="UART_RX_CTD_B" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="B2"/>
-<wire x1="281.94" y1="129.54" x2="284.48" y2="129.54" width="0.1524" layer="91"/>
-<label x="284.48" y="129.54" size="1.27" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="J2" gate="A" pin="6"/>
 <wire x1="127" y1="25.4" x2="124.46" y2="25.4" width="0.1524" layer="91"/>
 <label x="124.46" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="281.94" y1="124.46" x2="284.48" y2="124.46" width="0.1524" layer="91"/>
+<label x="284.48" y="124.46" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="A" pin="B4"/>
 </segment>
 </net>
 <net name="SOLENOID" class="0">
@@ -23173,6 +23145,34 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <wire x1="33.02" y1="83.82" x2="27.94" y2="83.82" width="0.1524" layer="91"/>
 <label x="27.94" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$6" gate="G$1" pin="BUSY"/>
+</segment>
+</net>
+<net name="UART_TX_M_A" class="0">
+<segment>
+<wire x1="241.3" y1="132.08" x2="238.76" y2="132.08" width="0.1524" layer="91"/>
+<label x="238.76" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="A" pin="A1"/>
+</segment>
+</net>
+<net name="UART_RX_M_A" class="0">
+<segment>
+<wire x1="241.3" y1="129.54" x2="238.76" y2="129.54" width="0.1524" layer="91"/>
+<label x="238.76" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="A" pin="A2"/>
+</segment>
+</net>
+<net name="UART_TX_CTD_A" class="0">
+<segment>
+<wire x1="241.3" y1="127" x2="238.76" y2="127" width="0.1524" layer="91"/>
+<label x="238.76" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="A" pin="A3"/>
+</segment>
+</net>
+<net name="UART_RX_CTD_A" class="0">
+<segment>
+<wire x1="241.3" y1="124.46" x2="238.76" y2="124.46" width="0.1524" layer="91"/>
+<label x="238.76" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="A" pin="A4"/>
 </segment>
 </net>
 </nets>
@@ -24148,7 +24148,6 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <approved hash="208,3,238.76,154.94,+5V,sup,,,,"/>
 <approved hash="111,1,355.6,251.46,SWDIO,,,,,"/>
 <approved hash="113,1,215.796,139.596,FRAME2,,,,,"/>
-<approved hash="113,1,375.691,17.5514,FRAME1,,,,,"/>
 <approved hash="113,2,215.796,139.596,FRAME4,,,,,"/>
 <approved hash="113,3,215.796,139.596,FRAME3,,,,,"/>
 <approved hash="113,1,200.66,256.515,S1,,,,,"/>
