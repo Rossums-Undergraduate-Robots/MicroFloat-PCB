@@ -24218,15 +24218,15 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <errors>
 <approved hash="104,2,241.3,134.62,U1,VCCA,+3V3,,,"/>
 <approved hash="104,2,281.94,134.62,U1,VCCB,+5V,,,"/>
-<approved hash="104,1,121.92,251.46,U3,VDDIO,+3V3,,,"/>
-<approved hash="104,1,121.92,243.84,U3,VDDIOB,+3V3,,,"/>
-<approved hash="104,1,121.92,246.38,U3,VDDANA,VCCA,,,"/>
-<approved hash="104,1,121.92,81.28,U3,GNDANA,GND,,,"/>
-<approved hash="104,1,121.92,248.92,U3,VDDCORE,VCC_CORE,,,"/>
-<approved hash="202,3,22.86,243.84,U11,EN,,,,"/>
-<approved hash="202,3,165.1,243.84,U6,EN,,,,"/>
-<approved hash="202,3,297.18,238.76,U7,EN,,,,"/>
-<approved hash="202,3,22.86,165.1,U10,EN,,,,"/>
+<approved hash="104,1,121.92,251.46,U4,VDDIO,+3V3,,,"/>
+<approved hash="104,1,121.92,243.84,U4,VDDIOB,+3V3,,,"/>
+<approved hash="104,1,121.92,246.38,U4,VDDANA,VCCA,,,"/>
+<approved hash="104,1,121.92,81.28,U4,GNDANA,GND,,,"/>
+<approved hash="104,1,121.92,248.92,U4,VDDCORE,VCC_CORE,,,"/>
+<approved hash="202,3,22.86,243.84,U13,EN,,,,"/>
+<approved hash="202,3,165.1,243.84,U7,EN,,,,"/>
+<approved hash="202,3,297.18,238.76,U10,EN,,,,"/>
+<approved hash="202,3,22.86,165.1,U12,EN,,,,"/>
 <approved hash="104,2,187.96,106.68,BT1,PLUS,N$32,,,"/>
 <approved hash="104,2,187.96,99.06,BT1,MINUS,GND,,,"/>
 <approved hash="208,2,307.34,137.16,+5V,sup,,,,"/>
@@ -24236,6 +24236,7 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <approved hash="208,3,238.76,154.94,+5V,sup,,,,"/>
 <approved hash="111,1,355.6,251.46,SWDIO,,,,,"/>
 <approved hash="113,1,215.796,139.596,FRAME2,,,,,"/>
+<approved hash="113,1,375.691,17.5514,FRAME1,,,,,"/>
 <approved hash="113,2,215.796,139.596,FRAME4,,,,,"/>
 <approved hash="113,3,215.796,139.596,FRAME3,,,,,"/>
 <approved hash="113,1,200.66,256.515,S1,,,,,"/>
