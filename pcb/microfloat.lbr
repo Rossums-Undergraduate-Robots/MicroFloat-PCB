@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -1591,6 +1591,26 @@ visible on the PCB.</text>
 <smd name="1" x="-2.603" y="0" dx="2" dy="5.52" layer="1"/>
 <smd name="2" x="2.603" y="0" dx="2" dy="5.52" layer="1"/>
 </package>
+<package name="SRR3818A-3R9Y">
+<smd name="2" x="1.35" y="0" dx="1.6" dy="4.3" layer="1"/>
+<smd name="1" x="-1.35" y="0" dx="1.6" dy="4.3" layer="1"/>
+<wire x1="0.8" y1="2.175" x2="0.8" y2="-2.175" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-2.175" x2="-0.8" y2="-2.175" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-2.175" x2="-0.8" y2="2.175" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="2.175" x2="0.8" y2="2.175" width="0.127" layer="21"/>
+<text x="0" y="2.5" size="0.8" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-0.55" y1="-2.15" x2="0.55" y2="2.15" layer="39"/>
+</package>
+<package name="78438357100">
+<smd name="2" x="1.185" y="0" dx="0.98" dy="3.7" layer="1"/>
+<smd name="1" x="-1.185" y="0" dx="0.98" dy="3.7" layer="1"/>
+<wire x1="0.8" y1="2.175" x2="0.8" y2="-2.175" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-2.175" x2="-0.8" y2="-2.175" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-2.175" x2="-0.8" y2="2.175" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="2.175" x2="0.8" y2="2.175" width="0.127" layer="21"/>
+<text x="0" y="2.5" size="0.8" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-0.695" y1="-1.85" x2="0.695" y2="1.85" layer="39"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOT23-BEC" urn="urn:adsk.eagle:package:28748/2" type="model">
@@ -2360,6 +2380,16 @@ visible on the PCB.</text>
 <rectangle x1="1.90685" y1="-1.90685" x2="2.54" y2="1.905" layer="94"/>
 <pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
 <pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas"/>
+</symbol>
+<symbol name="INDUCTOR_SINGLE">
+<pin name="P$1" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="P$2" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<text x="-5.08" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="0" y="-1.27" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3464,6 +3494,38 @@ XT-60 Power Connector
 <attribute name="PACKAGE" value="6153 Murata"/>
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/KCM55TR7YA336MH01L/?ref=eda"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SRR3818A-3R9Y" prefix="L">
+<gates>
+<gate name="G$1" symbol="INDUCTOR_SINGLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SRR3818A-3R9Y">
+<connects>
+<connect gate="G$1" pin="P$1" pad="2"/>
+<connect gate="G$1" pin="P$2" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="78438357100" prefix="L">
+<gates>
+<gate name="G$1" symbol="INDUCTOR_SINGLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="78438357100">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
