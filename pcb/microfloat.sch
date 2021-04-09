@@ -1414,6 +1414,22 @@
 <circle x="7.6" y="0" radius="0.889" width="0.127" layer="39"/>
 <circle x="7.6" y="0" radius="0.889" width="0.127" layer="40"/>
 </package>
+<package name="CAPC6153X500N">
+<text x="-3.85" y="-3.1" size="0.5" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-3.85" y="3.1" size="0.5" layer="25">&gt;NAME</text>
+<wire x1="3.25" y1="-2.75" x2="-3.25" y2="-2.75" width="0.127" layer="51"/>
+<wire x1="3.25" y1="2.75" x2="-3.25" y2="2.75" width="0.127" layer="51"/>
+<wire x1="3.25" y1="-2.75" x2="3.25" y2="2.75" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="-2.75" x2="-3.25" y2="2.75" width="0.127" layer="51"/>
+<wire x1="-1.28" y1="2.75" x2="1.28" y2="2.75" width="0.127" layer="21"/>
+<wire x1="-1.28" y1="-2.75" x2="1.28" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="-3.854" y1="-3.008" x2="3.854" y2="-3.008" width="0.05" layer="39"/>
+<wire x1="-3.854" y1="3.008" x2="3.854" y2="3.008" width="0.05" layer="39"/>
+<wire x1="-3.854" y1="-3.008" x2="-3.854" y2="3.008" width="0.05" layer="39"/>
+<wire x1="3.854" y1="-3.008" x2="3.854" y2="3.008" width="0.05" layer="39"/>
+<smd name="1" x="-2.603" y="0" dx="2" dy="5.52" layer="1"/>
+<smd name="2" x="2.603" y="0" dx="2" dy="5.52" layer="1"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOT23-BEC" urn="urn:adsk.eagle:package:28748/2" type="model">
@@ -1995,6 +2011,14 @@
 <text x="-1.905" y="-5.08" size="1.27" layer="96" align="top-center">&gt;MPN</text>
 <text x="-1.905" y="-3.175" size="1.27" layer="96" align="top-center">&gt;VOLTAGE</text>
 <text x="-3.175" y="1.27" size="1.778" layer="94" rot="R270" align="center">+</text>
+</symbol>
+<symbol name="KCM55TR7YA336MH01L">
+<text x="0" y="3.81093125" size="1.77843125" layer="95">&gt;NAME</text>
+<text x="0" y="-5.08848125" size="1.78096875" layer="96">&gt;VALUE</text>
+<rectangle x1="0" y1="-1.90685625" x2="0.635" y2="1.905" layer="94"/>
+<rectangle x1="1.90685" y1="-1.90685" x2="2.54" y2="1.905" layer="94"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2866,6 +2890,30 @@ SMT Type, PCB Top Mount </description>
 <device name="">
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KCM55TR7YA336MH01L" prefix="C">
+<description>CAP CERAMIC 33UF 35V X7R 20% SMD </description>
+<gates>
+<gate name="G$1" symbol="KCM55TR7YA336MH01L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CAPC6153X500N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value=" SMD Capacitor X7R(EIA) with Capacitance: 33uF Tol. 20%. Rated Voltage: 35Vdc "/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="490-16299-1-ND"/>
+<attribute name="MF" value="Murata"/>
+<attribute name="MP" value="KCM55TR7YA336MH01L"/>
+<attribute name="PACKAGE" value="6153 Murata"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/KCM55TR7YA336MH01L/?ref=eda"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -19838,16 +19886,6 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <part name="U3" library="microfloat" deviceset="ATSAMD51N20A-AUT" device=""/>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_B_L" device=""/>
 <part name="U11" library="microfloat" deviceset="TPS54308DDCT" device=""/>
-<part name="C64" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="33uF">
-<spice>
-<pinmapping spiceprefix="C">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VOLTAGE" value="35V"/>
-</part>
 <part name="C65" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF">
 <spice>
 <pinmapping spiceprefix="C">
@@ -19955,16 +19993,6 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <part name="+3V13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U7" library="microfloat" deviceset="TPS54308DDCT" device=""/>
-<part name="C42" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="33uF">
-<spice>
-<pinmapping spiceprefix="C">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="TOLERANCE" value="5%"/>
-<attribute name="VOLTAGE" value="35V"/>
-</part>
 <part name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF">
 <spice>
 <pinmapping spiceprefix="C">
@@ -20684,6 +20712,8 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <part name="U$34" library="microfloat" deviceset="VIN" device=""/>
 <part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="$$$$U$5" library="microfloat" deviceset="TEST_POINT" device=""/>
+<part name="C66" library="microfloat" deviceset="KCM55TR7YA336MH01L" device=""/>
+<part name="C67" library="microfloat" deviceset="KCM55TR7YA336MH01L" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23206,12 +23236,6 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <attribute name="NAME" x="27.94" y="252.46" size="2.0828" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="27.94" y="227.14" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
-<instance part="C64" gate="G$1" x="15.24" y="246.38" smashed="yes">
-<attribute name="NAME" x="16.256" y="247.015" size="1.778" layer="95"/>
-<attribute name="VALUE" x="16.256" y="242.189" size="1.778" layer="96"/>
-<attribute name="TOLERANCE" x="15.24" y="246.38" size="1.778" layer="96" display="off"/>
-<attribute name="VOLTAGE" x="15.24" y="246.38" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="C65" gate="G$1" x="63.5" y="248.92" smashed="yes" rot="R90">
 <attribute name="NAME" x="62.865" y="249.936" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="67.691" y="249.936" size="1.778" layer="96" rot="R90"/>
@@ -23306,12 +23330,6 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <instance part="U7" gate="G$1" x="314.96" y="236.22" smashed="yes">
 <attribute name="NAME" x="302.26" y="247.38" size="2.0828" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="302.26" y="222.06" size="2.0828" layer="96" ratio="10" rot="SR0"/>
-</instance>
-<instance part="C42" gate="G$1" x="289.56" y="241.3" smashed="yes">
-<attribute name="NAME" x="290.576" y="241.935" size="1.778" layer="95"/>
-<attribute name="VALUE" x="290.576" y="237.109" size="1.778" layer="96"/>
-<attribute name="TOLERANCE" x="289.56" y="241.3" size="1.778" layer="96" display="off"/>
-<attribute name="VOLTAGE" x="289.56" y="241.3" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C21" gate="G$1" x="337.82" y="243.84" smashed="yes" rot="R90">
 <attribute name="NAME" x="337.185" y="244.856" size="1.778" layer="95" rot="R90"/>
@@ -23576,6 +23594,14 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <attribute name="VALUE" x="337.82" y="180.34" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="$$$$U$5" gate="G$1" x="383.54" y="177.8" smashed="yes"/>
+<instance part="C66" gate="G$1" x="15.24" y="243.84" smashed="yes" rot="R90">
+<attribute name="NAME" x="11.42906875" y="243.84" size="1.77843125" layer="95" rot="R90"/>
+<attribute name="VALUE" x="20.32848125" y="243.84" size="1.78096875" layer="96" rot="R90"/>
+</instance>
+<instance part="C67" gate="G$1" x="289.56" y="238.76" smashed="yes" rot="R90">
+<attribute name="NAME" x="285.74906875" y="238.76" size="1.77843125" layer="95" rot="R90"/>
+<attribute name="VALUE" x="294.64848125" y="238.76" size="1.78096875" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -23588,9 +23614,9 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <pinref part="GND51" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C64" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="241.3" x2="15.24" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="GND52" gate="1" pin="GND"/>
+<pinref part="C66" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="106.68" y1="226.06" x2="106.68" y2="213.36" width="0.1524" layer="91"/>
@@ -23631,9 +23657,9 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <pinref part="GND28" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C42" gate="G$1" pin="2"/>
 <wire x1="289.56" y1="236.22" x2="289.56" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="GND29" gate="1" pin="GND"/>
+<pinref part="C67" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="C46" gate="G$1" pin="2"/>
@@ -23758,17 +23784,17 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <pinref part="U11" gate="G$1" pin="VIN"/>
 <wire x1="22.86" y1="248.92" x2="15.24" y2="248.92" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="248.92" x2="15.24" y2="254" width="0.1524" layer="91"/>
-<pinref part="C64" gate="G$1" pin="1"/>
-<junction x="15.24" y="248.92"/>
 <pinref part="U$22" gate="G$1" pin="VBATT"/>
+<pinref part="C66" gate="G$1" pin="2"/>
+<junction x="15.24" y="248.92"/>
 </segment>
 <segment>
 <pinref part="U7" gate="G$1" pin="VIN"/>
 <wire x1="297.18" y1="243.84" x2="289.56" y2="243.84" width="0.1524" layer="91"/>
 <wire x1="289.56" y1="243.84" x2="289.56" y2="248.92" width="0.1524" layer="91"/>
-<pinref part="C42" gate="G$1" pin="1"/>
-<junction x="289.56" y="243.84"/>
 <pinref part="U$5" gate="G$1" pin="VBATT"/>
+<pinref part="C67" gate="G$1" pin="2"/>
+<junction x="289.56" y="243.84"/>
 </segment>
 <segment>
 <pinref part="U6" gate="G$1" pin="VIN"/>
