@@ -9,7 +9,7 @@
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
@@ -22,20 +22,20 @@
 <layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -47,8 +47,8 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -7302,23 +7302,23 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="0.73903125" y="23.913" size="0.8" layer="25" font="vector" ratio="10" align="bottom-center"/>
 </element>
 <element name="T1" library="microfloat" package="SOT23-BEC" package3d_urn="urn:adsk.eagle:package:28748/2" value="MMBT3906" x="18" y="48" smashed="yes" rot="MR0">
-<attribute name="NAME" x="19.905" y="49.904996875" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
+<attribute name="NAME" x="17.895" y="46.095003125" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 <attribute name="POPULARITY" value="0" x="18" y="48" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
 <element name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k" x="15.3" y="50.5" smashed="yes" rot="MR180">
-<attribute name="NAME" x="14.665003125" y="49.864996875" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
+<attribute name="NAME" x="15.334996875" y="51.535003125" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
 <attribute name="POPULARITY" value="77" x="15.3" y="50.5" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="15.3" y="50.5" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="15.3" y="50.5" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
 <element name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k" x="15.5" y="48" smashed="yes" rot="MR90">
-<attribute name="NAME" x="16.135003125" y="47.365003125" size="0.8" layer="26" font="vector" ratio="10" rot="MR90" align="bottom-center"/>
+<attribute name="NAME" x="15.565003125" y="46.464996875" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 <attribute name="POPULARITY" value="77" x="15.5" y="48" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="15.5" y="48" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="15.5" y="48" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 </element>
 <element name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="27k" x="18.5" y="51" smashed="yes" rot="MR0">
-<attribute name="NAME" x="19.134996875" y="51.63500625" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
+<attribute name="NAME" x="18.534996875" y="52.03500625" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
 <attribute name="POPULARITY" value="77" x="18.5" y="51" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="18.5" y="51" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="18.5" y="51" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
@@ -7385,7 +7385,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VOLTAGE" value="10V" x="23" y="14" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
 <element name="C41" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="8.2 pF" x="7.5" y="32.5" smashed="yes" rot="MR0">
-<attribute name="NAME" x="8.135" y="33.135" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
+<attribute name="NAME" x="7.535" y="33.535" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
 <attribute name="POPULARITY" value="37" x="7.5" y="32.5" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="7.5" y="32.5" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="TOLERANCE" value="0.5%" x="7.5" y="32.5" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
@@ -7411,14 +7411,14 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="TOLERANCE" value="0.1%" x="57.5" y="27.75" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
 <element name="C37" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="22.5" y="32" smashed="yes" rot="MR180">
-<attribute name="NAME" x="21.865" y="31.365" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
+<attribute name="NAME" x="22.535" y="33.035" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
 <attribute name="POPULARITY" value="37" x="22.5" y="32" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="22.5" y="32" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="22.5" y="32" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="22.5" y="32" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
 <element name="C33" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="16.5" y="30" smashed="yes" rot="MR180">
-<attribute name="NAME" x="15.865" y="29.365" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
+<attribute name="NAME" x="16.465" y="28.965" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 <attribute name="POPULARITY" value="37" x="16.5" y="30" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="16.5" y="30" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="16.5" y="30" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
@@ -7432,14 +7432,14 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VOLTAGE" value="10V" x="18.5" y="25" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
 <element name="C54" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="4.7uF" x="20" y="40.8" smashed="yes" rot="MR0">
-<attribute name="NAME" x="20.635" y="41.435" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
+<attribute name="NAME" x="22.435" y="40.835" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="center"/>
 <attribute name="POPULARITY" value="37" x="20" y="40.8" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="20" y="40.8" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="20" y="40.8" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="20" y="40.8" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
 <element name="C50" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="20" y="38.8" smashed="yes" rot="MR0">
-<attribute name="NAME" x="20.635" y="39.435" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
+<attribute name="NAME" x="22.435" y="38.835" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="center"/>
 <attribute name="POPULARITY" value="37" x="20" y="38.8" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="20" y="38.8" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="20" y="38.8" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
@@ -7523,7 +7523,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VOLTAGE" value="16V" x="-1" y="18" size="0.8" layer="28" font="vector" rot="MR270" display="off"/>
 </element>
 <element name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k" x="-6" y="21.25" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-5.365" y="21.885" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
+<attribute name="NAME" x="-4.065" y="21.185" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="center"/>
 <attribute name="POPULARITY" value="77" x="5" y="18.25" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="5" y="18.25" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="-6" y="21.25" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
@@ -7535,7 +7535,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="TOLERANCE" value="1%" x="-6" y="23.25" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
 <element name="L2" library="microfloat" package="78438357100" value="10uH" x="-0.3" y="14.2" smashed="yes" rot="MR90">
-<attribute name="NAME" x="0.589" y="11.8" size="0.8" layer="26" font="vector" ratio="10" rot="MR90" align="bottom-center"/>
+<attribute name="NAME" x="-0.3" y="12.411" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 <attribute name="TOLERANCE" value="10%" x="-0.3" y="14.2" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 </element>
 <element name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF" x="-8" y="19" smashed="yes" rot="MR0">
@@ -7868,14 +7868,14 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </element>
 <element name="U$1" library="microfloat" package="UCM-MODEM" value="" x="-8" y="5.775" smashed="yes"/>
 <element name="C31" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="22.5" y="30" smashed="yes" rot="MR180">
-<attribute name="NAME" x="21.865" y="29.365" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
+<attribute name="NAME" x="22.465" y="28.965" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 <attribute name="POPULARITY" value="37" x="22.5" y="30" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="22.5" y="30" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="22.5" y="30" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="22.5" y="30" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
 <element name="C39" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="16.5" y="32" smashed="yes" rot="MR180">
-<attribute name="NAME" x="15.865" y="31.365" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
+<attribute name="NAME" x="16.535" y="33.035" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
 <attribute name="POPULARITY" value="37" x="16.5" y="32" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="16.5" y="32" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="16.5" y="32" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
@@ -7886,18 +7886,18 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </element>
 <element name="L3" library="RoboJackets-Inductors" package="0805" value="FB-30Ohm" x="13.5" y="35" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="490-1035-1-ND" x="13.5" y="35" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
-<attribute name="NAME" x="15.9" y="35.889" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
+<attribute name="NAME" x="16.2" y="34.989" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="center"/>
 <attribute name="TOLERANCE" value="25%" x="13.5" y="35" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
 <element name="C48" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="14" y="37" smashed="yes" rot="MR180">
-<attribute name="NAME" x="13.365" y="36.365" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
+<attribute name="NAME" x="11.365" y="36.965" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="center"/>
 <attribute name="POPULARITY" value="37" x="14" y="37" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="14" y="37" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="14" y="37" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="14" y="37" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
 <element name="L4" library="microfloat" package="78438357100" value="10uH" x="19.6" y="36.3" smashed="yes" rot="MR0">
-<attribute name="NAME" x="17.4" y="36.289" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
+<attribute name="NAME" x="20.5" y="34.011" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 <attribute name="TOLERANCE" value="10%" x="19.6" y="36.3" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
 <element name="Y1" library="microfloat" package="XTAL_ABS25-32.768KHZ-6-1-T" value="ABS25-32.768KHZ-6-1-T" x="5.6" y="35.7" smashed="yes" rot="R270">
@@ -7936,28 +7936,28 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VENDOR" value="Molex Connector Corporation" x="3.75" y="80" size="0.8" layer="27" font="vector" display="off"/>
 </element>
 <element name="C40" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="13.5" y="32" smashed="yes" rot="MR180">
-<attribute name="NAME" x="12.865" y="31.365" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
+<attribute name="NAME" x="13.535" y="33.035" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
 <attribute name="POPULARITY" value="37" x="13.5" y="32" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="13.5" y="32" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="13.5" y="32" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="13.5" y="32" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
 <element name="C32" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="19.5" y="30" smashed="yes" rot="MR180">
-<attribute name="NAME" x="18.865" y="29.365" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
+<attribute name="NAME" x="19.465" y="28.965" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 <attribute name="POPULARITY" value="37" x="19.5" y="30" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="19.5" y="30" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="19.5" y="30" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="19.5" y="30" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
 <element name="C38" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="19.5" y="32" smashed="yes" rot="MR180">
-<attribute name="NAME" x="18.865" y="31.365" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
+<attribute name="NAME" x="18.935" y="33.035" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
 <attribute name="POPULARITY" value="37" x="19.5" y="32" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="19.5" y="32" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="19.5" y="32" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="19.5" y="32" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
 <element name="C34" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="13.5" y="30" smashed="yes" rot="MR180">
-<attribute name="NAME" x="12.865" y="29.365" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
+<attribute name="NAME" x="13.465" y="28.965" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 <attribute name="POPULARITY" value="37" x="13.5" y="30" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="13.5" y="30" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="13.5" y="30" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
@@ -7978,7 +7978,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VOLTAGE" value="10V" x="22" y="25" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
 <element name="C51" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF" x="14" y="39" smashed="yes" rot="MR180">
-<attribute name="NAME" x="13.365" y="38.365" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
+<attribute name="NAME" x="14.035" y="40.035" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
 <attribute name="POPULARITY" value="63" x="14" y="39" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="14" y="39" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="14" y="39" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
@@ -8084,28 +8084,28 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VOLTAGE" value="10V" x="36" y="33" size="0.8" layer="27" font="vector" display="off"/>
 </element>
 <element name="C53" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="30" y="40" smashed="yes" rot="MR0">
-<attribute name="NAME" x="30.635" y="40.635" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
+<attribute name="NAME" x="27.535" y="39.935" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="center"/>
 <attribute name="POPULARITY" value="37" x="30" y="40" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="30" y="40" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="30" y="40" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="30" y="40" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
 <element name="C49" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="30" y="38" smashed="yes" rot="MR0">
-<attribute name="NAME" x="30.635" y="38.635" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
+<attribute name="NAME" x="27.635" y="37.935" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="center"/>
 <attribute name="POPULARITY" value="37" x="30" y="38" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="30" y="38" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="30" y="38" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="30" y="38" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
 <element name="C42" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="26" y="34" smashed="yes" rot="MR0">
-<attribute name="NAME" x="26.635" y="34.635" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
+<attribute name="NAME" x="23.535" y="34.335" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="center"/>
 <attribute name="POPULARITY" value="37" x="26" y="34" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="26" y="34" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="26" y="34" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="26" y="34" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
 <element name="C46" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="26" y="36" smashed="yes" rot="MR0">
-<attribute name="NAME" x="26.635" y="36.635" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
+<attribute name="NAME" x="23.535" y="36.035" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="center"/>
 <attribute name="POPULARITY" value="37" x="26" y="36" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="26" y="36" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="26" y="36" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
@@ -8146,6 +8146,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </element>
 <element name="$$U$4" library="RoboJackets-Aesthetics" package="ROBOBUZZ_0.4X" value="" x="49" y="24" smashed="yes"/>
 <element name="$$$$U$1" library="HyTechAesthetics" package="LOGO_GT_0.25&quot;" value="" x="20.1" y="21.5" smashed="yes"/>
+<element name="$$$$$$U$6" library="microfloat" package="TEST_POINT" value="TEST_POINT" x="2" y="59" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -10725,7 +10726,11 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="1.0511" y1="54" x2="1.198" y2="54.1469" width="0.35" layer="16"/>
 <wire x1="1.198" y1="54.1469" x2="1.198" y2="55.52509375" width="0.35" layer="16"/>
 <wire x1="1.198" y1="55.52509375" x2="4.57290625" y2="58.9" width="0.35" layer="16"/>
-<wire x1="4.57290625" y1="58.9" x2="7" y2="58.9" width="0.35" layer="16"/>
+<wire x1="4.57290625" y1="58.9" x2="5" y2="58.9" width="0.35" layer="16"/>
+<contactref element="$$$$$$U$6" pad="P$1"/>
+<wire x1="5" y1="58.9" x2="7" y2="58.9" width="0.35" layer="16"/>
+<wire x1="4.57290625" y1="58.9" x2="2.1" y2="58.9" width="0.35" layer="16"/>
+<wire x1="2.1" y1="58.9" x2="2" y2="59" width="0.35" layer="16"/>
 </signal>
 <signal name="RAD_BUSY">
 <contactref element="U2" pad="P$3"/>

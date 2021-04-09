@@ -20776,6 +20776,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <part name="$$$$$$U$3" library="microfloat" deviceset="TEST_POINT" device=""/>
 <part name="C9" library="microfloat" deviceset="KCM55TR7YA336MH01L" device=""/>
 <part name="C2" library="microfloat" deviceset="KCM55TR7YA336MH01L" device=""/>
+<part name="$$$$$$U$6" library="microfloat" deviceset="TEST_POINT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23664,6 +23665,7 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <attribute name="NAME" x="285.74906875" y="238.76" size="1.77843125" layer="95" rot="R90"/>
 <attribute name="VALUE" x="294.64848125" y="238.76" size="1.78096875" layer="96" rot="R90"/>
 </instance>
+<instance part="$$$$$$U$6" gate="G$1" x="342.9" y="177.8" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -24207,9 +24209,12 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <net name="VIN" class="0">
 <segment>
 <pinref part="U$18" gate="G$1" pin="VIN"/>
-<wire x1="340.36" y1="180.34" x2="340.36" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="180.34" x2="340.36" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="F4" gate="G$1" pin="2"/>
+<wire x1="340.36" y1="177.8" x2="340.36" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="340.36" y1="175.26" x2="342.9" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="$$$$$$U$6" gate="G$1" pin="P$1"/>
+<junction x="340.36" y="177.8"/>
 </segment>
 </net>
 </nets>
