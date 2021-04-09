@@ -20324,7 +20324,6 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <part name="$$U$5" library="microfloat" deviceset="TEST_POINT" device=""/>
 <part name="$$$$U$3" library="microfloat" deviceset="TEST_POINT" device=""/>
 <part name="$$$$$$U$2" library="microfloat" deviceset="TEST_POINT" device=""/>
-<part name="U$3" library="microfloat" deviceset="TEST_POINT" device=""/>
 <part name="$$$$U$2" library="microfloat" deviceset="TEST_POINT" device=""/>
 <part name="$$$$$$U$5" library="microfloat" deviceset="TEST_POINT" device=""/>
 <part name="$$U$2" library="microfloat" deviceset="TEST_POINT" device=""/>
@@ -23582,7 +23581,6 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <instance part="$$U$5" gate="G$1" x="109.22" y="264.16" smashed="yes"/>
 <instance part="$$$$U$3" gate="G$1" x="251.46" y="264.16" smashed="yes"/>
 <instance part="$$$$$$U$2" gate="G$1" x="383.54" y="259.08" smashed="yes"/>
-<instance part="U$3" gate="G$1" x="241.3" y="132.08" smashed="yes"/>
 <instance part="$$$$U$2" gate="G$1" x="284.48" y="177.8" smashed="yes"/>
 <instance part="$$$$$$U$5" gate="G$1" x="284.48" y="172.72" smashed="yes"/>
 <instance part="$$U$2" gate="G$1" x="284.48" y="167.64" smashed="yes"/>
@@ -24156,13 +24154,6 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <pinref part="U$16" gate="G$1" pin="VBATT_5V"/>
 <wire x1="381" y1="259.08" x2="381" y2="261.62" width="0.1524" layer="91"/>
 <junction x="381" y="259.08"/>
-</segment>
-</net>
-<net name="N$28" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="P$1"/>
-<pinref part="U8" gate="A" pin="V2ON"/>
-<wire x1="238.76" y1="132.08" x2="233.68" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
