@@ -24232,7 +24232,7 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <approved hash="208,3,238.76,154.94,+5V,sup,,,,"/>
 <approved hash="111,1,355.6,251.46,SWDIO,,,,,"/>
 <approved hash="113,1,215.796,139.596,FRAME2,,,,,"/>
-<approved hash="113,1,375.699,17.559,FRAME1,,,,,"/>
+<approved hash="113,1,375.691,17.5514,FRAME1,,,,,"/>
 <approved hash="113,2,215.796,139.596,FRAME4,,,,,"/>
 <approved hash="113,3,215.796,139.596,FRAME3,,,,,"/>
 <approved hash="113,1,200.66,256.515,S1,,,,,"/>
