@@ -19914,7 +19914,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 </spice>
 <attribute name="TOLERANCE" value="1%"/>
 </part>
-<part name="L6" library="RoboJackets-Inductors" deviceset="INDUCTOR_0805" device="" value="6.471uH">
+<part name="L6" library="RoboJackets-Inductors" deviceset="INDUCTOR_0805" device="" value="3.9uH">
 <attribute name="TOLERANCE" value="10%"/>
 </part>
 <part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -19961,7 +19961,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 </spice>
 <attribute name="TOLERANCE" value="1%"/>
 </part>
-<part name="L2" library="RoboJackets-Inductors" deviceset="INDUCTOR_0805" device="" value="13uH">
+<part name="L2" library="RoboJackets-Inductors" deviceset="INDUCTOR_0805" device="" value="10uH">
 <attribute name="TOLERANCE" value="10%"/>
 </part>
 <part name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF">
@@ -20021,7 +20021,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 </spice>
 <attribute name="TOLERANCE" value="1%"/>
 </part>
-<part name="L3" library="RoboJackets-Inductors" deviceset="INDUCTOR_0805" device="" value="12uH">
+<part name="L3" library="RoboJackets-Inductors" deviceset="INDUCTOR_0805" device="" value="10uH">
 <attribute name="TOLERANCE" value="10%"/>
 </part>
 <part name="C46" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22uF">
@@ -24161,10 +24161,10 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <approved hash="104,1,121.92,246.38,U3,VDDANA,VCCA,,,"/>
 <approved hash="104,1,121.92,81.28,U3,GNDANA,GND,,,"/>
 <approved hash="104,1,121.92,248.92,U3,VDDCORE,VCC_CORE,,,"/>
-<approved hash="202,3,22.86,243.84,U105,EN,,,,"/>
-<approved hash="202,3,165.1,243.84,U100,EN,,,,"/>
-<approved hash="202,3,297.18,238.76,U103,EN,,,,"/>
-<approved hash="202,3,22.86,165.1,U104,EN,,,,"/>
+<approved hash="202,3,22.86,243.84,U11,EN,,,,"/>
+<approved hash="202,3,165.1,243.84,U6,EN,,,,"/>
+<approved hash="202,3,297.18,238.76,U7,EN,,,,"/>
+<approved hash="202,3,22.86,165.1,U10,EN,,,,"/>
 <approved hash="104,2,187.96,106.68,BT1,PLUS,N$32,,,"/>
 <approved hash="104,2,187.96,99.06,BT1,MINUS,GND,,,"/>
 <approved hash="208,2,307.34,137.16,+5V,sup,,,,"/>
