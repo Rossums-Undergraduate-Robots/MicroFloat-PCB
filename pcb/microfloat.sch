@@ -19836,7 +19836,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <attribute name="TOLERANCE" value="0.5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
-<part name="C53" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="8.2 pF">
+<part name="C52" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="8.2 pF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -19901,7 +19901,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
-<part name="C47" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="4.7uF">
+<part name="C54" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="4.7uF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -19911,7 +19911,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
-<part name="C51" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF">
+<part name="C50" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -20023,7 +20023,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 </spice>
 <attribute name="TOLERANCE" value="1%"/>
 </part>
-<part name="L3" library="microfloat" deviceset="78438357100" device="" value="10uH">
+<part name="L2" library="microfloat" deviceset="78438357100" device="" value="10uH">
 <attribute name="TOLERANCE" value="10%"/>
 </part>
 <part name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF">
@@ -20330,7 +20330,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <part name="$$U$2" library="microfloat" deviceset="TEST_POINT" device=""/>
 <part name="$$U$1" library="microfloat" deviceset="TEST_POINT" device=""/>
 <part name="GND43" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U$6" library="microfloat" deviceset="TEST_POINT" device=""/>
+<part name="$$U$3" library="microfloat" deviceset="TEST_POINT" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="U$25" library="microfloat" deviceset="VBATT_5V" device=""/>
 <part name="U$26" library="microfloat" deviceset="VBUS" device=""/>
@@ -20467,12 +20467,12 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <part name="J5" library="microfloat" deviceset="JTAG-MINI" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$16" library="microfloat" deviceset="VBATT_5V" device=""/>
-<part name="L4" library="RoboJackets-Inductors" deviceset="INDUCTOR_0805" device="" value="FB-30Ohm">
+<part name="L3" library="RoboJackets-Inductors" deviceset="INDUCTOR_0805" device="" value="FB-30Ohm">
 <attribute name="DKPN" value="490-1035-1-ND"/>
 <attribute name="TOLERANCE" value="25%"/>
 </part>
 <part name="U$11" library="microfloat" deviceset="VCCA" device=""/>
-<part name="C49" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF">
+<part name="C48" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -20482,7 +20482,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
-<part name="L2" library="microfloat" deviceset="78438357100" device="" value="10uH">
+<part name="L4" library="microfloat" deviceset="78438357100" device="" value="10uH">
 <attribute name="TOLERANCE" value="10%"/>
 </part>
 <part name="U$17" library="microfloat" deviceset="VCC_CORE" device=""/>
@@ -20565,7 +20565,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
-<part name="C52" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF">
+<part name="C51" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -20648,7 +20648,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
-<part name="C48" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF">
+<part name="C47" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -20708,7 +20708,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
-<part name="C54" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF">
+<part name="C53" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -20718,7 +20718,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
-<part name="C50" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF">
+<part name="C49" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -20842,7 +20842,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <attribute name="TOLERANCE" x="142.24" y="25.4" size="1.778" layer="96" display="off"/>
 <attribute name="VOLTAGE" x="142.24" y="25.4" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C53" gate="G$1" x="132.08" y="25.4" smashed="yes">
+<instance part="C52" gate="G$1" x="132.08" y="25.4" smashed="yes">
 <attribute name="NAME" x="133.096" y="26.035" size="1.778" layer="95"/>
 <attribute name="VALUE" x="133.096" y="21.209" size="1.778" layer="96"/>
 <attribute name="TOLERANCE" x="132.08" y="25.4" size="1.778" layer="96" display="off"/>
@@ -20891,13 +20891,13 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <attribute name="TOLERANCE" x="40.64" y="48.26" size="1.778" layer="96" display="off"/>
 <attribute name="VOLTAGE" x="40.64" y="48.26" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C47" gate="G$1" x="121.92" y="48.26" smashed="yes">
+<instance part="C54" gate="G$1" x="121.92" y="48.26" smashed="yes">
 <attribute name="NAME" x="122.936" y="48.895" size="1.778" layer="95"/>
 <attribute name="VALUE" x="122.936" y="44.069" size="1.778" layer="96"/>
 <attribute name="TOLERANCE" x="121.92" y="48.26" size="1.27" layer="96" display="off"/>
 <attribute name="VOLTAGE" x="121.92" y="48.26" size="1.27" layer="96" display="off"/>
 </instance>
-<instance part="C51" gate="G$1" x="132.08" y="48.26" smashed="yes">
+<instance part="C50" gate="G$1" x="132.08" y="48.26" smashed="yes">
 <attribute name="NAME" x="133.096" y="48.895" size="1.778" layer="95"/>
 <attribute name="VALUE" x="133.096" y="44.069" size="1.778" layer="96"/>
 <attribute name="TOLERANCE" x="132.08" y="48.26" size="1.27" layer="96" display="off"/>
@@ -20986,7 +20986,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <attribute name="NAME" x="317.5" y="256.54" size="1.778" layer="95" align="top-left"/>
 <attribute name="VALUE" x="317.5" y="236.22" size="1.778" layer="96"/>
 </instance>
-<instance part="L4" gate="A" x="93.98" y="50.8" smashed="yes">
+<instance part="L3" gate="A" x="93.98" y="50.8" smashed="yes">
 <attribute name="NAME" x="93.98" y="53.34" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="93.98" y="49.784" size="1.778" layer="96" align="top-center"/>
 <attribute name="TOLERANCE" x="93.98" y="50.8" size="1.778" layer="96" display="off"/>
@@ -20994,13 +20994,13 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <instance part="U$11" gate="G$1" x="101.6" y="58.42" smashed="yes">
 <attribute name="VALUE" x="99.06" y="55.88" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C49" gate="G$1" x="109.22" y="48.26" smashed="yes">
+<instance part="C48" gate="G$1" x="109.22" y="48.26" smashed="yes">
 <attribute name="NAME" x="110.236" y="48.895" size="1.778" layer="95"/>
 <attribute name="VALUE" x="110.236" y="44.069" size="1.778" layer="96"/>
 <attribute name="TOLERANCE" x="109.22" y="48.26" size="1.27" layer="96" display="off"/>
 <attribute name="VOLTAGE" x="109.22" y="48.26" size="1.27" layer="96" display="off"/>
 </instance>
-<instance part="L2" gate="G$1" x="132.08" y="170.18" smashed="yes">
+<instance part="L4" gate="G$1" x="132.08" y="170.18" smashed="yes">
 <attribute name="NAME" x="132.08" y="172.72" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="132.08" y="169.164" size="1.778" layer="96" align="top-center"/>
 <attribute name="TOLERANCE" x="132.08" y="170.18" size="1.778" layer="96" display="off"/>
@@ -21057,7 +21057,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <attribute name="TOLERANCE" x="78.74" y="48.26" size="1.778" layer="96" display="off"/>
 <attribute name="VOLTAGE" x="78.74" y="48.26" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C52" gate="G$1" x="101.6" y="48.26" smashed="yes">
+<instance part="C51" gate="G$1" x="101.6" y="48.26" smashed="yes">
 <attribute name="NAME" x="102.616" y="48.895" size="1.778" layer="95"/>
 <attribute name="VALUE" x="102.616" y="44.069" size="1.778" layer="96"/>
 <attribute name="TOLERANCE" x="101.6" y="48.26" size="1.778" layer="96" display="off"/>
@@ -21080,7 +21080,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <pinref part="S1" gate="1" pin="S"/>
 </segment>
 <segment>
-<pinref part="C53" gate="G$1" pin="2"/>
+<pinref part="C52" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="20.32" x2="132.08" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="C41" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="17.78" x2="137.16" y2="17.78" width="0.1524" layer="91"/>
@@ -21128,9 +21128,9 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <wire x1="17.78" y1="43.18" x2="25.4" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="43.18" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="43.18" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="C47" gate="G$1" pin="2"/>
+<pinref part="C54" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="43.18" x2="63.5" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="C51" gate="G$1" pin="2"/>
+<pinref part="C50" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="43.18" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="43.18" x2="78.74" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="43.18" x2="86.36" y2="43.18" width="0.1524" layer="91"/>
@@ -21156,12 +21156,12 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <pinref part="C25" gate="G$1" pin="2"/>
 <junction x="78.74" y="43.18"/>
 <wire x1="93.98" y1="43.18" x2="101.6" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="C49" gate="G$1" pin="2"/>
+<pinref part="C48" gate="G$1" pin="2"/>
 <wire x1="101.6" y1="43.18" x2="109.22" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="43.18" x2="116.84" y2="43.18" width="0.1524" layer="91"/>
 <junction x="109.22" y="43.18"/>
 <junction x="101.6" y="43.18"/>
-<pinref part="C52" gate="G$1" pin="2"/>
+<pinref part="C51" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="GND"/>
@@ -21237,7 +21237,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <pinref part="C39" gate="G$1" pin="1"/>
 <junction x="25.4" y="50.8"/>
 <wire x1="55.88" y1="50.8" x2="63.5" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="L4" gate="A" pin="1"/>
+<pinref part="L3" gate="A" pin="1"/>
 <pinref part="C40" gate="G$1" pin="1"/>
 <junction x="48.26" y="50.8"/>
 <pinref part="C32" gate="G$1" pin="1"/>
@@ -21295,7 +21295,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <segment>
 <wire x1="134.62" y1="33.02" x2="132.08" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="33.02" x2="132.08" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="C53" gate="G$1" pin="1"/>
+<pinref part="C52" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="33.02" x2="132.08" y2="40.64" width="0.1524" layer="91"/>
 <junction x="132.08" y="33.02"/>
 <wire x1="132.08" y1="40.64" x2="144.78" y2="40.64" width="0.1524" layer="91"/>
@@ -21392,17 +21392,17 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <segment>
 <wire x1="101.6" y1="50.8" x2="101.6" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="U$11" gate="G$1" pin="VCCA"/>
-<pinref part="L4" gate="A" pin="2"/>
+<pinref part="L3" gate="A" pin="2"/>
 <junction x="101.6" y="50.8"/>
-<pinref part="C49" gate="G$1" pin="1"/>
+<pinref part="C48" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="50.8" x2="109.22" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="C52" gate="G$1" pin="1"/>
+<pinref part="C51" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="VCC_CORE" class="0">
 <segment>
-<pinref part="C51" gate="G$1" pin="1"/>
-<pinref part="C47" gate="G$1" pin="1"/>
+<pinref part="C50" gate="G$1" pin="1"/>
+<pinref part="C54" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="50.8" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="50.8" x2="121.92" y2="55.88" width="0.1524" layer="91"/>
 <junction x="121.92" y="50.8"/>
@@ -21415,7 +21415,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <pinref part="U$4" gate="G$1" pin="VCC_CORE"/>
 </segment>
 <segment>
-<pinref part="L2" gate="G$1" pin="P$1"/>
+<pinref part="L4" gate="G$1" pin="P$1"/>
 <wire x1="139.7" y1="170.18" x2="142.24" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="U$17" gate="G$1" pin="VCC_CORE"/>
 <wire x1="142.24" y1="170.18" x2="142.24" y2="175.26" width="0.1524" layer="91"/>
@@ -21735,7 +21735,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 </net>
 <net name="N$25" class="0">
 <segment>
-<pinref part="L2" gate="G$1" pin="P$2"/>
+<pinref part="L4" gate="G$1" pin="P$2"/>
 <pinref part="U4" gate="G$1" pin="VSW"/>
 <wire x1="124.46" y1="170.18" x2="121.92" y2="170.18" width="0.1524" layer="91"/>
 </segment>
@@ -22170,7 +22170,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <attribute name="TOLERANCE" x="274.32" y="238.76" size="1.778" layer="96" display="off"/>
 <attribute name="VOLTAGE" x="274.32" y="238.76" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C48" gate="G$1" x="266.7" y="248.92" smashed="yes">
+<instance part="C47" gate="G$1" x="266.7" y="248.92" smashed="yes">
 <attribute name="NAME" x="267.716" y="249.555" size="1.778" layer="95"/>
 <attribute name="VALUE" x="267.716" y="244.729" size="1.778" layer="96"/>
 <attribute name="TOLERANCE" x="266.7" y="248.92" size="1.778" layer="96" display="off"/>
@@ -22206,13 +22206,13 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <attribute name="TOLERANCE" x="406.4" y="254" size="1.778" layer="96" display="off"/>
 <attribute name="VOLTAGE" x="406.4" y="254" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C54" gate="G$1" x="383.54" y="254" smashed="yes">
+<instance part="C53" gate="G$1" x="383.54" y="254" smashed="yes">
 <attribute name="NAME" x="384.556" y="254.635" size="1.778" layer="95"/>
 <attribute name="VALUE" x="384.556" y="249.809" size="1.778" layer="96"/>
 <attribute name="TOLERANCE" x="383.54" y="254" size="1.778" layer="96" display="off"/>
 <attribute name="VOLTAGE" x="383.54" y="254" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C50" gate="G$1" x="391.16" y="254" smashed="yes">
+<instance part="C49" gate="G$1" x="391.16" y="254" smashed="yes">
 <attribute name="NAME" x="392.176" y="254.635" size="1.778" layer="95"/>
 <attribute name="VALUE" x="392.176" y="249.809" size="1.778" layer="96"/>
 <attribute name="TOLERANCE" x="391.16" y="254" size="1.778" layer="96" display="off"/>
@@ -22500,10 +22500,10 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <wire x1="368.3" y1="246.38" x2="375.92" y2="246.38" width="0.1524" layer="91"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 <junction x="375.92" y="246.38"/>
-<pinref part="C54" gate="G$1" pin="2"/>
+<pinref part="C53" gate="G$1" pin="2"/>
 <wire x1="383.54" y1="248.92" x2="383.54" y2="246.38" width="0.1524" layer="91"/>
 <junction x="383.54" y="246.38"/>
-<pinref part="C50" gate="G$1" pin="2"/>
+<pinref part="C49" gate="G$1" pin="2"/>
 <wire x1="391.16" y1="248.92" x2="391.16" y2="246.38" width="0.1524" layer="91"/>
 <junction x="391.16" y="246.38"/>
 <pinref part="C5" gate="G$1" pin="2"/>
@@ -22885,7 +22885,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <pinref part="U9" gate="A" pin="C1+"/>
 <wire x1="297.18" y1="248.92" x2="304.8" y2="248.92" width="0.1524" layer="91"/>
 <pinref part="C43" gate="G$1" pin="1"/>
-<pinref part="C48" gate="G$1" pin="1"/>
+<pinref part="C47" gate="G$1" pin="1"/>
 <wire x1="266.7" y1="251.46" x2="274.32" y2="251.46" width="0.1524" layer="91"/>
 <junction x="274.32" y="251.46"/>
 </segment>
@@ -22897,7 +22897,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <wire x1="276.86" y1="246.38" x2="276.86" y2="243.84" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="243.84" x2="274.32" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="C43" gate="G$1" pin="2"/>
-<pinref part="C48" gate="G$1" pin="2"/>
+<pinref part="C47" gate="G$1" pin="2"/>
 <wire x1="266.7" y1="243.84" x2="274.32" y2="243.84" width="0.1524" layer="91"/>
 <junction x="274.32" y="243.84"/>
 </segment>
@@ -22916,9 +22916,9 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <segment>
 <pinref part="U9" gate="A" pin="V+"/>
 <wire x1="340.36" y1="259.08" x2="383.54" y2="259.08" width="0.1524" layer="91"/>
-<pinref part="C54" gate="G$1" pin="1"/>
+<pinref part="C53" gate="G$1" pin="1"/>
 <wire x1="383.54" y1="259.08" x2="383.54" y2="256.54" width="0.1524" layer="91"/>
-<pinref part="C50" gate="G$1" pin="1"/>
+<pinref part="C49" gate="G$1" pin="1"/>
 <wire x1="383.54" y1="259.08" x2="391.16" y2="259.08" width="0.1524" layer="91"/>
 <wire x1="391.16" y1="259.08" x2="391.16" y2="256.54" width="0.1524" layer="91"/>
 <junction x="383.54" y="259.08"/>
@@ -23360,7 +23360,7 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <attribute name="VALUE" x="242.062" y="217.17" size="1.778" layer="96" rot="R90"/>
 <attribute name="TOLERANCE" x="238.76" y="220.98" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="L3" gate="G$1" x="223.52" y="243.84" smashed="yes">
+<instance part="L2" gate="G$1" x="223.52" y="243.84" smashed="yes">
 <attribute name="NAME" x="223.52" y="246.38" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="223.52" y="242.824" size="1.778" layer="96" align="top-center"/>
 <attribute name="TOLERANCE" x="223.52" y="243.84" size="1.778" layer="96" display="off"/>
@@ -23589,7 +23589,7 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <instance part="GND43" gate="1" x="276.86" y="149.86" smashed="yes">
 <attribute name="VALUE" x="274.32" y="147.32" size="1.778" layer="96"/>
 </instance>
-<instance part="U$6" gate="G$1" x="284.48" y="182.88" smashed="yes"/>
+<instance part="$$U$3" gate="G$1" x="284.48" y="182.88" smashed="yes"/>
 <instance part="P+5" gate="1" x="238.76" y="157.48" smashed="yes">
 <attribute name="VALUE" x="236.22" y="152.4" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -23818,7 +23818,7 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <wire x1="281.94" y1="172.72" x2="276.86" y2="172.72" width="0.1524" layer="91"/>
 <junction x="276.86" y="172.72"/>
 <pinref part="GND43" gate="1" pin="GND"/>
-<pinref part="U$6" gate="G$1" pin="P$1"/>
+<pinref part="$$U$3" gate="G$1" pin="P$1"/>
 <wire x1="281.94" y1="182.88" x2="276.86" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="182.88" x2="276.86" y2="177.8" width="0.1524" layer="91"/>
 <junction x="276.86" y="177.8"/>
@@ -23929,7 +23929,7 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <wire x1="200.66" y1="243.84" x2="210.82" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="C17" gate="G$1" pin="2"/>
 <wire x1="210.82" y1="243.84" x2="210.82" y2="248.92" width="0.1524" layer="91"/>
-<pinref part="L3" gate="G$1" pin="P$2"/>
+<pinref part="L2" gate="G$1" pin="P$2"/>
 <wire x1="210.82" y1="243.84" x2="215.9" y2="243.84" width="0.1524" layer="91"/>
 <junction x="210.82" y="243.84"/>
 </segment>
@@ -24062,7 +24062,7 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <wire x1="238.76" y1="243.84" x2="238.76" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="243.84" x2="248.92" y2="243.84" width="0.1524" layer="91"/>
 <junction x="238.76" y="243.84"/>
-<pinref part="L3" gate="G$1" pin="P$1"/>
+<pinref part="L2" gate="G$1" pin="P$1"/>
 <wire x1="231.14" y1="243.84" x2="238.76" y2="243.84" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="243.84" x2="248.92" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="C19" gate="G$1" pin="1"/>
@@ -24236,7 +24236,7 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <approved hash="208,3,238.76,154.94,+5V,sup,,,,"/>
 <approved hash="111,1,355.6,251.46,SWDIO,,,,,"/>
 <approved hash="113,1,215.796,139.596,FRAME2,,,,,"/>
-<approved hash="113,1,375.691,17.5514,FRAME1,,,,,"/>
+<approved hash="113,1,375.699,17.559,FRAME1,,,,,"/>
 <approved hash="113,2,215.796,139.596,FRAME4,,,,,"/>
 <approved hash="113,3,215.796,139.596,FRAME3,,,,,"/>
 <approved hash="113,1,200.66,256.515,S1,,,,,"/>

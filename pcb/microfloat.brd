@@ -34,8 +34,8 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -7061,7 +7061,7 @@ In this library you will find logos and images specific to RoboJackets. The part
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="JLCPCB (4 Layer)">
+<designrules name="JLCPCB (4 Layer) *">
 <description language="en">&lt;b&gt;JLCPCB Design Rules (4 Layers)&lt;/b&gt;
 &lt;p&gt;
 The default Design Rules have been set to cover
@@ -7130,7 +7130,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkAngle" value="0"/>
+<param name="checkAngle" value="1"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
@@ -7391,7 +7391,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="TOLERANCE" value="0.5%" x="7.5" y="32.5" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="7.5" y="32.5" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
-<element name="C53" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="8.2 pF" x="7.5" y="39" smashed="yes" rot="MR0">
+<element name="C52" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="8.2 pF" x="7.5" y="39" smashed="yes" rot="MR0">
 <attribute name="NAME" x="8.135" y="39.635" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
 <attribute name="POPULARITY" value="37" x="7.5" y="39" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="7.5" y="39" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
@@ -7431,14 +7431,14 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="TOLERANCE" value="5%" x="18.5" y="25" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="18.5" y="25" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
-<element name="C47" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="4.7uF" x="20" y="40.8" smashed="yes" rot="MR0">
+<element name="C54" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="4.7uF" x="20" y="40.8" smashed="yes" rot="MR0">
 <attribute name="NAME" x="20.635" y="41.435" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
 <attribute name="POPULARITY" value="37" x="20" y="40.8" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="20" y="40.8" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="20" y="40.8" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="20" y="40.8" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
-<element name="C51" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="20" y="38.8" smashed="yes" rot="MR0">
+<element name="C50" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="20" y="38.8" smashed="yes" rot="MR0">
 <attribute name="NAME" x="20.635" y="39.435" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
 <attribute name="POPULARITY" value="37" x="20" y="38.8" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="20" y="38.8" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
@@ -7534,7 +7534,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="R" x="-11" y="31.25" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="-6" y="23.25" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
-<element name="L3" library="microfloat" package="78438357100" value="10uH" x="-0.3" y="14.2" smashed="yes" rot="MR90">
+<element name="L2" library="microfloat" package="78438357100" value="10uH" x="-0.3" y="14.2" smashed="yes" rot="MR90">
 <attribute name="NAME" x="0.589" y="11.8" size="0.8" layer="26" font="vector" ratio="10" rot="MR90" align="bottom-center"/>
 <attribute name="TOLERANCE" value="10%" x="-0.3" y="14.2" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 </element>
@@ -7767,7 +7767,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <element name="$$$$$$U$5" library="microfloat" package="TEST_POINT" value="TEST_POINT" x="5.53" y="60.59" smashed="yes"/>
 <element name="$$U$2" library="microfloat" package="TEST_POINT" value="TEST_POINT" x="44" y="10" smashed="yes"/>
 <element name="$$U$1" library="microfloat" package="TEST_POINT" value="TEST_POINT" x="17.53" y="9.97" smashed="yes"/>
-<element name="U$6" library="microfloat" package="TEST_POINT" value="TEST_POINT" x="29.53" y="45.16" smashed="yes"/>
+<element name="$$U$3" library="microfloat" package="TEST_POINT" value="TEST_POINT" x="29.53" y="45.16" smashed="yes"/>
 <element name="U11" library="microfloat" package="SOT-23-3" value="SQ2348ES-T1_GE3" x="6" y="45" smashed="yes" rot="MR0">
 <attribute name="NAME" x="8" y="44" size="0.8" layer="26" font="vector" ratio="10" rot="MR90" align="bottom-center"/>
 </element>
@@ -7884,19 +7884,19 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <element name="J5" library="microfloat" package="FTSH-105-01-F-D-K" value="JTAG-MINI" x="57" y="38" smashed="yes" rot="R90">
 <attribute name="NAME" x="54.225" y="35.225" size="0.8" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
 </element>
-<element name="L4" library="RoboJackets-Inductors" package="0805" value="FB-30Ohm" x="13.5" y="35" smashed="yes" rot="MR0">
+<element name="L3" library="RoboJackets-Inductors" package="0805" value="FB-30Ohm" x="13.5" y="35" smashed="yes" rot="MR0">
 <attribute name="DKPN" value="490-1035-1-ND" x="13.5" y="35" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="NAME" x="15.9" y="35.889" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
 <attribute name="TOLERANCE" value="25%" x="13.5" y="35" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
-<element name="C49" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="14" y="37" smashed="yes" rot="MR180">
+<element name="C48" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="14" y="37" smashed="yes" rot="MR180">
 <attribute name="NAME" x="13.365" y="36.365" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 <attribute name="POPULARITY" value="37" x="14" y="37" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="14" y="37" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="14" y="37" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="14" y="37" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
-<element name="L2" library="microfloat" package="78438357100" value="10uH" x="19.6" y="36.3" smashed="yes" rot="MR0">
+<element name="L4" library="microfloat" package="78438357100" value="10uH" x="19.6" y="36.3" smashed="yes" rot="MR0">
 <attribute name="NAME" x="17.4" y="36.289" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
 <attribute name="TOLERANCE" value="10%" x="19.6" y="36.3" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
@@ -7977,7 +7977,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="TOLERANCE" value="5%" x="22" y="25" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="22" y="25" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
-<element name="C52" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF" x="14" y="39" smashed="yes" rot="MR180">
+<element name="C51" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF" x="14" y="39" smashed="yes" rot="MR180">
 <attribute name="NAME" x="13.365" y="38.365" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 <attribute name="POPULARITY" value="63" x="14" y="39" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="14" y="39" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
@@ -8041,7 +8041,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="TOLERANCE" value="5%" x="36" y="26.2" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="36" y="26.2" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
-<element name="C48" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="36.2" y="36.6" smashed="yes" rot="MR0">
+<element name="C47" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="36.2" y="36.6" smashed="yes" rot="MR0">
 <attribute name="NAME" x="36.835" y="37.235" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
 <attribute name="POPULARITY" value="37" x="36.2" y="36.6" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="36.2" y="36.6" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
@@ -8083,14 +8083,14 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="TOLERANCE" value="5%" x="36" y="33" size="0.8" layer="27" font="vector" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="36" y="33" size="0.8" layer="27" font="vector" display="off"/>
 </element>
-<element name="C54" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="30" y="40" smashed="yes" rot="MR0">
+<element name="C53" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="30" y="40" smashed="yes" rot="MR0">
 <attribute name="NAME" x="30.635" y="40.635" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
 <attribute name="POPULARITY" value="37" x="30" y="40" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="30" y="40" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="30" y="40" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="30" y="40" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
-<element name="C50" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="30" y="38" smashed="yes" rot="MR0">
+<element name="C49" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="30" y="38" smashed="yes" rot="MR0">
 <attribute name="NAME" x="30.635" y="38.635" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
 <attribute name="POPULARITY" value="37" x="30" y="38" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="30" y="38" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
@@ -8183,15 +8183,15 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="C14" pad="2"/>
 <contactref element="U1" pad="7"/>
 <contactref element="C13" pad="2"/>
-<contactref element="C53" pad="2"/>
+<contactref element="C52" pad="2"/>
 <contactref element="C41" pad="2"/>
 <contactref element="R15" pad="1"/>
 <contactref element="R12" pad="2"/>
 <contactref element="C37" pad="2"/>
 <contactref element="C33" pad="2"/>
 <contactref element="C26" pad="2"/>
-<contactref element="C47" pad="2"/>
-<contactref element="C51" pad="2"/>
+<contactref element="C54" pad="2"/>
+<contactref element="C50" pad="2"/>
 <contactref element="U13" pad="1"/>
 <contactref element="R32" pad="1"/>
 <contactref element="U7" pad="1"/>
@@ -8228,7 +8228,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="$$U$1" pad="P$1"/>
 <contactref element="$$U$2" pad="P$1"/>
 <contactref element="$$$$$$U$5" pad="P$1"/>
-<contactref element="U$6" pad="P$1"/>
+<contactref element="$$U$3" pad="P$1"/>
 <contactref element="U11" pad="2"/>
 <contactref element="D1" pad="3"/>
 <contactref element="R23" pad="1"/>
@@ -8281,8 +8281,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="C34" pad="2"/>
 <contactref element="C28" pad="2"/>
 <contactref element="C25" pad="2"/>
-<contactref element="C49" pad="2"/>
-<contactref element="C52" pad="2"/>
+<contactref element="C48" pad="2"/>
+<contactref element="C51" pad="2"/>
 <contactref element="U5" pad="7"/>
 <contactref element="BT1" pad="-"/>
 <contactref element="C56" pad="2"/>
@@ -8292,8 +8292,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="C7" pad="2"/>
 <contactref element="C1" pad="2"/>
 <contactref element="C3" pad="2"/>
-<contactref element="C54" pad="2"/>
-<contactref element="C50" pad="2"/>
+<contactref element="C53" pad="2"/>
+<contactref element="C49" pad="2"/>
 <contactref element="C5" pad="2"/>
 <contactref element="C4" pad="2"/>
 <contactref element="C42" pad="2"/>
@@ -8925,7 +8925,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <vertex x="63.5" y="6.35"/>
 <vertex x="-15.24" y="6.35"/>
 </polygon>
-<contactref element="L4" pad="1"/>
+<contactref element="L3" pad="1"/>
 <contactref element="C40" pad="1"/>
 <contactref element="C32" pad="1"/>
 <contactref element="C38" pad="1"/>
@@ -9440,7 +9440,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <signal name="N$2">
 <contactref element="U9" pad="16"/>
 <contactref element="C43" pad="1"/>
-<contactref element="C48" pad="1"/>
+<contactref element="C47" pad="1"/>
 <wire x1="37.05" y1="34.6" x2="37.05" y2="36.6" width="0.2" layer="16"/>
 <wire x1="37.05" y1="36.6" x2="36.323" y2="37.327" width="0.2" layer="16"/>
 <wire x1="34.705975" y1="37.327" x2="32.2" y2="34.821025" width="0.2" layer="16"/>
@@ -9450,7 +9450,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <signal name="N$4">
 <contactref element="U9" pad="1"/>
 <contactref element="C43" pad="2"/>
-<contactref element="C48" pad="2"/>
+<contactref element="C47" pad="2"/>
 <wire x1="35.35" y1="34.6" x2="33.95" y2="33.2" width="0.2" layer="16"/>
 <wire x1="33.95" y1="33.2" x2="33.435" y2="33.2" width="0.2" layer="16"/>
 <wire x1="35.35" y1="36.6" x2="35.35" y2="34.6" width="0.2" layer="16"/>
@@ -9468,8 +9468,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </signal>
 <signal name="N$10">
 <contactref element="U9" pad="15"/>
-<contactref element="C54" pad="1"/>
-<contactref element="C50" pad="1"/>
+<contactref element="C53" pad="1"/>
+<contactref element="C49" pad="1"/>
 <wire x1="31.4" y1="34.435" x2="31.4" y2="35.6" width="0.2" layer="16"/>
 <wire x1="30.85" y1="36.15" x2="30.85" y2="38" width="0.2" layer="16"/>
 <wire x1="31.4" y1="35.6" x2="30.85" y2="36.15" width="0.2" layer="16"/>
@@ -9595,12 +9595,13 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="40.35" y1="23.5" x2="39.35" y2="24.5" width="0.2" layer="16"/>
 <wire x1="36.551" y1="24.5" x2="36.051" y2="25" width="0.2" layer="16"/>
 <wire x1="39.35" y1="24.5" x2="36.551" y2="24.5" width="0.2" layer="16"/>
-<wire x1="34.05" y1="52.845" x2="34.05" y2="53.698" width="0.2" layer="16"/>
-<wire x1="34.401" y1="54.049" x2="34.05" y2="53.698" width="0.2" layer="16"/>
-<wire x1="34.401" y1="54.049" x2="34.601" y2="54.049" width="0.2" layer="16"/>
-<via x="34.601" y="54.049" extent="1-16" drill="0.2"/>
+<wire x1="34.05" y1="53.698" x2="34.05" y2="52.845" width="0.2" layer="16"/>
+<via x="34.51" y="54" extent="1-16" drill="0.2"/>
 <wire x1="38" y1="47" x2="38" y2="50.65" width="0.2" layer="15"/>
-<wire x1="38" y1="50.65" x2="34.601" y2="54.049" width="0.2" layer="15"/>
+<wire x1="38" y1="50.65" x2="34.65" y2="54" width="0.2" layer="15"/>
+<wire x1="34.65" y1="54" x2="34.51" y2="54" width="0.2" layer="15"/>
+<wire x1="34.51" y1="54" x2="34.352" y2="54" width="0.2" layer="16"/>
+<wire x1="34.352" y1="54" x2="34.05" y2="53.698" width="0.2" layer="16"/>
 </signal>
 <signal name="UART_TX_CTD_A">
 <contactref element="U4" pad="35"/>
@@ -9767,7 +9768,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="22.35" y1="10.65" x2="23.65" y2="9.35" width="0.2" layer="1"/>
 </signal>
 <signal name="XIN32">
-<contactref element="C53" pad="1"/>
+<contactref element="C52" pad="1"/>
 <contactref element="U4" pad="1"/>
 <contactref element="Y1" pad="1"/>
 <via x="9.8" y="39.6" extent="1-16" drill="0.2"/>
@@ -9932,9 +9933,9 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </signal>
 <signal name="VCCA">
 <contactref element="U4" pad="12"/>
-<contactref element="L4" pad="2"/>
-<contactref element="C49" pad="1"/>
-<contactref element="C52" pad="1"/>
+<contactref element="L3" pad="2"/>
+<contactref element="C48" pad="1"/>
+<contactref element="C51" pad="1"/>
 <wire x1="10.93" y1="33.25" x2="12.1708" y2="33.25" width="0.35" layer="1"/>
 <wire x1="12.1708" y1="33.25" x2="12.2604" y2="33.1604" width="0.35" layer="1"/>
 <via x="12.2604" y="33.1604" extent="1-16" drill="0.35"/>
@@ -9946,10 +9947,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="13.15" y1="38.9" x2="13.05" y2="39" width="0.35" layer="16"/>
 </signal>
 <signal name="VCC_CORE">
-<contactref element="C51" pad="1"/>
-<contactref element="C47" pad="1"/>
+<contactref element="C50" pad="1"/>
+<contactref element="C54" pad="1"/>
 <contactref element="U4" pad="89"/>
-<contactref element="L2" pad="1"/>
+<contactref element="L4" pad="1"/>
 <wire x1="20.85" y1="39" x2="20.85" y2="38.8" width="0.2" layer="16"/>
 <wire x1="20.985" y1="37" x2="20.785" y2="36.8" width="0.2" layer="16"/>
 <wire x1="20.785" y1="36.8" x2="20.785" y2="36.3" width="0.2" layer="16"/>
@@ -10031,10 +10032,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="44.094025" y1="38.727" x2="45.321025" y2="37.5" width="0.2" layer="16"/>
 <wire x1="44.094025" y1="38.727" x2="38.2126" y2="38.727" width="0.2" layer="16"/>
 <via x="32" y="47" extent="1-16" drill="0.2"/>
-<wire x1="32" y1="47" x2="31.9" y2="47" width="0.2" layer="16"/>
-<wire x1="31.9" y1="47" x2="31.269" y2="47.631" width="0.2" layer="16"/>
-<wire x1="31.269" y1="47.631" x2="31.269" y2="48.9" width="0.2" layer="16"/>
-<via x="31.269" y="48.9" extent="1-16" drill="0.2"/>
+<wire x1="31.9" y1="47" x2="32" y2="47" width="0.2" layer="16"/>
+<via x="31.25" y="48.9" extent="1-16" drill="0.2"/>
 <wire x1="33.4901875" y1="45.5098125" x2="34.1796125" y2="45.5098125" width="0.2" layer="1"/>
 <wire x1="36.03680625" y1="45.7130125" x2="36.7791375" y2="44.97068125" width="0.2" layer="1"/>
 <wire x1="36.7791375" y1="44.97068125" x2="36.7791375" y2="43.52895625" width="0.2" layer="1"/>
@@ -10048,10 +10047,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="36" y1="41.9219375" x2="36" y2="41.9396" width="0.2" layer="1"/>
 <wire x1="36" y1="41.9396" x2="36.5759375" y2="42.5155375" width="0.2" layer="1"/>
 <wire x1="28.3" y1="49.9" x2="28.3" y2="53.7" width="0.35" layer="1"/>
-<wire x1="28.3655" y1="49.8345" x2="30.6345" y2="49.8345" width="0.2" layer="1"/>
+<wire x1="30" y1="49.8345" x2="28.3655" y2="49.8345" width="0.2" layer="1"/>
 <wire x1="28.3655" y1="49.8345" x2="28.3" y2="49.9" width="0.2" layer="1"/>
-<wire x1="31.269" y1="49.2" x2="30.6345" y2="49.8345" width="0.2" layer="1"/>
-<wire x1="31.269" y1="49.2" x2="31.269" y2="48.9" width="0.2" layer="1"/>
 <contactref element="C9" pad="2"/>
 <contactref element="C2" pad="2"/>
 <wire x1="-10.8" y1="25" x2="-8.9" y2="23.1" width="0.2" layer="1"/>
@@ -10079,6 +10076,12 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-3.168" y1="53.602" x2="-4.2493625" y2="53.602" width="0.6" layer="1"/>
 <wire x1="-4.2493625" y1="53.602" x2="-6.028" y2="51.8233625" width="0.6" layer="1"/>
 <wire x1="-6.028" y1="51.8233625" x2="-6.028" y2="47.25" width="0.6" layer="1"/>
+<wire x1="31.9" y1="47.078975" x2="31.9" y2="47" width="0.2" layer="16"/>
+<wire x1="31.523" y1="47.455975" x2="31.9" y2="47.078975" width="0.2" layer="16"/>
+<wire x1="31.25" y1="48.9" x2="31.523" y2="48.627" width="0.2" layer="16"/>
+<wire x1="31.523" y1="48.627" x2="31.523" y2="47.455975" width="0.2" layer="16"/>
+<wire x1="31.25" y1="48.9" x2="30.9345" y2="48.9" width="0.2" layer="1"/>
+<wire x1="30.9345" y1="48.9" x2="30" y2="49.8345" width="0.2" layer="1"/>
 </signal>
 <signal name="+6V">
 <contactref element="F1" pad="2"/>
@@ -10215,7 +10218,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <signal name="N$39">
 <contactref element="U7" pad="2"/>
 <contactref element="C17" pad="2"/>
-<contactref element="L3" pad="2"/>
+<contactref element="L2" pad="2"/>
 <wire x1="-4" y1="16.845" x2="-4" y2="16" width="0.2" layer="16"/>
 <wire x1="-4" y1="16" x2="-3.4" y2="15.4" width="0.2" layer="16"/>
 <wire x1="-3" y1="15.4" x2="-3.4" y2="15.4" width="0.2" layer="16"/>
@@ -10280,8 +10283,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="35.807175" y1="54" x2="35" y2="53.192825" width="0.2" layer="16"/>
 <wire x1="35" y1="53.192825" x2="35" y2="52.845" width="0.2" layer="16"/>
 <wire x1="37" y1="54" x2="35.807175" y2="54" width="0.2" layer="16"/>
-<wire x1="35.25" y1="49.7" x2="35" y2="49.914284375" width="0.2" layer="16"/>
-<wire x1="35" y1="49.914284375" x2="35" y2="52.845" width="0.2" layer="16"/>
+<wire x1="35.25" y1="49.7" x2="35" y2="49.95" width="0.2" layer="16"/>
+<wire x1="35" y1="49.95" x2="35" y2="52.845" width="0.2" layer="16"/>
 </signal>
 <signal name="N$16">
 <contactref element="U12" pad="4"/>
@@ -10438,7 +10441,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </signal>
 <signal name="N$18">
 <contactref element="R2" pad="2"/>
-<contactref element="L3" pad="1"/>
+<contactref element="L2" pad="1"/>
 <contactref element="C19" pad="1"/>
 <contactref element="C16" pad="1"/>
 <contactref element="F1" pad="1"/>
@@ -10642,7 +10645,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="38.534" y1="32.456" x2="38.039" y2="31.961" width="0.2" layer="16"/>
 </signal>
 <signal name="N$25">
-<contactref element="L2" pad="2"/>
+<contactref element="L4" pad="2"/>
 <contactref element="U4" pad="91"/>
 <via x="17.5302" y="38.5848" extent="1-16" drill="0.2"/>
 <wire x1="18.415" y1="36.3" x2="18.415" y2="37.7" width="0.2" layer="16"/>
