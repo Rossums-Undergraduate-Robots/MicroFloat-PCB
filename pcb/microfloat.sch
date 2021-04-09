@@ -1440,15 +1440,15 @@
 <text x="0" y="2.5" size="0.8" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-0.55" y1="-2.15" x2="0.55" y2="2.15" layer="39"/>
 </package>
-<package name="78438357100">
-<smd name="2" x="1.185" y="0" dx="0.98" dy="3.7" layer="1"/>
-<smd name="1" x="-1.185" y="0" dx="0.98" dy="3.7" layer="1"/>
-<wire x1="0.8" y1="2.175" x2="0.8" y2="-2.175" width="0.127" layer="21"/>
-<wire x1="0.8" y1="-2.175" x2="-0.8" y2="-2.175" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="-2.175" x2="-0.8" y2="2.175" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="2.175" x2="0.8" y2="2.175" width="0.127" layer="21"/>
-<text x="0" y="2.5" size="0.8" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-0.695" y1="-1.85" x2="0.695" y2="1.85" layer="39"/>
+<package name="78438336100">
+<smd name="2" x="1.05" y="0" dx="1.3" dy="3.4" layer="1"/>
+<smd name="1" x="-1.05" y="0" dx="1.3" dy="3.4" layer="1"/>
+<wire x1="0.8" y1="1.775" x2="0.8" y2="-1.775" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-1.775" x2="-0.8" y2="-1.775" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-1.775" x2="-0.8" y2="1.775" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="1.775" x2="0.8" y2="1.775" width="0.127" layer="21"/>
+<text x="0" y="1.9" size="0.8" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-0.4" y1="-1.7" x2="0.4" y2="1.7" layer="39"/>
 </package>
 </packages>
 <packages3d>
@@ -2964,12 +2964,12 @@ SMT Type, PCB Top Mount </description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="78438357100" prefix="L">
+<deviceset name="78438336100" prefix="L">
 <gates>
 <gate name="G$1" symbol="INDUCTOR_SINGLE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="78438357100">
+<device name="" package="78438336100">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$2" pad="2"/>
@@ -20023,7 +20023,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 </spice>
 <attribute name="TOLERANCE" value="1%"/>
 </part>
-<part name="L2" library="microfloat" deviceset="78438357100" device="" value="10uH">
+<part name="L2" library="microfloat" deviceset="78438336100" device="" value="10uH">
 <attribute name="TOLERANCE" value="10%"/>
 </part>
 <part name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF">
@@ -20083,7 +20083,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 </spice>
 <attribute name="TOLERANCE" value="1%"/>
 </part>
-<part name="L1" library="microfloat" deviceset="78438357100" device="" value="10uH">
+<part name="L1" library="microfloat" deviceset="78438336100" device="" value="10uH">
 <attribute name="TOLERANCE" value="10%"/>
 </part>
 <part name="C45" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22uF">
@@ -20481,7 +20481,7 @@ https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012N6R8LT000/445-6
 <attribute name="TOLERANCE" value="5%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
-<part name="L4" library="microfloat" deviceset="78438357100" device="" value="10uH">
+<part name="L4" library="microfloat" deviceset="78438336100" device="" value="10uH">
 <attribute name="TOLERANCE" value="10%"/>
 </part>
 <part name="U$17" library="microfloat" deviceset="VCC_CORE" device=""/>
@@ -24232,7 +24232,7 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/4419fa.pdf</
 <approved hash="208,3,238.76,154.94,+5V,sup,,,,"/>
 <approved hash="111,1,355.6,251.46,SWDIO,,,,,"/>
 <approved hash="113,1,215.796,139.596,FRAME2,,,,,"/>
-<approved hash="113,1,375.699,17.559,FRAME1,,,,,"/>
+<approved hash="113,1,375.691,17.5514,FRAME1,,,,,"/>
 <approved hash="113,2,215.796,139.596,FRAME4,,,,,"/>
 <approved hash="113,3,215.796,139.596,FRAME3,,,,,"/>
 <approved hash="113,1,200.66,256.515,S1,,,,,"/>
