@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.1.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -188,11 +188,9 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYzk2ZTQz" projecturn="a.cGVyc29uYWw6dWUyYzk2ZTQzIzIwMTkwMjE1MTc2NTExNTA2" f3durn="urn:adsk.wipprod:dm.lineage:kBVr3XIRQMefSeK5IowBAA" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="3c45d896-04a7-4eae-b7b8-d7290e07e245" lastsyncedrevisionid="3c45d896-04a7-4eae-b7b8-d7290e07e245" lastboardhashguid="ff6db588-a866-1344-3c75-80f5d7c7692e" lastpushedtime="2021-03-22T20:04:48Z" linktopcb3d="false"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYzk2ZTQz" projecturn="a.cGVyc29uYWw6dWUyYzk2ZTQzI0QyMDE5MDIxNTE3NjUxMTQ4MQ" f3durn="urn:adsk.wipprod:dm.lineage:AfOmo5aTTmaZSwFe0-BHfw" pcbguid="e88fc27c-5493-4e6a-a2d9-5d9857e414b1" lastpulledtime="2021-04-10T20:46:51Z" lastsyncedchangeguid="525d7464-f810-5b46-f92f-39e95de75ce0"/>
 <plain>
 <circle x="24" y="30" radius="38.1" width="0.1524" layer="47"/>
-<wire x1="-6.946071875" y1="7.775" x2="54.946071875" y2="7.775" width="0.1524" layer="20"/>
-<wire x1="-6.946071875" y1="7.775" x2="54.946071875" y2="7.775" width="0.1524" layer="20" curve="-251.370669"/>
 <circle x="24" y="30" radius="44.45" width="0.1524" layer="47"/>
 <text x="15" y="48" size="1.5" layer="21" font="vector" ratio="12" align="center">ECE/ME
 4723
@@ -204,11 +202,13 @@ Arvind S</text>
 <text x="39" y="26" size="1.5" layer="21" font="vector" ratio="12" align="center">MicroFloats!</text>
 <rectangle x1="46" y1="24" x2="51" y2="29" layer="21"/>
 <text x="50" y="30" size="1.5" layer="21" font="vector" ratio="12" align="center">ID:</text>
+<wire x1="-6.946" y1="7.775" x2="54.946" y2="7.775" width="0.254" layer="20"/>
+<wire x1="54.946" y1="7.775" x2="-6.946" y2="7.775" width="0.254" layer="20" curve="251.371"/>
 </plain>
 <libraries>
-<library name="microfloat">
+<library name="microfloat" urn="urn:adsk.eagle:library:27994367">
 <packages>
-<package name="PSON65P250X250X100-8N">
+<package name="PSON65P250X250X100-8N" urn="urn:adsk.eagle:footprint:27994410/1" library_version="1">
 <description>2.5 mm x 2.5 mm x 0.93 mm metal lid LGA</description>
 <text x="-1.256709375" y="1.66246875" size="0.4085875" layer="25">&gt;NAME</text>
 <text x="-1.204140625" y="-2.010759375" size="0.4078" layer="27">&gt;VALUE</text>
@@ -218,11 +218,11 @@ Arvind S</text>
 <wire x1="1.3" y1="1.3" x2="-1.3" y2="1.3" width="0.127" layer="51"/>
 <wire x1="-1.3" y1="-1.385" x2="1.3" y2="-1.385" width="0.127" layer="21"/>
 <wire x1="-1.3" y1="1.385" x2="1.3" y2="1.385" width="0.127" layer="21"/>
-<circle x="1.6" y="1" radius="0.05" width="0.2" layer="21"/>
 <wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.05" layer="39"/>
 <wire x1="1.55" y1="1.55" x2="1.55" y2="-1.55" width="0.05" layer="39"/>
 <wire x1="1.55" y1="-1.55" x2="-1.55" y2="-1.55" width="0.05" layer="39"/>
 <wire x1="-1.55" y1="-1.55" x2="-1.55" y2="1.55" width="0.05" layer="39"/>
+<circle x="1.6" y="1" radius="0.05" width="0.2" layer="21"/>
 <circle x="1" y="1" radius="0.05" width="0.2" layer="51"/>
 <smd name="3" x="0.97" y="-0.325" dx="0.49" dy="0.45" layer="1" roundness="25"/>
 <smd name="2" x="0.97" y="0.325" dx="0.49" dy="0.45" layer="1" roundness="25"/>
@@ -233,7 +233,7 @@ Arvind S</text>
 <smd name="8" x="-0.97" y="0.975" dx="0.49" dy="0.45" layer="1" roundness="25"/>
 <smd name="5" x="-0.97" y="-0.975" dx="0.49" dy="0.45" layer="1" roundness="25"/>
 </package>
-<package name="PQFN50P300X250X97-14N">
+<package name="PQFN50P300X250X97-14N" urn="urn:adsk.eagle:footprint:27994411/1" library_version="1">
 <wire x1="-1.5" y1="-1.25" x2="-1.5" y2="1.25" width="0.127" layer="51"/>
 <wire x1="-1.5" y1="1.25" x2="1.5" y2="1.25" width="0.127" layer="51"/>
 <wire x1="1.5" y1="1.25" x2="1.5" y2="-1.25" width="0.127" layer="51"/>
@@ -457,7 +457,7 @@ Arvind S</text>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 </package>
-<package name="XCVR_NEO-M8N-0">
+<package name="XCVR_NEO-M8N-0" urn="urn:adsk.eagle:footprint:27994412/1" library_version="1">
 <text x="-6.27736875" y="8.52705" size="1.27143125" layer="25">&gt;NAME</text>
 <text x="-7.124459375" y="-9.71455" size="1.271840625" layer="27">&gt;VALUE</text>
 <circle x="-7.889" y="7.036" radius="0.1" width="0.3" layer="21"/>
@@ -788,7 +788,7 @@ Arvind S</text>
 <smd name="23" x="6" y="5.9" dx="1.8" dy="0.8" layer="1" rot="R180" cream="no"/>
 <smd name="24" x="6" y="7" dx="1.8" dy="0.8" layer="1" rot="R180" cream="no"/>
 </package>
-<package name="LR62E">
+<package name="LR62E" urn="urn:adsk.eagle:footprint:27994413/1" library_version="1">
 <wire x1="-5" y1="7.5" x2="-5" y2="-7.5" width="0.127" layer="51"/>
 <wire x1="-5" y1="-7.5" x2="5" y2="-7.5" width="0.127" layer="51"/>
 <wire x1="5" y1="-7.5" x2="5" y2="7.5" width="0.127" layer="51"/>
@@ -807,7 +807,7 @@ Arvind S</text>
 <text x="-5" y="8" size="0.6096" layer="25">&gt;NAME</text>
 <text x="-4.9" y="-8.3" size="0.6096" layer="27">&gt;VALUE</text>
 </package>
-<package name="TE_1909763-1">
+<package name="TE_1909763-1" urn="urn:adsk.eagle:footprint:27994423/1" library_version="1">
 <wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
@@ -822,7 +822,7 @@ Arvind S</text>
 <smd name="3" x="1.475" y="0" dx="1.05" dy="2.2" layer="1"/>
 <smd name="1" x="0" y="-1.525" dx="1" dy="1.05" layer="1"/>
 </package>
-<package name="GCT_USB4105_REVA">
+<package name="GCT_USB4105_REVA" urn="urn:adsk.eagle:footprint:27994420/1" library_version="1">
 <wire x1="-4.32" y1="0.7" x2="-4.02" y2="0.4" width="0.0001" layer="46" curve="-90"/>
 <wire x1="-4.02" y1="0.4" x2="-4.02" y2="-0.4" width="0.0001" layer="46"/>
 <wire x1="-4.02" y1="-0.4" x2="-4.32" y2="-0.7" width="0.0001" layer="46" curve="-90"/>
@@ -858,12 +858,12 @@ Arvind S</text>
 <wire x1="-5.1" y1="-2.85" x2="5.1" y2="-2.85" width="0.05" layer="39"/>
 <wire x1="5.1" y1="-2.85" x2="5.1" y2="5.58" width="0.05" layer="39"/>
 <wire x1="5.1" y1="5.58" x2="-5.1" y2="5.58" width="0.05" layer="39"/>
-<text x="-5.1" y="5.7" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.1" y="-4.3" size="1.27" layer="27">&gt;VALUE</text>
-<text x="5.4" y="-2.5" size="0.4064" layer="51">PCB EDGE</text>
 <wire x1="4.8" y1="-2.6" x2="8.4" y2="-2.6" width="0.1" layer="51"/>
 <wire x1="-4.79" y1="2.65" x2="-4.79" y2="1.4" width="0.2" layer="21"/>
 <wire x1="4.79" y1="2.65" x2="4.79" y2="1.4" width="0.2" layer="21"/>
+<text x="-5.1" y="5.7" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5.1" y="-4.3" size="1.27" layer="27">&gt;VALUE</text>
+<text x="5.4" y="-2.5" size="0.4064" layer="51">PCB EDGE</text>
 <pad name="G1" x="-4.32" y="0" drill="0.6" diameter="1" shape="long" rot="R90"/>
 <pad name="G2" x="4.32" y="0" drill="0.6" diameter="1" shape="long" rot="R90"/>
 <pad name="G3" x="-4.32" y="4.18" drill="0.6" diameter="1.05" shape="long" rot="R90"/>
@@ -883,7 +883,7 @@ Arvind S</text>
 <smd name="A5" x="-1.25" y="4.755" dx="0.3" dy="1.15" layer="1"/>
 <smd name="B8" x="-1.75" y="4.755" dx="0.3" dy="1.15" layer="1"/>
 </package>
-<package name="QFN80P500X500X80-17N">
+<package name="QFN80P500X500X80-17N" urn="urn:adsk.eagle:footprint:27994421/1" library_version="1">
 <rectangle x1="-0.98" y1="-0.98" x2="0.98" y2="0.98" layer="31"/>
 <text x="-3.34" y="-4.105" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
 <text x="-3.34" y="4.105" size="1.27" layer="25">&gt;NAME</text>
@@ -923,7 +923,7 @@ Arvind S</text>
 <smd name="12" x="2.435" y="1.2" dx="0.84" dy="0.32" layer="1" roundness="25"/>
 <smd name="17" x="0" y="0" dx="3.1" dy="3.1" layer="1" cream="no"/>
 </package>
-<package name="PW14">
+<package name="PW14" urn="urn:adsk.eagle:footprint:27994427/1" library_version="1">
 <smd name="1" x="-2.8194" y="1.95" dx="1.6764" dy="0.3556" layer="1"/>
 <smd name="2" x="-2.8194" y="1.3" dx="1.6764" dy="0.3556" layer="1"/>
 <smd name="3" x="-2.8194" y="0.65" dx="1.6764" dy="0.3556" layer="1"/>
@@ -965,7 +965,7 @@ Arvind S</text>
 <text x="-3" y="3" size="0.6096" layer="21" ratio="6">&gt;Name</text>
 <text x="-3" y="-4" size="0.6096" layer="21" ratio="6">&gt;Value</text>
 </package>
-<package name="QFP50P1600X1600X120-100N">
+<package name="QFP50P1600X1600X120-100N" urn="urn:adsk.eagle:footprint:27994430/1" library_version="1">
 <wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="51"/>
 <wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="51"/>
 <wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="51"/>
@@ -1087,7 +1087,7 @@ Arvind S</text>
 <smd name="99" x="-5.5" y="7.67" dx="1.47" dy="0.28" layer="1" roundness="25" rot="R270"/>
 <smd name="100" x="-6" y="7.67" dx="1.47" dy="0.28" layer="1" roundness="25" rot="R270"/>
 </package>
-<package name="SOT95P280X110-6N">
+<package name="SOT95P280X110-6N" urn="urn:adsk.eagle:footprint:27994415/1" library_version="1">
 <wire x1="-0.8" y1="-1.45" x2="0.8" y2="-1.45" width="0.127" layer="51"/>
 <wire x1="0.8" y1="-1.45" x2="0.8" y2="1.45" width="0.127" layer="51"/>
 <wire x1="0.8" y1="1.45" x2="-0.8" y2="1.45" width="0.127" layer="51"/>
@@ -1117,7 +1117,7 @@ Arvind S</text>
 <smd name="5" x="1.155" y="0" dx="1.45" dy="0.59" layer="1" roundness="25"/>
 <smd name="6" x="1.155" y="0.95" dx="1.45" dy="0.59" layer="1" roundness="25"/>
 </package>
-<package name="F1206">
+<package name="F1206" urn="urn:adsk.eagle:footprint:27994432/1" library_version="1">
 <smd name="2" x="1.422" y="0" dx="1.6" dy="1.8" layer="1"/>
 <smd name="1" x="-1.422" y="0" dx="1.6" dy="1.8" layer="1"/>
 <text x="-2.522" y="1.2" size="1" layer="25" font="vector">&gt;NAME</text>
@@ -1128,7 +1128,7 @@ Arvind S</text>
 <wire x1="-2.322" y1="-1" x2="-2.322" y2="1" width="0.2" layer="21"/>
 <rectangle x1="-2.522" y1="-1.2" x2="2.522" y2="1.2" layer="39"/>
 </package>
-<package name="MSE_12_ADI">
+<package name="MSE_12_ADI" urn="urn:adsk.eagle:footprint:27994434/1" library_version="1">
 <smd name="1" x="-2.1844" y="1.625" dx="1.397" dy="0.4318" layer="1"/>
 <smd name="2" x="-2.1844" y="0.975" dx="1.397" dy="0.4318" layer="1"/>
 <smd name="3" x="-2.1844" y="0.325" dx="1.397" dy="0.4318" layer="1"/>
@@ -1199,6 +1199,7 @@ Arvind S</text>
 <wire x1="-1.3462" y1="-2.1336" x2="1.3462" y2="-2.1336" width="0.1524" layer="21"/>
 <wire x1="1.3462" y1="2.1336" x2="-1.3462" y2="2.1336" width="0.1524" layer="21"/>
 <text x="-2.54" y="-2.54" size="1.016" layer="21" font="vector" ratio="6" rot="SR0" align="top-left">&gt;Value</text>
+<text x="-2.54" y="2.54" size="1.016" layer="25" font="vector" ratio="6" rot="SR0">&gt;Name</text>
 <polygon width="0.0254" layer="31">
 <vertex x="-0.7255" y="1.3224"/>
 <vertex x="-0.7255" y="0.1"/>
@@ -1211,13 +1212,12 @@ Arvind S</text>
 <vertex x="0.7255" y="-1.3224"/>
 <vertex x="0.7255" y="-0.1"/>
 </polygon>
-<text x="-2.54" y="2.54" size="1.016" layer="25" font="vector" ratio="6" rot="SR0">&gt;Name</text>
 </package>
-<package name="TEST_POINT">
+<package name="TEST_POINT" urn="urn:adsk.eagle:footprint:27994435/1" library_version="1">
 <circle x="0" y="0" radius="1.5875" width="0.127" layer="21"/>
 <pad name="P$1" x="0" y="0" drill="1.6002" rot="R90"/>
 </package>
-<package name="SOT-23-3">
+<package name="SOT-23-3" urn="urn:adsk.eagle:footprint:27994428/1" library_version="1">
 <wire x1="1.45" y1="0.8" x2="1.45" y2="-0.8" width="0.2" layer="21"/>
 <wire x1="-1.45" y1="-0.8" x2="-1.45" y2="0.8" width="0.2" layer="21"/>
 <wire x1="-1.45" y1="0.8" x2="-0.55" y2="0.8" width="0.2" layer="21"/>
@@ -1228,7 +1228,7 @@ Arvind S</text>
 <smd name="3" x="0" y="1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
 <text x="-2" y="-1" size="1" layer="25" rot="R90">&gt;NAME</text>
 </package>
-<package name="CLP1608-2L_VIS">
+<package name="CLP1608-2L_VIS" urn="urn:adsk.eagle:footprint:27994436/1" library_version="1">
 <smd name="1" x="-0.5969" y="0" dx="0.3302" dy="0.6604" layer="1"/>
 <smd name="2" x="0.2921" y="0" dx="0.9398" dy="0.6604" layer="1"/>
 <wire x1="-0.8128" y1="-0.4064" x2="0.8128" y2="-0.4064" width="0.1524" layer="51"/>
@@ -1242,7 +1242,7 @@ Arvind S</text>
 <text x="-2.9972" y="-2.159" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
 <text x="-3.0226" y="1.016" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
-<package name="CON_1054291110_MOL">
+<package name="CON_1054291110_MOL" urn="urn:adsk.eagle:footprint:27994438/1" library_version="1">
 <smd name="1" x="0" y="0" dx="1.24" dy="3" layer="1"/>
 <smd name="2" x="-2.5" y="0" dx="1.24" dy="3" layer="1"/>
 <smd name="3" x="-5" y="0" dx="1.24" dy="3" layer="1"/>
@@ -1266,7 +1266,6 @@ Arvind S</text>
 <wire x1="0.9398" y1="2.0066" x2="-10.9474" y2="2.0066" width="0.1524" layer="21"/>
 <wire x1="-10.9474" y1="-8.509" x2="0.9398" y2="-8.509" width="0.1524" layer="21"/>
 <wire x1="-12.6746" y1="2.0066" x2="-12.8524" y2="2.0066" width="0.1524" layer="21"/>
-<text x="-13.081" y="-10.795" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
 <wire x1="0" y1="3.2004" x2="0.635" y2="4.7244" width="0.1524" layer="51"/>
 <wire x1="0.635" y1="4.7244" x2="-0.635" y2="4.7244" width="0.1524" layer="51"/>
 <wire x1="-0.635" y1="4.7244" x2="0" y2="3.2004" width="0.1524" layer="51"/>
@@ -1274,9 +1273,10 @@ Arvind S</text>
 <wire x1="2.8702" y1="-7.7978" x2="2.8702" y2="2.9464" width="0.1524" layer="51"/>
 <wire x1="2.8702" y1="2.9464" x2="-12.8524" y2="2.9464" width="0.1524" layer="51"/>
 <wire x1="-12.8524" y1="2.9464" x2="-12.8524" y2="-7.7978" width="0.1524" layer="51"/>
+<text x="-13.081" y="-10.795" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
 <text x="-13.3604" y="4.445" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
-<package name="UCM-MODEM">
+<package name="UCM-MODEM" urn="urn:adsk.eagle:footprint:27994443/1" library_version="1">
 <wire x1="0" y1="0" x2="0" y2="48.3" width="0.127" layer="51"/>
 <wire x1="61" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
 <wire x1="61" y1="0" x2="61" y2="48.3" width="0.127" layer="51"/>
@@ -1291,7 +1291,7 @@ Arvind S</text>
 <circle x="30.5" y="44.45" radius="3.175" width="0" layer="39"/>
 <circle x="3.85" y="3.81" radius="3.175" width="0" layer="39"/>
 </package>
-<package name="FTSH-105-01-F-D-K">
+<package name="FTSH-105-01-F-D-K" urn="urn:adsk.eagle:footprint:27994424/1" library_version="1">
 <pad name="6" x="0" y="0.635" drill="0.71" diameter="1.01"/>
 <pad name="8" x="1.27" y="0.635" drill="0.71" diameter="1.01"/>
 <pad name="4" x="-1.27" y="0.635" drill="0.71" diameter="1.01"/>
@@ -1313,7 +1313,7 @@ Arvind S</text>
 <text x="-3.175" y="3.175" size="1" layer="25">&gt;NAME</text>
 <text x="-3.175" y="-3.175" size="1" layer="27" align="top-left">&gt;VALUE</text>
 </package>
-<package name="XTAL_ABS25-32.768KHZ-6-1-T">
+<package name="XTAL_ABS25-32.768KHZ-6-1-T" urn="urn:adsk.eagle:footprint:27994439/1" library_version="1">
 <wire x1="1.9" y1="4" x2="-1.9" y2="4" width="0.127" layer="51"/>
 <wire x1="-1.9" y1="4" x2="-1.9" y2="-4" width="0.127" layer="51"/>
 <wire x1="-1.9" y1="-4" x2="1.9" y2="-4" width="0.127" layer="51"/>
@@ -1336,7 +1336,7 @@ Arvind S</text>
 <smd name="3" x="1.6" y="-2.75" dx="1.3" dy="1.9" layer="1" rot="R90"/>
 <smd name="4" x="1.6" y="2.75" dx="1.3" dy="1.9" layer="1" rot="R90"/>
 </package>
-<package name="TACTILE_SWITCH_SMD_6.2MM_TALL">
+<package name="TACTILE_SWITCH_SMD_6.2MM_TALL" urn="urn:adsk.eagle:footprint:27994441/1" library_version="1">
 <description>Source: Sparkfun Library
 
 &lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 6.2mm Square&lt;/h3&gt;
@@ -1354,22 +1354,22 @@ Arvind S</text>
 <text x="0" y="3.175" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-3.175" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
-<package name="BR-1632A/HAN">
+<package name="BR-1632A/HAN" urn="urn:adsk.eagle:footprint:27994440/1" library_version="1">
 <description>BR-1632A/HAN RTC Battery
 &lt;br&gt;
 &lt;a href="https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Batteries%20PDFS/BR-1632A_HAN_Dwg.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <pad name="-" x="-7.6" y="0" drill="0.8"/>
 <pad name="+" x="7.6" y="0" drill="0.8"/>
 <circle x="-1.3" y="0" radius="8.75" width="0.127" layer="21"/>
-<text x="9.525" y="0" size="1.27" layer="21" font="vector" rot="R180" align="center">+</text>
-<text x="-10.795" y="0" size="1.27" layer="21" font="vector" rot="R180" align="center">-</text>
-<text x="-1.27" y="8.89" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <circle x="-7.6" y="0" radius="0.889" width="0.127" layer="39"/>
 <circle x="-7.6" y="0" radius="0.889" width="0.127" layer="40"/>
 <circle x="7.6" y="0" radius="0.889" width="0.127" layer="39"/>
 <circle x="7.6" y="0" radius="0.889" width="0.127" layer="40"/>
+<text x="9.525" y="0" size="1.27" layer="21" font="vector" rot="R180" align="center">+</text>
+<text x="-10.795" y="0" size="1.27" layer="21" font="vector" rot="R180" align="center">-</text>
+<text x="-1.27" y="8.89" size="0.8128" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="CAPC6153X500N">
+<package name="CAPC6153X500N" urn="urn:adsk.eagle:footprint:27994444/1" library_version="1">
 <text x="-3.85" y="-3.1" size="0.5" layer="27" align="top-left">&gt;VALUE</text>
 <text x="-3.85" y="3.1" size="0.5" layer="25">&gt;NAME</text>
 <wire x1="3.25" y1="-2.75" x2="-3.25" y2="-2.75" width="0.127" layer="51"/>
@@ -1385,7 +1385,7 @@ Arvind S</text>
 <smd name="1" x="-2.603" y="0" dx="2" dy="5.52" layer="1"/>
 <smd name="2" x="2.603" y="0" dx="2" dy="5.52" layer="1"/>
 </package>
-<package name="SRR3818A-3R9Y">
+<package name="SRR3818A-3R9Y" urn="urn:adsk.eagle:footprint:27994445/1" library_version="1">
 <smd name="2" x="1.35" y="0" dx="1.6" dy="4.3" layer="1"/>
 <smd name="1" x="-1.35" y="0" dx="1.6" dy="4.3" layer="1"/>
 <wire x1="0.8" y1="2.175" x2="0.8" y2="-2.175" width="0.127" layer="21"/>
@@ -1395,7 +1395,7 @@ Arvind S</text>
 <text x="0" y="2.5" size="0.8" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-0.55" y1="-2.15" x2="0.55" y2="2.15" layer="39"/>
 </package>
-<package name="78438336100">
+<package name="78438336100" urn="urn:adsk.eagle:footprint:27994446/1" library_version="1">
 <smd name="2" x="1.05" y="0" dx="1.3" dy="3.4" layer="1"/>
 <smd name="1" x="-1.05" y="0" dx="1.3" dy="3.4" layer="1"/>
 <wire x1="0.8" y1="1.775" x2="0.8" y2="-1.775" width="0.127" layer="21"/>
@@ -1411,6 +1411,130 @@ Arvind S</text>
 <description>TO-236 ITT Intermetall</description>
 <packageinstances>
 <packageinstance name="SOT23-BEC"/>
+</packageinstances>
+</package3d>
+<package3d name="PSON65P250X250X100-8N" urn="urn:adsk.eagle:package:27994475/1" type="box" library_version="1">
+<description>2.5 mm x 2.5 mm x 0.93 mm metal lid LGA</description>
+<packageinstances>
+<packageinstance name="PSON65P250X250X100-8N"/>
+</packageinstances>
+</package3d>
+<package3d name="PQFN50P300X250X97-14N" urn="urn:adsk.eagle:package:27994474/1" type="box" library_version="1">
+<packageinstances>
+<packageinstance name="PQFN50P300X250X97-14N"/>
+</packageinstances>
+</package3d>
+<package3d name="LR62E" urn="urn:adsk.eagle:package:27994472/1" type="box" library_version="1">
+<packageinstances>
+<packageinstance name="LR62E"/>
+</packageinstances>
+</package3d>
+<package3d name="TE_1909763-1" urn="urn:adsk.eagle:package:27994462/2" type="model" library_version="1">
+<packageinstances>
+<packageinstance name="TE_1909763-1"/>
+</packageinstances>
+</package3d>
+<package3d name="GCT_USB4105_REVA" urn="urn:adsk.eagle:package:27994465/2" type="model" library_version="1">
+<packageinstances>
+<packageinstance name="GCT_USB4105_REVA"/>
+</packageinstances>
+</package3d>
+<package3d name="QFN80P500X500X80-17N" urn="urn:adsk.eagle:package:27994464/1" type="box" library_version="1">
+<packageinstances>
+<packageinstance name="QFN80P500X500X80-17N"/>
+</packageinstances>
+</package3d>
+<package3d name="PW14" urn="urn:adsk.eagle:package:27994458/1" type="box" library_version="1">
+<packageinstances>
+<packageinstance name="PW14"/>
+</packageinstances>
+</package3d>
+<package3d name="QFP50P1600X1600X120-100N" urn="urn:adsk.eagle:package:27994455/2" type="model" library_version="1">
+<packageinstances>
+<packageinstance name="QFP50P1600X1600X120-100N"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT95P280X110-6N" urn="urn:adsk.eagle:package:27994470/1" type="box" library_version="1">
+<packageinstances>
+<packageinstance name="SOT95P280X110-6N"/>
+</packageinstances>
+</package3d>
+<package3d name="SRR3818A-3R9Y" urn="urn:adsk.eagle:package:27994481/1" type="box" library_version="1">
+<packageinstances>
+<packageinstance name="SRR3818A-3R9Y"/>
+</packageinstances>
+</package3d>
+<package3d name="78438336100" urn="urn:adsk.eagle:package:27994482/1" type="box" library_version="1">
+<packageinstances>
+<packageinstance name="78438336100"/>
+</packageinstances>
+</package3d>
+<package3d name="F1206" urn="urn:adsk.eagle:package:27994453/1" type="box" library_version="1">
+<packageinstances>
+<packageinstance name="F1206"/>
+</packageinstances>
+</package3d>
+<package3d name="MSE_12_ADI" urn="urn:adsk.eagle:package:27994451/1" type="box" library_version="1">
+<packageinstances>
+<packageinstance name="MSE_12_ADI"/>
+</packageinstances>
+</package3d>
+<package3d name="TEST_POINT" urn="urn:adsk.eagle:package:27994450/2" type="model" library_version="1">
+<packageinstances>
+<packageinstance name="TEST_POINT"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT-23-3" urn="urn:adsk.eagle:package:27994457/1" type="box" library_version="1">
+<packageinstances>
+<packageinstance name="SOT-23-3"/>
+</packageinstances>
+</package3d>
+<package3d name="CLP1608-2L_VIS" urn="urn:adsk.eagle:package:27994449/1" type="box" library_version="1">
+<packageinstances>
+<packageinstance name="CLP1608-2L_VIS"/>
+</packageinstances>
+</package3d>
+<package3d name="CON_1054291110_MOL" urn="urn:adsk.eagle:package:27994447/2" type="model" library_version="1">
+<packageinstances>
+<packageinstance name="CON_1054291110_MOL"/>
+</packageinstances>
+</package3d>
+<package3d name="FTSH-105-01-F-D-K" urn="urn:adsk.eagle:package:27994461/2" type="model" library_version="1">
+<packageinstances>
+<packageinstance name="FTSH-105-01-F-D-K"/>
+</packageinstances>
+</package3d>
+<package3d name="XTAL_ABS25-32.768KHZ-6-1-T" urn="urn:adsk.eagle:package:27994476/1" type="box" library_version="1">
+<packageinstances>
+<packageinstance name="XTAL_ABS25-32.768KHZ-6-1-T"/>
+</packageinstances>
+</package3d>
+<package3d name="TACTILE_SWITCH_SMD_6.2MM_TALL" urn="urn:adsk.eagle:package:27994478/1" type="box" library_version="1">
+<description>Source: Sparkfun Library
+
+&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 6.2mm Square&lt;/h3&gt;
+&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.apem.com/files/apem/brochures/ADTS6-ADTSM-KTSC6.pdf"&gt;Datasheet&lt;/a&gt; (ADTSM63NVTR)&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="TACTILE_SWITCH_SMD_6.2MM_TALL"/>
+</packageinstances>
+</package3d>
+<package3d name="BR-1632A/HAN" urn="urn:adsk.eagle:package:27994477/2" type="model" library_version="1">
+<description>BR-1632A/HAN RTC Battery
+&lt;br&gt;
+&lt;a href="https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Batteries%20PDFS/BR-1632A_HAN_Dwg.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<packageinstances>
+<packageinstance name="BR-1632A/HAN"/>
+</packageinstances>
+</package3d>
+<package3d name="CAPC6153X500N" urn="urn:adsk.eagle:package:27994480/1" type="box" library_version="1">
+<packageinstances>
+<packageinstance name="CAPC6153X500N"/>
+</packageinstances>
+</package3d>
+<package3d name="XCVR_NEO-M8N-0" urn="urn:adsk.eagle:package:27994473/2" type="model" library_version="1">
+<packageinstances>
+<packageinstance name="XCVR_NEO-M8N-0"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -4012,7 +4136,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="R" x="55" y="46" size="0.8" layer="28" font="vector" rot="MR270" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="55" y="46" size="0.8" layer="28" font="vector" rot="MR270" display="off"/>
 </element>
-<element name="U6" library="microfloat" package="PSON65P250X250X100-8N" value="BME280" x="50.25" y="50.75" smashed="yes" rot="R270">
+<element name="U6" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="PSON65P250X250X100-8N" package3d_urn="urn:adsk.eagle:package:27994475/1" value="BME280" x="50.25" y="50.75" smashed="yes" rot="R270">
 <attribute name="DESCRIPTION" value=" BME280 - Humidity, Pressure, Temperature Sensor Evaluation Board " x="50.25" y="50.75" size="0.8" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="DKPN" value="828-1049-ND" x="50.25" y="50.75" size="0.8" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="NAME" x="50.193290625" y="52.41246875" size="0.8" layer="25" font="vector" ratio="10" align="bottom-center"/>
@@ -4031,7 +4155,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="TOLERANCE" value="5%" x="50.37" y="53.1" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="50.37" y="53.1" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
-<element name="U3" library="microfloat" package="PQFN50P300X250X97-14N" value="ICM-42688-P" x="30.65" y="24.5" smashed="yes" rot="R90">
+<element name="U3" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="PQFN50P300X250X97-14N" package3d_urn="urn:adsk.eagle:package:27994474/1" value="ICM-42688-P" x="30.65" y="24.5" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value=" Accelerometer, Gyroscope, 6 Axis Sensor Output " x="30.65" y="24.5" size="0.8" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="DKPN" value="1428-ICM-42688-PCT-ND" x="30.65" y="24.5" size="0.8" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="NAME" x="30.7" y="26.35" size="0.8" layer="25" font="vector" ratio="10" align="bottom-center"/>
@@ -4064,12 +4188,12 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="TOLERANCE" value="5%" x="53" y="46" size="0.8" layer="28" font="vector" rot="MR270" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="53" y="46" size="0.8" layer="28" font="vector" rot="MR270" display="off"/>
 </element>
-<element name="J1" library="microfloat" package="MOLEX_503182-1852" value="503182-1852" x="7.5" y="16.5" smashed="yes" rot="R180">
+<element name="J1" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="MOLEX_503182-1852" value="503182-1852" x="7.5" y="16.5" smashed="yes" rot="R180">
 <attribute name="DESCRIPTION" value=" 10 (8 + 2) Position Card Connector Secure Digital - microSD™ Surface Mount, Right Angle Gold " x="7.5" y="16.5" size="0.8" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="DKPN" value="WM12834CT-ND" x="7.5" y="16.5" size="0.8" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="0.73903125" y="23.913" size="0.8" layer="25" font="vector" ratio="10" align="bottom-center"/>
 </element>
-<element name="T1" library="microfloat" package="SOT23-BEC" package3d_urn="urn:adsk.eagle:package:28748/2" value="MMBT3906" x="18" y="48" smashed="yes" rot="MR0">
+<element name="T1" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="SOT23-BEC" package3d_urn="urn:adsk.eagle:package:28748/2" value="MMBT3906" x="18" y="48" smashed="yes" rot="MR0">
 <attribute name="NAME" x="17.895" y="46.095003125" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 <attribute name="POPULARITY" value="0" x="18" y="48" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
@@ -4103,20 +4227,20 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="R" x="-2" y="39.5" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="TOLERANCE" value="0.1%" x="-2" y="39.5" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
-<element name="U5" library="microfloat" package="XCVR_NEO-M8N-0" value="NEO-M8N-0" x="39.55" y="43.8" smashed="yes" rot="R270">
+<element name="U5" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="XCVR_NEO-M8N-0" package3d_urn="urn:adsk.eagle:package:27994473/2" value="NEO-M8N-0" x="39.55" y="43.8" smashed="yes" rot="R270">
 <attribute name="DESCRIPTION" value=" NEO-M8 RF Receiver BeiDou, Galileo, GLONASS, GNSS, GPS 1.575GHz -167dBm " x="62.409996875" y="60.31" size="0.8" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="DKPN" value="672-NEO-M8N-0CT-ND" x="62.409996875" y="60.31" size="0.8" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="NAME" x="47.52263125" y="51.477046875" size="0.8" layer="25" font="vector" ratio="10" align="bottom-center"/>
 </element>
-<element name="U2" library="microfloat" package="LR62E" value="LR62E" x="50.5" y="18.25" smashed="yes" rot="R270">
+<element name="U2" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="LR62E" package3d_urn="urn:adsk.eagle:package:27994472/1" value="LR62E" x="50.5" y="18.25" smashed="yes" rot="R270">
 <attribute name="DKPN" value="1914-LR62ECT-ND" x="69.55" y="30.95" size="0.8" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="NAME" x="42.95" y="23.6" size="0.8" layer="25"/>
 <attribute name="VALUE" x="42.2" y="23.15" size="0.6096" layer="27" rot="R270"/>
 </element>
-<element name="J6" library="microfloat" package="TE_1909763-1" value="1909763-1" x="43.5" y="56" smashed="yes" rot="R270">
+<element name="J6" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="TE_1909763-1" package3d_urn="urn:adsk.eagle:package:27994462/2" value="1909763-1" x="43.5" y="56" smashed="yes" rot="R270">
 <attribute name="NAME" x="44.09803125" y="58.30196875" size="0.8" layer="25" font="vector"/>
 </element>
-<element name="J3" library="microfloat" package="GCT_USB4105_REVA" value="USB4105_REVA" x="59" y="28.5" smashed="yes" rot="R90">
+<element name="J3" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="GCT_USB4105_REVA" package3d_urn="urn:adsk.eagle:package:27994465/2" value="USB4105_REVA" x="59" y="28.5" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value=" USB-C (USB TYPE-C) USB 2.0 Receptacle Connector 24 (16+8 Dummy) Position Surface Mount, Right Angle; Through Hole " x="59" y="28.5" size="0.8" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="DIGI-KEY_PART_NUMBER" value="" x="59" y="28.5" size="0.8" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="MF" value="Global Connector Technology" x="59" y="28.5" size="0.8" layer="27" font="vector" rot="R90" display="off"/>
@@ -4124,7 +4248,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="60.5" y="33.6" size="0.8" layer="25" font="vector" ratio="10" align="bottom-center"/>
 <attribute name="PACKAGE" value="Package " x="59" y="28.5" size="0.8" layer="27" font="vector" rot="R90" display="off"/>
 </element>
-<element name="U9" library="microfloat" package="QFN80P500X500X80-17N" value="MAX13237EETE" x="31" y="32" smashed="yes" rot="MR0">
+<element name="U9" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="QFN80P500X500X80-17N" package3d_urn="urn:adsk.eagle:package:27994464/1" value="MAX13237EETE" x="31" y="32" smashed="yes" rot="MR0">
 <attribute name="DESCRIPTION" value=" 1/1 Transceiver Full RS232 16-TQFN (5x5) " x="31" y="32" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="DIGI-KEY_PART_NUMBER" value="MAX13237EETE+TTR-ND" x="31" y="32" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MF" value="Maxim Integrated" x="31" y="32" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
@@ -4132,7 +4256,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="33.07" y="35.089" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
 <attribute name="PACKAGE" value="WQFN-16 Maxim Integrated" x="31" y="32" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
-<element name="U1" library="microfloat" package="PW14" value="TXB0104PWR" x="23" y="15" smashed="yes" rot="R270">
+<element name="U1" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="PW14" package3d_urn="urn:adsk.eagle:package:27994458/1" value="TXB0104PWR" x="23" y="15" smashed="yes" rot="R270">
 <attribute name="DATASHEET_URL" value="http://www.ti.com/lit/gpn/TXB0104" x="23" y="15" size="0.8" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="DESCRIPTION" value="4-Bit Bidirectional Voltage-Level Translator with Auto Direction Sensing and +/-15 kV ESD Protect" x="23" y="15" size="0.8" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="TXB0104PWR" x="23" y="15" size="0.8" layer="27" font="vector" rot="R270" display="off"/>
@@ -4225,7 +4349,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="R" x="19" y="66" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 <attribute name="TOLERANCE" value="0.1%" x="19" y="66" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 </element>
-<element name="U4" library="microfloat" package="QFP50P1600X1600X120-100N" value="ATSAMD51N20A-AUT" x="18.6" y="32.75" smashed="yes">
+<element name="U4" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="QFP50P1600X1600X120-100N" package3d_urn="urn:adsk.eagle:package:27994455/2" value="ATSAMD51N20A-AUT" x="18.6" y="32.75" smashed="yes">
 <attribute name="AVAILABILITY" value="Warning" x="18.6" y="32.75" size="0.8" layer="27" font="vector" display="off"/>
 <attribute name="DESCRIPTION" value=" ARM® Cortex®-M4F SAM D51 Microcontroller IC 32-Bit 120MHz 1MB (1M x 8) FLASH 100-TQFP (14x14) " x="18.6" y="32.75" size="0.8" layer="27" font="vector" display="off"/>
 <attribute name="MF" value="Microchip" x="18.6" y="32.75" size="0.8" layer="27" font="vector" display="off"/>
@@ -4235,7 +4359,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="PRICE" value="None" x="18.6" y="32.75" size="0.8" layer="27" font="vector" display="off"/>
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/ATSAMD51N20A-AU/?ref=eda" x="18.6" y="32.75" size="0.8" layer="27" font="vector" display="off"/>
 </element>
-<element name="U13" library="microfloat" package="SOT95P280X110-6N" value="TPS54308DDCT" x="5" y="54" smashed="yes" rot="MR90">
+<element name="U13" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="SOT95P280X110-6N" package3d_urn="urn:adsk.eagle:package:27994470/1" value="TPS54308DDCT" x="5" y="54" smashed="yes" rot="MR90">
 <attribute name="DESCRIPTION" value=" 4.5V to 28V Input, 3A Output, Synchronous 350kHz FCCM Step-Down Converter 6-SOT-23-THIN -40 to 125 " x="12" y="49" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 <attribute name="DIGI-KEY_PART_NUMBER" value="296-47881-1-ND" x="12" y="49" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 <attribute name="MF" value="Texas Instruments" x="12" y="49" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
@@ -4263,11 +4387,11 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="R" x="13.5" y="46" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="8.5" y="54" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
-<element name="L6" library="microfloat" package="SRR3818A-3R9Y" value="3.9uH" x="-3.9" y="50.6" smashed="yes" rot="MR180">
+<element name="L6" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="SRR3818A-3R9Y" package3d_urn="urn:adsk.eagle:package:27994481/1" value="3.9uH" x="-3.9" y="50.6" smashed="yes" rot="MR180">
 <attribute name="NAME" x="-3.923" y="48.231" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 <attribute name="TOLERANCE" value="10%" x="-3.9" y="50.6" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
-<element name="U7" library="microfloat" package="SOT95P280X110-6N" value="TPS54308DDCT" x="-4" y="18" smashed="yes" rot="MR90">
+<element name="U7" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="SOT95P280X110-6N" package3d_urn="urn:adsk.eagle:package:27994470/1" value="TPS54308DDCT" x="-4" y="18" smashed="yes" rot="MR90">
 <attribute name="DESCRIPTION" value=" 4.5V to 28V Input, 3A Output, Synchronous 350kHz FCCM Step-Down Converter 6-SOT-23-THIN -40 to 125 " x="3" y="13" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 <attribute name="DIGI-KEY_PART_NUMBER" value="296-47881-1-ND" x="3" y="13" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 <attribute name="MF" value="Texas Instruments" x="3" y="13" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
@@ -4302,7 +4426,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="R" x="-11" y="31.25" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="-6" y="23.25" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
-<element name="L2" library="microfloat" package="78438336100" value="10uH" x="-0.3" y="14.2" smashed="yes" rot="MR90">
+<element name="L2" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="78438336100" package3d_urn="urn:adsk.eagle:package:27994482/1" value="10uH" x="-0.3" y="14.2" smashed="yes" rot="MR90">
 <attribute name="NAME" x="-0.3" y="12.411" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 <attribute name="TOLERANCE" value="10%" x="-0.3" y="14.2" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 </element>
@@ -4320,7 +4444,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="TOLERANCE" value="5%" x="-8" y="17" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="VOLTAGE" value="16V" x="-8" y="17" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
-<element name="U10" library="microfloat" package="SOT95P280X110-6N" value="TPS54308DDCT" x="47" y="34" smashed="yes" rot="MR270">
+<element name="U10" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="SOT95P280X110-6N" package3d_urn="urn:adsk.eagle:package:27994470/1" value="TPS54308DDCT" x="47" y="34" smashed="yes" rot="MR270">
 <attribute name="DESCRIPTION" value=" 4.5V to 28V Input, 3A Output, Synchronous 350kHz FCCM Step-Down Converter 6-SOT-23-THIN -40 to 125 " x="40" y="39" size="0.8" layer="28" font="vector" rot="MR270" display="off"/>
 <attribute name="DIGI-KEY_PART_NUMBER" value="296-47881-1-ND" x="40" y="39" size="0.8" layer="28" font="vector" rot="MR270" display="off"/>
 <attribute name="MF" value="Texas Instruments" x="40" y="39" size="0.8" layer="28" font="vector" rot="MR270" display="off"/>
@@ -4348,7 +4472,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="R" x="37.5" y="40" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="42.5" y="32" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
-<element name="L1" library="microfloat" package="78438336100" value="10uH" x="47" y="34" smashed="yes">
+<element name="L1" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="78438336100" package3d_urn="urn:adsk.eagle:package:27994482/1" value="10uH" x="47" y="34" smashed="yes">
 <attribute name="NAME" x="47.1" y="31.111" size="0.8" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
 <attribute name="TOLERANCE" value="10%" x="47" y="34" size="0.8" layer="27" font="vector" display="off"/>
 </element>
@@ -4373,7 +4497,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="TOLERANCE" value="5%" x="-4" y="13.5" size="0.8" layer="28" font="vector" rot="MR270" display="off"/>
 <attribute name="VOLTAGE" value="35V" x="-4" y="13.5" size="0.8" layer="28" font="vector" rot="MR270" display="off"/>
 </element>
-<element name="U12" library="microfloat" package="SOT95P280X110-6N" value="TPS54308DDCT" x="35" y="54" smashed="yes" rot="MR90">
+<element name="U12" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="SOT95P280X110-6N" package3d_urn="urn:adsk.eagle:package:27994470/1" value="TPS54308DDCT" x="35" y="54" smashed="yes" rot="MR90">
 <attribute name="DESCRIPTION" value=" 4.5V to 28V Input, 3A Output, Synchronous 350kHz FCCM Step-Down Converter 6-SOT-23-THIN -40 to 125 " x="42" y="49" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 <attribute name="DIGI-KEY_PART_NUMBER" value="296-47881-1-ND" x="42" y="49" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 <attribute name="MF" value="Texas Instruments" x="42" y="49" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
@@ -4408,7 +4532,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="R" x="26.5" y="63" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="31.5" y="55" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
-<element name="L5" library="microfloat" package="SRR3818A-3R9Y" value="3.9uH" x="33.9" y="49.7" smashed="yes" rot="MR0">
+<element name="L5" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="SRR3818A-3R9Y" package3d_urn="urn:adsk.eagle:package:27994481/1" value="3.9uH" x="33.9" y="49.7" smashed="yes" rot="MR0">
 <attribute name="NAME" x="33.9" y="47.411" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 <attribute name="TOLERANCE" value="10%" x="33.9" y="49.7" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
@@ -4462,16 +4586,16 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="R" x="54.8" y="38.8" size="0.8" layer="28" font="vector" rot="MR270" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="54.8" y="38.8" size="0.8" layer="28" font="vector" rot="MR270" display="off"/>
 </element>
-<element name="F5" library="microfloat" package="F1206" value="0.5A" x="28.5" y="48.5" smashed="yes" rot="MR0">
+<element name="F5" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="F1206" package3d_urn="urn:adsk.eagle:package:27994453/1" value="0.5A" x="28.5" y="48.5" smashed="yes" rot="MR0">
 <attribute name="NAME" x="28.478" y="47.2" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 </element>
-<element name="F6" library="microfloat" package="F1206" value="2A" x="1" y="49" smashed="yes" rot="MR0">
+<element name="F6" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="F1206" package3d_urn="urn:adsk.eagle:package:27994453/1" value="2A" x="1" y="49" smashed="yes" rot="MR0">
 <attribute name="NAME" x="1.018" y="47.8" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 </element>
-<element name="F1" library="microfloat" package="F1206" value="0.25A" x="-9" y="22.5" smashed="yes" rot="MR90">
+<element name="F1" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="F1206" package3d_urn="urn:adsk.eagle:package:27994453/1" value="0.25A" x="-9" y="22.5" smashed="yes" rot="MR90">
 <attribute name="NAME" x="-10.878" y="22.5" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="center"/>
 </element>
-<element name="F3" library="microfloat" package="F1206" value="0.6A" x="38.5" y="31" smashed="yes" rot="MR180">
+<element name="F3" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="F1206" package3d_urn="urn:adsk.eagle:package:27994453/1" value="0.6A" x="38.5" y="31" smashed="yes" rot="MR180">
 <attribute name="NAME" x="38.19" y="32.176" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
 </element>
 <element name="C36" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uF" x="50.5" y="31" smashed="yes" rot="MR180">
@@ -4505,7 +4629,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="R" x="40.7" y="28" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 <attribute name="TOLERANCE" value="0.1%" x="40.7" y="28" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 </element>
-<element name="U8" library="microfloat" package="MSE_12_ADI" value="LTC4419CMSEPBF" x="45" y="27" smashed="yes" rot="MR0">
+<element name="U8" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="MSE_12_ADI" package3d_urn="urn:adsk.eagle:package:27994451/1" value="LTC4419CMSEPBF" x="45" y="27" smashed="yes" rot="MR0">
 <attribute name="BUILT_BY" value="EMA_Jessica" x="45" y="27" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="COPYRIGHT" value="Copyright (C) 2016 Accelerated Designs. All rights reserved" x="45" y="27" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="LTC4419CMSE#PBF" x="45" y="27" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
@@ -4526,22 +4650,22 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="TOLERANCE" value="5%" x="38.7" y="28" size="0.8" layer="28" font="vector" rot="MR270" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="38.7" y="28" size="0.8" layer="28" font="vector" rot="MR270" display="off"/>
 </element>
-<element name="$$$$U$5" library="microfloat" package="TEST_POINT" value="TEST_POINT" x="47" y="54.5" smashed="yes"/>
-<element name="$$U$5" library="microfloat" package="TEST_POINT" value="TEST_POINT" x="6.5" y="41.5" smashed="yes"/>
-<element name="$$$$U$3" library="microfloat" package="TEST_POINT" value="TEST_POINT" x="-12.205" y="26.791" smashed="yes"/>
-<element name="$$$$$$U$2" library="microfloat" package="TEST_POINT" value="TEST_POINT" x="50.53" y="35.02" smashed="yes"/>
-<element name="$$$$U$2" library="microfloat" package="TEST_POINT" value="TEST_POINT" x="-8.77" y="14.3" smashed="yes"/>
-<element name="$$$$$$U$5" library="microfloat" package="TEST_POINT" value="TEST_POINT" x="5.53" y="60.59" smashed="yes"/>
-<element name="$$U$2" library="microfloat" package="TEST_POINT" value="TEST_POINT" x="44" y="10" smashed="yes"/>
-<element name="$$U$1" library="microfloat" package="TEST_POINT" value="TEST_POINT" x="17.53" y="9.97" smashed="yes"/>
-<element name="$$U$3" library="microfloat" package="TEST_POINT" value="TEST_POINT" x="29.63" y="45.16" smashed="yes"/>
-<element name="U11" library="microfloat" package="SOT-23-3" value="SQ2348ES-T1_GE3" x="6" y="45" smashed="yes" rot="MR0">
+<element name="$$$$U$5" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="TEST_POINT" package3d_urn="urn:adsk.eagle:package:27994450/2" value="TEST_POINT" x="47" y="54.5" smashed="yes"/>
+<element name="$$U$5" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="TEST_POINT" package3d_urn="urn:adsk.eagle:package:27994450/2" value="TEST_POINT" x="6.5" y="41.5" smashed="yes"/>
+<element name="$$$$U$3" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="TEST_POINT" package3d_urn="urn:adsk.eagle:package:27994450/2" value="TEST_POINT" x="-12.205" y="26.791" smashed="yes"/>
+<element name="$$$$$$U$2" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="TEST_POINT" package3d_urn="urn:adsk.eagle:package:27994450/2" value="TEST_POINT" x="50.53" y="35.02" smashed="yes"/>
+<element name="$$$$U$2" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="TEST_POINT" package3d_urn="urn:adsk.eagle:package:27994450/2" value="TEST_POINT" x="-8.77" y="14.3" smashed="yes"/>
+<element name="$$$$$$U$5" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="TEST_POINT" package3d_urn="urn:adsk.eagle:package:27994450/2" value="TEST_POINT" x="5.53" y="60.59" smashed="yes"/>
+<element name="$$U$2" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="TEST_POINT" package3d_urn="urn:adsk.eagle:package:27994450/2" value="TEST_POINT" x="44" y="10" smashed="yes"/>
+<element name="$$U$1" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="TEST_POINT" package3d_urn="urn:adsk.eagle:package:27994450/2" value="TEST_POINT" x="17.53" y="9.97" smashed="yes"/>
+<element name="$$U$3" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="TEST_POINT" package3d_urn="urn:adsk.eagle:package:27994450/2" value="TEST_POINT" x="29.63" y="45.16" smashed="yes"/>
+<element name="U11" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="SOT-23-3" package3d_urn="urn:adsk.eagle:package:27994457/1" value="SQ2348ES-T1_GE3" x="6" y="45" smashed="yes" rot="MR0">
 <attribute name="NAME" x="4.8" y="42.4" size="0.8" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
 </element>
-<element name="D1" library="microfloat" package="SOT-23-3" value="GSOT04-E3-08" x="13" y="47" smashed="yes" rot="MR180">
+<element name="D1" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="SOT-23-3" package3d_urn="urn:adsk.eagle:package:27994457/1" value="GSOT04-E3-08" x="13" y="47" smashed="yes" rot="MR180">
 <attribute name="NAME" x="14" y="46" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 </element>
-<element name="CR1" library="microfloat" package="CLP1608-2L_VIS" value="VSKY20401608-G4-08" x="3" y="46" smashed="yes" rot="MR270">
+<element name="CR1" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="CLP1608-2L_VIS" package3d_urn="urn:adsk.eagle:package:27994449/1" value="VSKY20401608-G4-08" x="3" y="46" smashed="yes" rot="MR270">
 <attribute name="BUILT_BY" value="EMA_Cory" x="3" y="46" size="0.8" layer="28" font="vector" rot="MR270" display="off"/>
 <attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" x="3" y="46" size="0.8" layer="28" font="vector" rot="MR270" display="off"/>
 <attribute name="DATASHEET" value="https://www.vishay.com/docs/85892/vsky20401608.pdf" x="3" y="46" size="0.8" layer="28" font="vector" rot="MR270" display="off"/>
@@ -4562,7 +4686,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="R" x="9" y="44" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="9" y="44" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 </element>
-<element name="J4" library="microfloat" package="CON_1054291110_MOL" value="1054291110" x="-7.5" y="38" smashed="yes" rot="R90">
+<element name="J4" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="CON_1054291110_MOL" package3d_urn="urn:adsk.eagle:package:27994447/2" value="1054291110" x="-7.5" y="38" smashed="yes" rot="R90">
 <attribute name="BUILT_BY" value="Molex_Team" x="-7.5" y="38" size="0.8" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" x="-7.5" y="38" size="0.8" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="1054291110" x="-7.5" y="38" size="0.8" layer="27" font="vector" rot="R90" display="off"/>
@@ -4570,7 +4694,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SOURCELIBRARY" value="Add_to_database_2021-02-05" x="-7.5" y="38" size="0.8" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="VENDOR" value="Molex Connector Corporation" x="-7.5" y="38" size="0.8" layer="27" font="vector" rot="R90" display="off"/>
 </element>
-<element name="J2" library="microfloat" package="CON_1054291110_MOL" value="1054291110" x="39" y="17.5" smashed="yes">
+<element name="J2" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="CON_1054291110_MOL" package3d_urn="urn:adsk.eagle:package:27994447/2" value="1054291110" x="39" y="17.5" smashed="yes">
 <attribute name="BUILT_BY" value="Molex_Team" x="39" y="17.5" size="0.8" layer="27" font="vector" display="off"/>
 <attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" x="39" y="17.5" size="0.8" layer="27" font="vector" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="1054291110" x="39" y="17.5" size="0.8" layer="27" font="vector" display="off"/>
@@ -4584,12 +4708,12 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="R" x="20" y="15" size="0.8" layer="28" font="vector" rot="MR270" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="20" y="15" size="0.8" layer="28" font="vector" rot="MR270" display="off"/>
 </element>
-<element name="F2" library="microfloat" package="F1206" value="0.5A" x="51.2" y="26.5" smashed="yes" rot="MR0">
+<element name="F2" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="F1206" package3d_urn="urn:adsk.eagle:package:27994453/1" value="0.5A" x="51.2" y="26.5" smashed="yes" rot="MR0">
 <attribute name="NAME" x="50.545" y="25.259" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 </element>
-<element name="$$$$$$U$1" library="microfloat" package="TEST_POINT" value="TEST_POINT" x="54.25" y="10" smashed="yes"/>
-<element name="$$$$U$4" library="microfloat" package="TEST_POINT" value="TEST_POINT" x="-12.29" y="30.04" smashed="yes"/>
-<element name="$$$$$$U$4" library="microfloat" package="TEST_POINT" value="TEST_POINT" x="47" y="58" smashed="yes"/>
+<element name="$$$$$$U$1" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="TEST_POINT" package3d_urn="urn:adsk.eagle:package:27994450/2" value="TEST_POINT" x="54.25" y="10" smashed="yes"/>
+<element name="$$$$U$4" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="TEST_POINT" package3d_urn="urn:adsk.eagle:package:27994450/2" value="TEST_POINT" x="-12.29" y="30.04" smashed="yes"/>
+<element name="$$$$$$U$4" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="TEST_POINT" package3d_urn="urn:adsk.eagle:package:27994450/2" value="TEST_POINT" x="47" y="58" smashed="yes"/>
 <element name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uF" x="39.5" y="23.5" smashed="yes" rot="MR0">
 <attribute name="NAME" x="39.494" y="22.474" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 <attribute name="POPULARITY" value="37" x="39.5" y="23.5" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
@@ -4630,10 +4754,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="TOLERANCE" value="20%" x="-4.25" y="47.25" size="0.8" layer="27" font="vector" display="off"/>
 <attribute name="VOLTAGE" value="25V" x="-4.25" y="47.25" size="0.8" layer="27" font="vector" display="off"/>
 </element>
-<element name="F4" library="microfloat" package="F1206" value="3A" x="-1.92" y="44.14" smashed="yes" rot="MR180">
+<element name="F4" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="F1206" package3d_urn="urn:adsk.eagle:package:27994453/1" value="3A" x="-1.92" y="44.14" smashed="yes" rot="MR180">
 <attribute name="NAME" x="-1.942" y="42.94" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 </element>
-<element name="U$1" library="microfloat" package="UCM-MODEM" value="" x="-8" y="5.775" smashed="yes"/>
+<element name="U$1" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="UCM-MODEM" value="" x="-8" y="5.775" smashed="yes"/>
 <element name="C31" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="22.5" y="30" smashed="yes" rot="MR180">
 <attribute name="NAME" x="22.465" y="28.965" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 <attribute name="POPULARITY" value="37" x="22.5" y="30" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
@@ -4648,7 +4772,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="TOLERANCE" value="5%" x="16.5" y="32" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="16.5" y="32" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
-<element name="J5" library="microfloat" package="FTSH-105-01-F-D-K" value="JTAG-MINI" x="57" y="38" smashed="yes" rot="R90">
+<element name="J5" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="FTSH-105-01-F-D-K" package3d_urn="urn:adsk.eagle:package:27994461/2" value="JTAG-MINI" x="57" y="38" smashed="yes" rot="R90">
 <attribute name="NAME" x="59.125" y="41.375" size="0.8" layer="25" font="vector" ratio="10" align="bottom-center"/>
 </element>
 <element name="L3" library="RoboJackets-Inductors" package="0805" value="FB-30Ohm" x="13.5" y="35" smashed="yes" rot="MR0">
@@ -4663,11 +4787,11 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="TOLERANCE" value="5%" x="14" y="37" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="14" y="37" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
-<element name="L4" library="microfloat" package="78438336100" value="10uH" x="19.6" y="36.1" smashed="yes" rot="MR0">
+<element name="L4" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="78438336100" package3d_urn="urn:adsk.eagle:package:27994482/1" value="10uH" x="19.6" y="36.1" smashed="yes" rot="MR0">
 <attribute name="NAME" x="20.5" y="34.111" size="0.8" layer="26" font="vector" ratio="10" rot="MR180" align="bottom-center"/>
 <attribute name="TOLERANCE" value="10%" x="19.6" y="36.1" size="0.8" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
-<element name="Y1" library="microfloat" package="XTAL_ABS25-32.768KHZ-6-1-T" value="ABS25-32.768KHZ-6-1-T" x="5.6" y="35.7" smashed="yes" rot="R270">
+<element name="Y1" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="XTAL_ABS25-32.768KHZ-6-1-T" package3d_urn="urn:adsk.eagle:package:27994476/1" value="ABS25-32.768KHZ-6-1-T" x="5.6" y="35.7" smashed="yes" rot="R270">
 <attribute name="DESCRIPTION" value=" 32.768kHz ±10ppm Crystal 6pF 50 kOhms 4-SOJ, 5.50mm pitch " x="5.6" y="35.7" size="0.8" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="DIGI-KEY_PART_NUMBER" value="535-10241-1-ND" x="5.6" y="35.7" size="0.8" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="MF" value="Abracon" x="5.6" y="35.7" size="0.8" layer="27" font="vector" rot="R270" display="off"/>
@@ -4676,7 +4800,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="PACKAGE" value="4-4 Abracon" x="5.6" y="35.7" size="0.8" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/ABS25-32.768KHZ-6-1-T/?ref=eda" x="5.6" y="35.7" size="0.8" layer="27" font="vector" rot="R270" display="off"/>
 </element>
-<element name="S1" library="microfloat" package="TACTILE_SWITCH_SMD_6.2MM_TALL" value="" x="52.75" y="44.5" smashed="yes">
+<element name="S1" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="TACTILE_SWITCH_SMD_6.2MM_TALL" package3d_urn="urn:adsk.eagle:package:27994478/1" value="" x="52.75" y="44.5" smashed="yes">
 <attribute name="NAME" x="52.75" y="47.675" size="0.8" layer="25" font="vector" ratio="10" align="bottom-center"/>
 <attribute name="VALUE" x="52.75" y="41.325" size="0.8" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
@@ -4686,7 +4810,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="R" x="51" y="46" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="51" y="46" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 </element>
-<element name="J7" library="microfloat" package="CON_1054291110_MOL" value="1054291110" x="38.3" y="60.2" smashed="yes">
+<element name="J7" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="CON_1054291110_MOL" package3d_urn="urn:adsk.eagle:package:27994447/2" value="1054291110" x="38.3" y="60.2" smashed="yes">
 <attribute name="BUILT_BY" value="Molex_Team" x="20.3" y="78.2" size="0.8" layer="27" font="vector" display="off"/>
 <attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" x="20.3" y="78.2" size="0.8" layer="27" font="vector" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="1054291110" x="20.3" y="78.2" size="0.8" layer="27" font="vector" display="off"/>
@@ -4694,7 +4818,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SOURCELIBRARY" value="Add_to_database_2021-02-05" x="20.3" y="78.2" size="0.8" layer="27" font="vector" display="off"/>
 <attribute name="VENDOR" value="Molex Connector Corporation" x="20.3" y="78.2" size="0.8" layer="27" font="vector" display="off"/>
 </element>
-<element name="J8" library="microfloat" package="CON_1054291110_MOL" value="1054291110" x="21.75" y="62" smashed="yes">
+<element name="J8" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="CON_1054291110_MOL" package3d_urn="urn:adsk.eagle:package:27994447/2" value="1054291110" x="21.75" y="62" smashed="yes">
 <attribute name="BUILT_BY" value="Molex_Team" x="3.75" y="80" size="0.8" layer="27" font="vector" display="off"/>
 <attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" x="3.75" y="80" size="0.8" layer="27" font="vector" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="1054291110" x="3.75" y="80" size="0.8" layer="27" font="vector" display="off"/>
@@ -4751,7 +4875,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="TOLERANCE" value="5%" x="14" y="39" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="14" y="39" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
-<element name="BT1" library="microfloat" package="BR-1632A/HAN" value="BATTERY" x="52" y="32" smashed="yes" rot="MR90">
+<element name="BT1" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="BR-1632A/HAN" package3d_urn="urn:adsk.eagle:package:27994477/2" value="BATTERY" x="52" y="32" smashed="yes" rot="MR90">
 <attribute name="DKPN" value="P023-ND" x="52" y="32" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic - BSG" x="52" y="32" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
 <attribute name="MOPN" value="658-BR1632A/HAN" x="52" y="32" size="0.8" layer="28" font="vector" rot="MR90" display="off"/>
@@ -4892,8 +5016,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="TOLERANCE" value="5%" x="45" y="18.6" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="45" y="18.6" size="0.8" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
-<element name="$$$$$$U$3" library="microfloat" package="TEST_POINT" value="TEST_POINT" x="3" y="41.5" smashed="yes"/>
-<element name="C9" library="microfloat" package="CAPC6153X500N" value="KCM55TR7YA336MH01L" x="5" y="52.5" smashed="yes" rot="R90">
+<element name="$$$$$$U$3" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="TEST_POINT" package3d_urn="urn:adsk.eagle:package:27994450/2" value="TEST_POINT" x="3" y="41.5" smashed="yes"/>
+<element name="C9" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="CAPC6153X500N" package3d_urn="urn:adsk.eagle:package:27994480/1" value="KCM55TR7YA336MH01L" x="5" y="52.5" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value=" SMD Capacitor X7R(EIA) with Capacitance: 33uF Tol. 20%. Rated Voltage: 35Vdc " x="5" y="52.5" size="0.8" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="DIGI-KEY_PART_NUMBER" value="490-16299-1-ND" x="5" y="52.5" size="0.8" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="MF" value="Murata" x="5" y="52.5" size="0.8" layer="27" font="vector" rot="R90" display="off"/>
@@ -4902,7 +5026,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="PACKAGE" value="6153 Murata" x="5" y="52.5" size="0.8" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/KCM55TR7YA336MH01L/?ref=eda" x="5" y="52.5" size="0.8" layer="27" font="vector" rot="R90" display="off"/>
 </element>
-<element name="C2" library="microfloat" package="CAPC6153X500N" value="KCM55TR7YA336MH01L" x="41.9" y="31.7" smashed="yes" rot="R90">
+<element name="C2" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="CAPC6153X500N" package3d_urn="urn:adsk.eagle:package:27994480/1" value="KCM55TR7YA336MH01L" x="41.9" y="31.7" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value=" SMD Capacitor X7R(EIA) with Capacitance: 33uF Tol. 20%. Rated Voltage: 35Vdc " x="41.9" y="31.7" size="0.8" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="DIGI-KEY_PART_NUMBER" value="490-16299-1-ND" x="41.9" y="31.7" size="0.8" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="MF" value="Murata" x="41.9" y="31.7" size="0.8" layer="27" font="vector" rot="R90" display="off"/>
@@ -4912,7 +5036,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/KCM55TR7YA336MH01L/?ref=eda" x="41.9" y="31.7" size="0.8" layer="27" font="vector" rot="R90" display="off"/>
 </element>
 <element name="$$$$U$1" library="HyTechAesthetics" package="LOGO_GT_0.25&quot;" value="" x="20.1" y="21.5" smashed="yes"/>
-<element name="$$$$$$U$6" library="microfloat" package="TEST_POINT" value="TEST_POINT" x="2" y="59" smashed="yes"/>
+<element name="$$$$$$U$6" library="microfloat" library_urn="urn:adsk.eagle:library:27994367" package="TEST_POINT" package3d_urn="urn:adsk.eagle:package:27994450/2" value="TEST_POINT" x="2" y="59" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -7513,8 +7637,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="4,1,c193721888254dc2"/>
-<approved hash="4,1,6a21aa8559383b0b"/>
 <approved hash="7,39,8944118fabc07af9"/>
 <approved hash="7,39,8942e699a6a6cf6a"/>
 <approved hash="7,39,52942ee2e0ac59f9"/>
